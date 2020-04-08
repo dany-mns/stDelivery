@@ -8,31 +8,37 @@
     <Jar>D:\A.C\SEM_II\IP\Proiect\stDelivery\stDelivery\stDelivery\obj\Debug\80\lp\13\jl\bin\classes.jar</Jar>
     <Jar>D:\A.C\SEM_II\IP\Proiect\stDelivery\stDelivery\stDelivery\obj\Debug\80\lp\14\jl\bin\classes.jar</Jar>
     <Jar>D:\A.C\SEM_II\IP\Proiect\stDelivery\stDelivery\stDelivery\obj\Debug\80\lp\15\jl\bin\classes.jar</Jar>
+    <Jar>D:\A.C\SEM_II\IP\Proiect\stDelivery\stDelivery\stDelivery\obj\Debug\80\lp\16\jl\bin\classes.jar</Jar>
+    <Jar>D:\A.C\SEM_II\IP\Proiect\stDelivery\stDelivery\stDelivery\obj\Debug\80\lp\17\jl\bin\classes.jar</Jar>
     <Jar>D:\A.C\SEM_II\IP\Proiect\stDelivery\stDelivery\stDelivery\obj\Debug\80\lp\2\jl\arch-lifecycle-common.jar</Jar>
     <Jar>D:\A.C\SEM_II\IP\Proiect\stDelivery\stDelivery\stDelivery\obj\Debug\80\lp\3\jl\bin\classes.jar</Jar>
     <Jar>D:\A.C\SEM_II\IP\Proiect\stDelivery\stDelivery\stDelivery\obj\Debug\80\lp\4\jl\bin\classes.jar</Jar>
     <Jar>D:\A.C\SEM_II\IP\Proiect\stDelivery\stDelivery\stDelivery\obj\Debug\80\lp\5\jl\support-annotations.jar</Jar>
     <Jar>D:\A.C\SEM_II\IP\Proiect\stDelivery\stDelivery\stDelivery\obj\Debug\80\lp\6\jl\bin\classes.jar</Jar>
     <Jar>D:\A.C\SEM_II\IP\Proiect\stDelivery\stDelivery\stDelivery\obj\Debug\80\lp\7\jl\bin\classes.jar</Jar>
-    <Jar>D:\A.C\SEM_II\IP\Proiect\stDelivery\stDelivery\stDelivery\obj\Debug\80\lp\8\jl\bin\classes.jar</Jar>
+    <Jar>D:\A.C\SEM_II\IP\Proiect\stDelivery\stDelivery\stDelivery\obj\Debug\80\lp\8\jl\constraint-layout-solver.jar</Jar>
     <Jar>D:\A.C\SEM_II\IP\Proiect\stDelivery\stDelivery\stDelivery\obj\Debug\80\lp\9\jl\bin\classes.jar</Jar>
   </Jars>
   <ResolvedResourceDirectories>
     <ResolvedResourceDirectory>D:\A.C\SEM_II\IP\Proiect\stDelivery\stDelivery\stDelivery\obj\Debug\80\lp\6\jl\res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>D:\A.C\SEM_II\IP\Proiect\stDelivery\stDelivery\stDelivery\obj\Debug\80\lp\9\jl\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>D:\A.C\SEM_II\IP\Proiect\stDelivery\stDelivery\stDelivery\obj\Debug\80\lp\7\jl\res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>D:\A.C\SEM_II\IP\Proiect\stDelivery\stDelivery\stDelivery\obj\Debug\80\lp\11\jl\res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>D:\A.C\SEM_II\IP\Proiect\stDelivery\stDelivery\stDelivery\obj\Debug\80\lp\12\jl\res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>D:\A.C\SEM_II\IP\Proiect\stDelivery\stDelivery\stDelivery\obj\Debug\80\lp\13\jl\res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>D:\A.C\SEM_II\IP\Proiect\stDelivery\stDelivery\stDelivery\obj\Debug\80\lp\14\jl\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>D:\A.C\SEM_II\IP\Proiect\stDelivery\stDelivery\stDelivery\obj\Debug\80\lp\15\jl\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>D:\A.C\SEM_II\IP\Proiect\stDelivery\stDelivery\stDelivery\obj\Debug\80\lp\16\jl\res</ResolvedResourceDirectory>
   </ResolvedResourceDirectories>
-  <ResolvedAssetDirectories />
+  <ResolvedAssetDirectories>
+    <ResolvedAssetDirectory>obj\Debug\80\lp\7\jl\assets</ResolvedAssetDirectory>
+  </ResolvedAssetDirectories>
   <ResolvedEnvironmentFiles />
   <ResolvedResourceDirectoryStamps>
     <ResolvedResourceDirectoryStamp>D:\A.C\SEM_II\IP\Proiect\stDelivery\stDelivery\stDelivery\obj\Debug\80\lp\6.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>D:\A.C\SEM_II\IP\Proiect\stDelivery\stDelivery\stDelivery\obj\Debug\80\lp\9.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>D:\A.C\SEM_II\IP\Proiect\stDelivery\stDelivery\stDelivery\obj\Debug\80\lp\7.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>D:\A.C\SEM_II\IP\Proiect\stDelivery\stDelivery\stDelivery\obj\Debug\80\lp\11.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>D:\A.C\SEM_II\IP\Proiect\stDelivery\stDelivery\stDelivery\obj\Debug\80\lp\12.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>D:\A.C\SEM_II\IP\Proiect\stDelivery\stDelivery\stDelivery\obj\Debug\80\lp\13.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>D:\A.C\SEM_II\IP\Proiect\stDelivery\stDelivery\stDelivery\obj\Debug\80\lp\14.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>D:\A.C\SEM_II\IP\Proiect\stDelivery\stDelivery\stDelivery\obj\Debug\80\lp\15.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>D:\A.C\SEM_II\IP\Proiect\stDelivery\stDelivery\stDelivery\obj\Debug\80\lp\16.stamp</ResolvedResourceDirectoryStamp>
   </ResolvedResourceDirectoryStamps>
 </Paths>

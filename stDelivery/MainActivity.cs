@@ -1,9 +1,11 @@
 ﻿using System;
 using Android.App;
+using Android.Content;
 using Android.OS;
 using Android.Runtime;
 using Android.Support.Design.Widget;
 using Android.Support.V7.App;
+using Android.Util;
 using Android.Views;
 using Android.Widget;
 
@@ -18,36 +20,21 @@ namespace stDelivery
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.activity_main);
 
-            Android.Support.V7.Widget.Toolbar toolbar = FindViewById<Android.Support.V7.Widget.Toolbar>(Resource.Id.toolbar);
-            SetSupportActionBar(toolbar);
-
-            FloatingActionButton fab = FindViewById<FloatingActionButton>(Resource.Id.fab);
-            fab.Click += FabOnClick;
-        }
-
-        public override bool OnCreateOptionsMenu(IMenu menu)
-        {
-            MenuInflater.Inflate(Resource.Menu.menu_main, menu);
-            return true;
-        }
-
-        public override bool OnOptionsItemSelected(IMenuItem item)
-        {
-            int id = item.ItemId;
-            if (id == Resource.Id.action_settings)
+            var btn = FindViewById(Resource.Id.btnSwitchToMenu);
+            btn.Click += delegate
             {
-                return true;
-            }
-
-            return base.OnOptionsItemSelected(item);
+                Intent menuActivity = new Intent(this, typeof(FoodMenuActivity));
+                this.StartActivity(menuActivity);
+            };
         }
 
-        private void FabOnClick(object sender, EventArgs eventArgs)
-        {
-            View view = (View) sender;
-            Snackbar.Make(view, "Replace with your own action", Snackbar.LengthLong)
-                .SetAction("Action", (Android.Views.View.IOnClickListener)null).Show();
-        }
-	}
+        //void OnButtonClicked(object sender, EventArgs args)
+        //{
+        //    Intent menuActivity = new Intent(this, typeof(FoodMenuActivity));
+        //    this.StartActivity(menuActivity);
+        //}
+
+
+    }
 }
 

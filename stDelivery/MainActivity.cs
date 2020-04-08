@@ -28,11 +28,6 @@ namespace stDelivery
             };
         }
 
-        //void OnButtonClicked(object sender, EventArgs args)
-        //{
-        //    Intent menuActivity = new Intent(this, typeof(FoodMenuActivity));
-        //    this.StartActivity(menuActivity);
-        //}
 
 
     }

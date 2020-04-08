@@ -2534,8 +2534,8 @@ namespace stDelivery
 			// aapt resource value: 0x7F0C0011
 			public const int action_mode_close_button = 2131492881;
 			
-			// aapt resource value: 0x7F010005
-			public const int action_settings = 2130771973;
+			// aapt resource value: 0x7F010009
+			public const int action_settings = 2130771977;
 			
 			// aapt resource value: 0x7F0C0004
 			public const int action_text = 2131492868;
@@ -2885,6 +2885,15 @@ namespace stDelivery
 			// aapt resource value: 0x7F0C0017
 			public const int text2 = 2131492887;
 			
+			// aapt resource value: 0x7F010005
+			public const int textFoodDescription = 2130771973;
+			
+			// aapt resource value: 0x7F010004
+			public const int textFoodName = 2130771972;
+			
+			// aapt resource value: 0x7F010006
+			public const int textFoodPrice = 2130771974;
+			
 			// aapt resource value: 0x7F0C007D
 			public const int textinput_counter = 2131492989;
 			
@@ -2897,8 +2906,11 @@ namespace stDelivery
 			// aapt resource value: 0x7F0C007B
 			public const int textSpacerNoTitle = 2131492987;
 			
-			// aapt resource value: 0x7F010004
-			public const int textureView1 = 2130771972;
+			// aapt resource value: 0x7F010008
+			public const int textStatus = 2130771976;
+			
+			// aapt resource value: 0x7F010007
+			public const int textStatusView = 2130771975;
 			
 			// aapt resource value: 0x7F0C007C
 			public const int text_input_password_toggle = 2131492988;
@@ -3141,6 +3153,9 @@ namespace stDelivery
 			
 			// aapt resource value: 0x7F020003
 			public const int FoodMenuActivity = 2130837507;
+			
+			// aapt resource value: 0x7F020004
+			public const int foodrow = 2130837508;
 			
 			// aapt resource value: 0x7F0F0001
 			public const int notification_action = 2131689473;

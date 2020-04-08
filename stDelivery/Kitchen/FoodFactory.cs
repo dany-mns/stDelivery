@@ -14,9 +14,16 @@ namespace stDelivery.Kitchen
 {
     class FoodFactory
     {
-        public IFood prepareFood(TypeOfFood tf, string name, string description, int price)
+        private TypeOfFood _tf;
+
+        public FoodFactory(TypeOfFood tf)
         {
-            switch (tf)
+            this._tf = tf;
+        }
+
+        public IFood prepareFood(string name, string description, int price)
+        {
+            switch (this._tf)
             {
                 case TypeOfFood.Pizza:
                     return new Pizza(name, description, price);

@@ -20,12 +20,31 @@ namespace stDelivery
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.activity_main);
 
-            var btn = FindViewById(Resource.Id.btnSwitchToMenu);
-            btn.Click += delegate
+            var btnPizza = FindViewById(Resource.Id.btnPizza);
+            btnPizza.Click += delegate
             {
                 Intent menuActivity = new Intent(this, typeof(FoodMenuActivity));
+                menuActivity.PutExtra("Type", 0);
                 this.StartActivity(menuActivity);
             };
+
+            var btnHam = FindViewById(Resource.Id.btnHamburger);
+            btnHam.Click += delegate
+            {
+                Intent menuActivity = new Intent(this, typeof(FoodMenuActivity));
+                menuActivity.PutExtra("Type", 1);
+                this.StartActivity(menuActivity);
+            };
+
+            var btnDesert = FindViewById(Resource.Id.btnDesert);
+            btnDesert.Click += delegate
+            {
+                Intent menuActivity = new Intent(this, typeof(FoodMenuActivity));
+                menuActivity.PutExtra("Type", 2);
+                this.StartActivity(menuActivity);
+            };
+
+
         }
 
 

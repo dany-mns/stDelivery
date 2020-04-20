@@ -12,6 +12,7 @@ using Android.Runtime;
 using Android.Util;
 using Android.Views;
 using Android.Widget;
+using stDelivery.FileWork;
 using stDelivery.Kitchen;
 
 namespace stDelivery
@@ -20,6 +21,7 @@ namespace stDelivery
     public class FoodMenuActivity : Activity
     {
         private FoodFactory _foodFactory;
+        private IFood _foods;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -29,16 +31,15 @@ namespace stDelivery
             {
                 TypeOfFood myFood = (TypeOfFood)typeFood;
                 this._foodFactory = new FoodFactory(myFood);
+                try
+                {
+                    this._foods = this._foodFactory.prepareFoods();
+                } catch (Exception e)
+                {
+                    Log.Info("myapp", e.Message);
+                }
             }
 
-            string content;
-            AssetManager assets = this.Assets;
-            using (StreamReader sr = new StreamReader(assets.Open("food-menu.json")))
-            {
-                content = sr.ReadToEnd();
-                TextView text = FindViewById<TextView>(Resource.Id.textFoodDescription);
-                text.Text = content;
-            }
         }
     }
 }

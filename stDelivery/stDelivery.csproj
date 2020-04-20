@@ -57,8 +57,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Adapter\FoodAdapter.cs" />
-    <Compile Include="FileWork\File.cs" />
+    <Compile Include="FileWork\MyJsonFile.cs" />
     <Compile Include="FoodMenuActivity.cs" />
+    <Compile Include="Kitchen\Menuitem.cs" />
+    <Compile Include="Kitchen\Restaurant.cs" />
     <Compile Include="Kitchen\Desert.cs" />
     <Compile Include="Kitchen\IFood.cs" />
     <Compile Include="Kitchen\FoodFactory.cs" />

@@ -12,13 +12,7 @@ using Android.Widget;
 
 namespace stDelivery.Kitchen
 {
-    class Pizza : IFood
+    public class Pizza : IFood
     {
-        public Pizza(string name, string desc, int price)
-        {
-            this.Name = name;
-            this.Description = desc;
-            this.Price = price;
-        }
     }
 }

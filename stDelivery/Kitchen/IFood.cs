@@ -14,14 +14,8 @@ namespace stDelivery.Kitchen
 {
 
     public enum TypeOfFood { Pizza=0, Hamburger, Desert}
-    public abstract class IFood
+    public class IFood
     {
-        private string _name;
-        private string _description;
-        private int _price;
-
-        public string Name { get => _name; set => _name = value; }
-        public string Description { get => _description; set => _description = value; }
-        public int Price { get => _price; set => _price = value; }
+        public List<Menuitem> menuitem { get; set; }
     }
 }

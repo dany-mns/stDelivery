@@ -16,6 +16,9 @@ namespace stDelivery.Kitchen
     {
         public Pizza Pizza { get; set; }
         public Hamburger Hamburger { get; set; }
+        public Ciorba Ciorba { get; set; }
+        public Paste Paste { get; set; }
+        public Salata Salata { get; set; }
         public Desert Desert { get; set; }
     }
 }

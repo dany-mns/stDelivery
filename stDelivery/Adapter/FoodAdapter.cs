@@ -3,6 +3,7 @@
 using Android.Views;
 using Android.Widget;
 using Android.Support.V7.Widget;
+using stDelivery.Kitchen;
 
 namespace stDelivery.Adapter
 {
@@ -10,11 +11,11 @@ namespace stDelivery.Adapter
     {
         public event EventHandler<FoodAdapterClickEventArgs> ItemClick;
         public event EventHandler<FoodAdapterClickEventArgs> ItemLongClick;
-        string[] items;
+        public IFood foods;
 
-        public FoodAdapter(string[] data)
+        public FoodAdapter(IFood data)
         {
-            items = data;
+            foods = data;
         }
 
         // Create new views (invoked by the layout manager)
@@ -22,10 +23,7 @@ namespace stDelivery.Adapter
         {
 
             //Setup layout here
-            View itemView = null;
-            //var id = Resource.Layout.__YOUR_ITEM_HERE;
-            //itemView = LayoutInflater.From(parent.Context).
-            //       Inflate(id, parent, false);
+            View itemView = LayoutInflater.From(parent.Context).Inflate(Resource.Layout.UsesForFood, parent, false);
 
             var vh = new FoodAdapterViewHolder(itemView, OnClick, OnLongClick);
             return vh;
@@ -34,14 +32,17 @@ namespace stDelivery.Adapter
         // Replace the contents of a view (invoked by the layout manager)
         public override void OnBindViewHolder(RecyclerView.ViewHolder viewHolder, int position)
         {
-            var item = items[position];
+            var item = foods.menuitem[position];
 
             // Replace the contents of the view with that element
             var holder = viewHolder as FoodAdapterViewHolder;
             //holder.TextView.Text = items[position];
+            holder.foodNameText.Text = item.name;
+            holder.foodDescpriptionText.Text = item.description;
+            holder.foodPriceText.Text = item.price.ToString() + " LEI";
         }
 
-        public override int ItemCount => items.Length;
+        public override int ItemCount => foods.menuitem.Count;
 
         void OnClick(FoodAdapterClickEventArgs args) => ItemClick?.Invoke(this, args);
         void OnLongClick(FoodAdapterClickEventArgs args) => ItemLongClick?.Invoke(this, args);
@@ -50,13 +51,20 @@ namespace stDelivery.Adapter
 
     public class FoodAdapterViewHolder : RecyclerView.ViewHolder
     {
-        //public TextView TextView { get; set; }
-
+        public TextView foodNameText { get; set; }
+        public TextView foodDescpriptionText { get; set; }
+        public TextView foodPriceText { get; set; }
+        public ImageView addFoodButton { get; set; }
 
         public FoodAdapterViewHolder(View itemView, Action<FoodAdapterClickEventArgs> clickListener,
                             Action<FoodAdapterClickEventArgs> longClickListener) : base(itemView)
         {
             //TextView = v;
+            foodNameText = (TextView)itemView.FindViewById(Resource.Id.textFoodName);
+            foodDescpriptionText = (TextView)itemView.FindViewById(Resource.Id.textFoodDescription);
+            foodPriceText = (TextView)itemView.FindViewById(Resource.Id.textFoodPrice);
+            addFoodButton = (ImageView)itemView.FindViewById(Resource.Id.btnAddFood);
+
             itemView.Click += (sender, e) => clickListener(new FoodAdapterClickEventArgs { View = itemView, Position = AdapterPosition });
             itemView.LongClick += (sender, e) => longClickListener(new FoodAdapterClickEventArgs { View = itemView, Position = AdapterPosition });
         }

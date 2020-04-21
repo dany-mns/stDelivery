@@ -13,7 +13,7 @@ using Android.Widget;
 namespace stDelivery.Kitchen
 {
 
-    public enum TypeOfFood { Pizza=0, Hamburger, Desert}
+    public enum TypeOfFood { Pizza=0, Hamburger, Ciorba, Paste, Salata, Desert }
     public class IFood
     {
         public List<Menuitem> menuitem { get; set; }

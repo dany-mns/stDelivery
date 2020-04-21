@@ -25,13 +25,6 @@ public class FoodAdapter
 			mono.android.TypeManager.Activate ("stDelivery.Adapter.FoodAdapter, stDelivery", "", this, new java.lang.Object[] {  });
 	}
 
-	public FoodAdapter (java.lang.String[] p0)
-	{
-		super ();
-		if (getClass () == FoodAdapter.class)
-			mono.android.TypeManager.Activate ("stDelivery.Adapter.FoodAdapter, stDelivery", "System.String[], mscorlib", this, new java.lang.Object[] { p0 });
-	}
-
 
 	public android.support.v7.widget.RecyclerView.ViewHolder onCreateViewHolder (android.view.ViewGroup p0, int p1)
 	{

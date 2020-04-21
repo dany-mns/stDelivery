@@ -34,6 +34,15 @@ namespace stDelivery.Kitchen
                 case TypeOfFood.Hamburger:
                     return this._factory.Restaurant.Hamburger;
 
+                case TypeOfFood.Ciorba:
+                    return this._factory.Restaurant.Ciorba;
+
+                case TypeOfFood.Paste:
+                    return this._factory.Restaurant.Paste;
+
+                case TypeOfFood.Salata:
+                    return this._factory.Restaurant.Salata;
+
                 case TypeOfFood.Desert:
                     return this._factory.Restaurant.Desert;
 

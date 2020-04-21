@@ -59,13 +59,16 @@
     <Compile Include="Adapter\FoodAdapter.cs" />
     <Compile Include="FileWork\MyJsonFile.cs" />
     <Compile Include="FoodMenuActivity.cs" />
+    <Compile Include="Kitchen\Ciorba.cs" />
     <Compile Include="Kitchen\Menuitem.cs" />
+    <Compile Include="Kitchen\Paste.cs" />
     <Compile Include="Kitchen\Restaurant.cs" />
     <Compile Include="Kitchen\Desert.cs" />
     <Compile Include="Kitchen\IFood.cs" />
     <Compile Include="Kitchen\FoodFactory.cs" />
     <Compile Include="Kitchen\Hamburger.cs" />
     <Compile Include="Kitchen\Pizza.cs" />
+    <Compile Include="Kitchen\Salata.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -140,6 +143,18 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\sweet2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\UsesForFood.axml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\pasta.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\salad.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\soup.JPG" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

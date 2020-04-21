@@ -43,6 +43,30 @@ namespace stDelivery
                 this.StartActivity(menuActivity);
             };
 
+            var btnCiorba = FindViewById(Resource.Id.btnCiorba);
+            btnCiorba.Click += delegate
+            {
+                Intent menuActivity = new Intent(this, typeof(FoodMenuActivity));
+                menuActivity.PutExtra("Type", 2);
+                this.StartActivity(menuActivity);
+            };
+
+            var btnPaste = FindViewById(Resource.Id.btnPaste);
+            btnPaste.Click += delegate
+            {
+                Intent menuActivity = new Intent(this, typeof(FoodMenuActivity));
+                menuActivity.PutExtra("Type", 3);
+                this.StartActivity(menuActivity);
+            };
+
+            var btnSalata = FindViewById(Resource.Id.btnSalata);
+            btnSalata.Click += delegate
+            {
+                Intent menuActivity = new Intent(this, typeof(FoodMenuActivity));
+                menuActivity.PutExtra("Type", 4);
+                this.StartActivity(menuActivity);
+            };
+
             var btnDesert = FindViewById(Resource.Id.btnDesert);
             btnDesert.Click += delegate
             {
@@ -50,12 +74,7 @@ namespace stDelivery
                 menuActivity.PutExtra("Type", 5);
                 this.StartActivity(menuActivity);
             };
-
-
         }
-
-
-
     }
 }
 

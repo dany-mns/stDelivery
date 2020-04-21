@@ -67,13 +67,16 @@
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:id="@+id/f3"
-                    android:text="Food 3"
+                    android:id="@+id/btnCiorba"
+					android:background="#FFF"
+					android:alpha="0.1"
+                    android:text="Ciorba"
                     android:textSize="18sp"
                     android:gravity="center|bottom"/>
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="150dp"
+                    android:src="@drawable/soup"
                     android:layout_centerInParent="true"/>
             </RelativeLayout>
             <RelativeLayout
@@ -83,14 +86,17 @@
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:id="@+id/button4"
-                    android:text="Food 4"
+                    android:id="@+id/btnPaste"
+					android:background="#FFF"
+					android:alpha="0.1"
+                    android:text="Paste"
                     android:textSize="18sp"
                     android:gravity="center|bottom"
                     android:paddingBottom="10dp"/>
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:src="@drawable/pasta"
                     android:layout_centerInParent="true"/>
             </RelativeLayout>
         </TableRow>
@@ -107,14 +113,17 @@
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:id="@+id/button5"
-                    android:text="Food 5"
+                    android:id="@+id/btnSalata"
+					android:background="#FFF"
+					android:alpha="0.1"
+                    android:text="Salata"
                     android:textSize="18sp"
                     android:gravity="center|bottom"
                     android:paddingBottom="10dp"/>
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:src="@drawable/salad"
                     android:layout_centerInParent="true"/>
             </RelativeLayout>
             <RelativeLayout

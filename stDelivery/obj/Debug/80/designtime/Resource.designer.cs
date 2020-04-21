@@ -2423,7 +2423,10 @@ namespace stDelivery
 			public const int design_snackbar_background = 2131296347;
 			
 			// aapt resource value: 0x7F010002
-			public const int ham = 2130771970;
+			public const int fisi = 2130771970;
+			
+			// aapt resource value: 0x7F010003
+			public const int ham = 2130771971;
 			
 			// aapt resource value: 0x7F09005C
 			public const int navigation_empty_icon = 2131296348;
@@ -2464,14 +2467,23 @@ namespace stDelivery
 			// aapt resource value: 0x7F09000C
 			public const int notify_panel_notification_icon_bg = 2131296268;
 			
-			// aapt resource value: 0x7F010003
-			public const int pizza2 = 2130771971;
-			
 			// aapt resource value: 0x7F010004
-			public const int sweet = 2130771972;
+			public const int pasta = 2130771972;
 			
 			// aapt resource value: 0x7F010005
-			public const int sweet2 = 2130771973;
+			public const int pizza2 = 2130771973;
+			
+			// aapt resource value: 0x7F010006
+			public const int salad = 2130771974;
+			
+			// aapt resource value: 0x7F010007
+			public const int soup = 2130771975;
+			
+			// aapt resource value: 0x7F010008
+			public const int sweet = 2130771976;
+			
+			// aapt resource value: 0x7F010009
+			public const int sweet2 = 2130771977;
 			
 			// aapt resource value: 0x7F090069
 			public const int tooltip_frame_dark = 2131296361;
@@ -2546,8 +2558,8 @@ namespace stDelivery
 			// aapt resource value: 0x7F0C0011
 			public const int action_mode_close_button = 2131492881;
 			
-			// aapt resource value: 0x7F020013
-			public const int action_settings = 2130837523;
+			// aapt resource value: 0x7F020017
+			public const int action_settings = 2130837527;
 			
 			// aapt resource value: 0x7F0C0004
 			public const int action_text = 2131492868;
@@ -2576,20 +2588,29 @@ namespace stDelivery
 			// aapt resource value: 0x7F020000
 			public const int bottom = 2130837504;
 			
+			// aapt resource value: 0x7F020016
+			public const int btnAddFood = 2130837526;
+			
+			// aapt resource value: 0x7F020004
+			public const int btnCiorba = 2130837508;
+			
 			// aapt resource value: 0x7F020007
 			public const int btnDesert = 2130837511;
+			
+			// aapt resource value: 0x7F020009
+			public const int btnFinishBuy = 2130837513;
 			
 			// aapt resource value: 0x7F020003
 			public const int btnHamburger = 2130837507;
 			
+			// aapt resource value: 0x7F020005
+			public const int btnPaste = 2130837509;
+			
 			// aapt resource value: 0x7F020002
 			public const int btnPizza = 2130837506;
 			
-			// aapt resource value: 0x7F020005
-			public const int button4 = 2130837509;
-			
 			// aapt resource value: 0x7F020006
-			public const int button5 = 2130837510;
+			public const int btnSalata = 2130837510;
 			
 			// aapt resource value: 0x7F0C001B
 			public const int buttonPanel = 2131492891;
@@ -2666,9 +2687,6 @@ namespace stDelivery
 			// aapt resource value: 0x7F0C002F
 			public const int expand_activities_button = 2131492911;
 			
-			// aapt resource value: 0x7F020004
-			public const int f3 = 2130837508;
-			
 			// aapt resource value: 0x7F0C0031
 			public const int fill = 2131492913;
 			
@@ -2740,6 +2758,9 @@ namespace stDelivery
 			
 			// aapt resource value: 0x7F0C0046
 			public const int multiply = 2131492934;
+			
+			// aapt resource value: 0x7F020010
+			public const int myRecyclerView = 2130837520;
 			
 			// aapt resource value: 0x7F0C0047
 			public const int navigation_header_container = 2131492935;
@@ -2912,14 +2933,14 @@ namespace stDelivery
 			// aapt resource value: 0x7F0C0017
 			public const int text2 = 2131492887;
 			
-			// aapt resource value: 0x7F020009
-			public const int textFoodDescription = 2130837513;
+			// aapt resource value: 0x7F020012
+			public const int textFoodDescription = 2130837522;
 			
-			// aapt resource value: 0x7F020008
-			public const int textFoodName = 2130837512;
+			// aapt resource value: 0x7F020011
+			public const int textFoodName = 2130837521;
 			
-			// aapt resource value: 0x7F020010
-			public const int textFoodPrice = 2130837520;
+			// aapt resource value: 0x7F020013
+			public const int textFoodPrice = 2130837523;
 			
 			// aapt resource value: 0x7F0C007D
 			public const int textinput_counter = 2131492989;
@@ -2933,11 +2954,11 @@ namespace stDelivery
 			// aapt resource value: 0x7F0C007B
 			public const int textSpacerNoTitle = 2131492987;
 			
-			// aapt resource value: 0x7F020012
-			public const int textStatus = 2130837522;
+			// aapt resource value: 0x7F020015
+			public const int textStatus = 2130837525;
 			
-			// aapt resource value: 0x7F020011
-			public const int textStatusView = 2130837521;
+			// aapt resource value: 0x7F020014
+			public const int textStatusView = 2130837524;
 			
 			// aapt resource value: 0x7F0C007C
 			public const int text_input_password_toggle = 2131492988;
@@ -2953,6 +2974,9 @@ namespace stDelivery
 			
 			// aapt resource value: 0x7F0C0082
 			public const int title_template = 2131492994;
+			
+			// aapt resource value: 0x7F020008
+			public const int toolbar = 2130837512;
 			
 			// aapt resource value: 0x7F020005
 			public const int top = 2130837509;
@@ -3243,6 +3267,9 @@ namespace stDelivery
 			
 			// aapt resource value: 0x7F0F003D
 			public const int tooltip = 2131689533;
+			
+			// aapt resource value: 0x7F030005
+			public const int UsesForFood = 2130903045;
 			
 			static Layout()
 			{

@@ -17,7 +17,7 @@
             "price":24
          },
          {
-            "name":"Pizza Quatro Formaggi ",
+            "name":"Pizz Quatro Formaggi ",
             "description":"Mozzarella, gorgonzola, emmentaler,telemea de oaie - 500 g",
             "price":25
          },
@@ -117,6 +117,82 @@
          }
       ]
    },
+
+   "Ciorba": {
+      "menuitem": [
+                     { 
+            "name": "Ciorbă rădăuțeană",
+            "description": "pui",
+            "price": 10
+         },
+         { 
+            "name": "Ciorbă de pui cu tăieței de casă",
+            "description": "pui",
+            "price": 9
+         },
+         { 
+            "name": "Ciorbă de fasole cu afumătură",
+            "description": "fasole",
+            "price": 10
+         },
+         { 
+            "name": "Minestrone",
+            "description": "nu stiu",
+            "price": 9
+         }
+      ]
+   },
+
+   "Paste": {
+      "menuitem": [
+         {
+            "name": "Tagliatelli Carbonara ",
+            "description": "Tagliatelli, bacon, ou, parmezan - 300 g",
+            "price": 22 
+         },
+         {
+            "name": "Penne cu piept de pui",
+            "description": "Penne, piept de pui, sos alb/sos de rosii, parmezan - 300 g",
+            "price": 22 
+         }
+      ]
+   },
+
+   "Salata": {
+      "menuitem": [
+            {
+               "name": "Coleslaw",
+               "description": "150g",
+               "price": 7
+            },
+            {
+               "name": "Castraveți murați",
+               "description": "150g",
+               "price": 5
+            },
+            {
+               "name": "Gogoșari la oțet",
+               "description": "150g",
+               "price": 5
+            },
+            {
+               "name": "Salată mix",
+               "description": "100g",
+               "price": 5
+            },
+            {
+               "name": "Salată de vinete",
+               "description": "Mini focaccia - 200g",
+               "price": 10
+            },
+            {
+               "name": "Salată de varză",
+               "description": "posibil contine varza",
+               "price": 5
+            }
+      ]
+   },
+
    "Desert":{
       "menuitem":[
          {

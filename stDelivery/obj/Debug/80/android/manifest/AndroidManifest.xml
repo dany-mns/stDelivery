@@ -3,7 +3,7 @@
   <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="26" />
   <uses-permission android:name="android.permission.INTERNET" />
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-  <application android:allowBackup="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:roundIcon="@mipmap/ic_launcher_round" android:supportsRtl="true" android:theme="@style/AppTheme" android:name="android.app.Application" android:debuggable="true">
+  <application android:allowBackup="true" android:icon="@mipmap/ic_profi" android:label="@string/app_name" android:roundIcon="@mipmap/ic_profi" android:supportsRtl="true" android:theme="@style/AppTheme" android:name="android.app.Application" android:debuggable="true">
     <activity android:label="FoodMenu" android:theme="@style/AppTheme.NoActionBar" android:name="md549db6d8e5f52d3e5c415335b0cbd4fff.FoodMenuActivity" />
     <activity android:label="@string/app_name" android:theme="@style/AppTheme.NoActionBar" android:name="md549db6d8e5f52d3e5c415335b0cbd4fff.MainActivity">
       <intent-filter>

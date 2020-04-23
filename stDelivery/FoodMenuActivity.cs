@@ -63,7 +63,7 @@ namespace stDelivery
             string priceFood = _foods.menuitem[e.Position].price.ToString();
             Android.Support.V7.App.AlertDialog.Builder message = new Android.Support.V7.App.AlertDialog.Builder(this);
             message.SetTitle("Ati adaugat in cos");
-            message.SetMessage(nameFood + "\n Pret: " + priceFood + " LEI.");
+            message.SetMessage(nameFood + "\nPret: " + priceFood + " LEI.");
             message.SetPositiveButton("Confirm", (confirmAlert, args) =>
             {
                 //Add new item food in shop

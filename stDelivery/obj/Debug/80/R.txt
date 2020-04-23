@@ -1081,6 +1081,7 @@ int menu menu_main 0x7f0e0000
 int mipmap ic_launcher 0x7f030000
 int mipmap ic_launcher_foreground 0x7f030001
 int mipmap ic_launcher_round 0x7f030002
+int mipmap ic_profi 0x7f030003
 int string abc_action_bar_home_description 0x7f090000
 int string abc_action_bar_home_description_format 0x7f090001
 int string abc_action_bar_home_subtitle_description_format 0x7f090002

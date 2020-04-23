@@ -3423,6 +3423,9 @@ namespace stDelivery
 			// aapt resource value: 0x7f030002
 			public const int ic_launcher_round = 2130903042;
 			
+			// aapt resource value: 0x7f030003
+			public const int ic_profi = 2130903043;
+			
 			static Mipmap()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();

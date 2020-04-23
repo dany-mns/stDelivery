@@ -267,3 +267,8 @@ E:\Repositories\stDelivery\stDelivery\obj\Debug\80\android\assets\System.Xml.Lin
 E:\Repositories\stDelivery\stDelivery\obj\Debug\80\android\assets\System.Xml.pdb
 E:\Repositories\stDelivery\stDelivery\obj\Debug\80\res\drawable\shopping_cart.png
 E:\Repositories\stDelivery\stDelivery\obj\Debug\80\res\drawable\shop.png
+E:\Repositories\stDelivery\stDelivery\obj\Debug\80\res\mipmap-hdpi\ic_profi.png
+E:\Repositories\stDelivery\stDelivery\obj\Debug\80\res\mipmap-mdpi\ic_profi.png
+E:\Repositories\stDelivery\stDelivery\obj\Debug\80\res\mipmap-xhdpi\ic_profi.png
+E:\Repositories\stDelivery\stDelivery\obj\Debug\80\res\mipmap-xxhdpi\ic_profi.png
+E:\Repositories\stDelivery\stDelivery\obj\Debug\80\res\mipmap-xxxhdpi\ic_profi.png

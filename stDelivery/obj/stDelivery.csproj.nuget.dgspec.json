@@ -1,0 +1,51 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\stefa\\OneDrive\\Desktop\\stDelivery-master\\stDelivery\\stDelivery.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\stefa\\OneDrive\\Desktop\\stDelivery-master\\stDelivery\\stDelivery.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\stefa\\OneDrive\\Desktop\\stDelivery-master\\stDelivery\\stDelivery.csproj",
+        "projectName": "stDelivery",
+        "projectPath": "C:\\Users\\stefa\\OneDrive\\Desktop\\stDelivery-master\\stDelivery\\stDelivery.csproj",
+        "packagesPath": "C:\\Users\\stefa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\stefa\\OneDrive\\Desktop\\stDelivery-master\\stDelivery\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\stefa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "monoandroid80"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://packagesource": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "monoandroid80": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "monoandroid80": {
+          "dependencies": {
+            "Xamarin.Android.Support.Design": {
+              "target": "Package",
+              "version": "[26.1.0.1, )"
+            }
+          }
+        }
+      }
+    }
+  }
+}

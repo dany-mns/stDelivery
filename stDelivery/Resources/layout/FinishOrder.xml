@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/linearLayout1">
+        <TextView
+            android:text="Finalizare comanda"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView1"
+            android:gravity="center_horizontal"
+            android:textStyle="bold|italic"/>
+        <TextView
+            android:text="Selectati sursa de contact"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:gravity="center_horizontal"
+            android:textStyle="bold|italic"/>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:id="@+id/space1" />
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/contactSelector"
+            android:gravity="center_horizontal"
+            android:textStyle="bold|italic"/>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:id="@+id/space2" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="584.6dp"
+            android:id="@+id/linearLayout2">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="386.0dp"
+                android:layout_height="50.0dp"
+                android:id="@+id/linearLayout4">
+                <TextView
+                    android:text="Nume si Prenume"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="149.4dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView3"
+                    android:textStyle="bold|italic"
+                    android:layout_marginLeft="10dp"/>
+                <EditText
+                    android:inputType="textPersonName"
+                    android:layout_width="188.3dp"
+                    android:layout_height="48.0dp"
+                    android:id="@+id/numeClient" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="386.0dp"
+                android:layout_height="50.0dp"
+                android:id="@+id/linearLayout5">
+                <TextView
+                    android:text="Numar de telefon"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="149.4dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView3"
+                    android:textStyle="bold|italic"
+                    android:layout_marginLeft="10dp"/>
+                <EditText
+                    android:inputType="phone"
+                    android:layout_width="188.3dp"
+                    android:layout_height="48.0dp"
+                    android:id="@+id/telefonClient" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="386.0dp"
+                android:layout_height="50.0dp"
+                android:id="@+id/linearLayout6">
+                <TextView
+                    android:text="Adresa e-mail"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="115.1dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView3"
+                    android:textStyle="bold|italic"
+                    android:layout_marginLeft="10dp"/>
+                <EditText
+                    android:inputType="textEmailAddress"
+                    android:layout_width="208.3dp"
+                    android:layout_height="48.0dp"
+                    android:id="@+id/emailClient" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="386.0dp"
+                android:layout_height="50.0dp"
+                android:id="@+id/linearLayout7">
+                <TextView
+                    android:text="Strada"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="65.7dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView3"
+                    android:textStyle="bold|italic"
+                    android:layout_marginLeft="10dp"/>
+                <EditText
+                    android:layout_width="222.6dp"
+                    android:layout_height="48.0dp"
+                    android:id="@+id/stradaClient" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="386.0dp"
+                android:layout_height="50.0dp"
+                android:id="@+id/linearLayout8">
+                <TextView
+                    android:text="Nr."
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="27.4dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView3"
+                    android:textStyle="bold|italic"
+                    android:layout_marginLeft="10dp"/>
+                <EditText
+                    android:layout_width="60.3dp"
+                    android:layout_height="48.0dp"
+                    android:id="@+id/nrCasaClient" />
+                <TextView
+                    android:text="Bloc"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="37.1dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView4"
+                    android:textStyle="bold|italic"
+                    android:layout_marginLeft="10dp"/>
+                <EditText
+                    android:layout_width="57.7dp"
+                    android:layout_height="48.0dp"
+                    android:id="@+id/blocClient" />
+                <TextView
+                    android:text="Apartament"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="99.1dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView5"
+                    android:textStyle="bold|italic"
+                    android:layout_marginLeft="10dp"/>
+                <EditText
+                    android:layout_width="36.6dp"
+                    android:layout_height="48.0dp"
+                    android:id="@+id/apartamentClient" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="386.0dp"
+                android:layout_height="50.0dp"
+                android:id="@+id/linearLayout9">
+                <TextView
+                    android:text="Oras"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="65.7dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView3"
+                    android:textStyle="bold|italic"
+                    android:layout_marginLeft="10dp"/>
+                <EditText
+                    android:layout_width="222.6dp"
+                    android:layout_height="48.0dp"
+                    android:id="@+id/orasClient" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="386.0dp"
+                android:layout_height="50.0dp"
+                android:id="@+id/linearLayout10">
+                <TextView
+                    android:text="Modalitate plata"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="144.0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView3"
+                    android:textStyle="bold|italic"
+                    android:layout_marginLeft="10dp"/>
+                <Spinner
+                    android:layout_width="208.6dp"
+                    android:layout_height="31.4dp"
+                    android:id="@+id/modalitatePlataClient" />
+            </LinearLayout>
+            <TextView
+                android:text="Alte observatii"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold|italic"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/textView6" />
+            <EditText
+                android:inputType="textMultiLine"
+                android:layout_width="match_parent"
+                android:layout_height="48.3dp"
+                android:id="@+id/observatiiClient" />
+            <CheckBox
+                android:text="Nu sunt un robotel care vrea sa faca o farsa!"
+                android:layout_width="411.1dp"
+                android:layout_height="37.4dp"
+                android:id="@+id/robotCheck"
+                android:textStyle="bold|italic"/>
+            <CheckBox
+                android:text="Sunt de acord cu termenii si conditiile!"
+                android:layout_width="411.1dp"
+                android:layout_height="37.4dp"
+                android:id="@+id/termsCheck"
+                android:textStyle="bold|italic"/>
+            <TextView
+                android:text="Termeni si conditii"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/termsClick"
+                android:textStyle="bold|italic"
+                android:layout_marginLeft="20dp"
+                android:textColor="#ff0000"
+                android:clickable="true"/>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="75.5dp"
+            android:id="@+id/linearLayout3">
+            <Button
+                android:text="Trimite comanda"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/sendCommand"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

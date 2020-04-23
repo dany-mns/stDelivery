@@ -57,24 +57,25 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Adapter\FoodAdapter.cs" />
-    <Compile Include="FileWork\MyJsonFile.cs" />
+    <Compile Include="Kitchen\RestaurantFactory.cs" />
     <Compile Include="FoodMenuActivity.cs" />
-    <Compile Include="Kitchen\Ciorba.cs" />
-    <Compile Include="Kitchen\Menuitem.cs" />
-    <Compile Include="Kitchen\Paste.cs" />
+    <Compile Include="Kitchen\Food\Ciorba.cs" />
+    <Compile Include="Kitchen\Food\Menuitem.cs" />
+    <Compile Include="Kitchen\Food\Paste.cs" />
     <Compile Include="Kitchen\Restaurant.cs" />
-    <Compile Include="Kitchen\Desert.cs" />
-    <Compile Include="Kitchen\IFood.cs" />
+    <Compile Include="Kitchen\Food\Desert.cs" />
+    <Compile Include="Kitchen\Food\IFood.cs" />
     <Compile Include="Kitchen\FoodFactory.cs" />
-    <Compile Include="Kitchen\Hamburger.cs" />
-    <Compile Include="Kitchen\Pizza.cs" />
-    <Compile Include="Kitchen\Salata.cs" />
+    <Compile Include="Kitchen\Food\Hamburger.cs" />
+    <Compile Include="Kitchen\Food\Pizza.cs" />
+    <Compile Include="Kitchen\Food\Salata.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <AndroidAsset Include="Assets\food-menu.json" />
+    <None Include="RestaurantFactoryClassD.cd" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Properties\AndroidManifest.xml" />
     <None Include="Assets\AboutAssets.txt" />

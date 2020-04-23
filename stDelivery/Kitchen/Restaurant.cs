@@ -12,6 +12,7 @@ using Android.Widget;
 
 namespace stDelivery.Kitchen
 {
+	// Main root json deserialization
     public class Restaurant
     {
         public Pizza Pizza { get; set; }

@@ -9,19 +9,37 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
-using stDelivery.FileWork;
+using stDelivery.Kitchen;
+
+/**************************************************************************
+ *                                                                        *
+ *  File:        FoodCategoryActivity.cs                                  *
+ *  Copyright:   (c) 2020, Manastireanu Dany                              *
+ *  E-mail:      andrei-dany.manastireanu@student.tuiasi.ro               *
+ *  Website:     http://127.0.0.1                                         *
+ *  Description: Class for return reference to food type based on user    *
+ *               selected option.                                         *
+ *  This program is free software; you can redistribute it and/or modify  *
+ *  it under the terms of the GNU General Public License as published by  *
+ *  the Free Software Foundation. This program is distributed in the      *
+ *  hope that it will be useful, but WITHOUT ANY WARRANTY; without even   *
+ *  the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR   *
+ *  PURPOSE. See the GNU General Public License for more details.         *
+ *                                                                        *
+ **************************************************************************/
+
 
 namespace stDelivery.Kitchen
 {
     class FoodFactory
     {
         private TypeOfFood _tf;
-        private MyJsonFile _factory;
+        private RestaurantFactory _factory;
 
         public FoodFactory(TypeOfFood tf)
         {
             this._tf = tf;
-            this._factory = MyJsonFile.GetInstance(null);
+            this._factory = RestaurantFactory.GetInstance(null, "");
         }
 
         public IFood prepareFoods()

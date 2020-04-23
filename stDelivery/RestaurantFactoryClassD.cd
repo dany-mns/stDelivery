@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="stDelivery.Kitchen.Ciorba" Collapsed="true">
+    <Position X="0.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Kitchen\Food\Ciorba.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="stDelivery.Kitchen.Desert" Collapsed="true">
+    <Position X="5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Kitchen\Food\Desert.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="stDelivery.Kitchen.FoodFactory">
+    <Position X="14.25" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIAAAAAAAAAAAAgAAAAAAAAACAAAAAAA=</HashCode>
+      <FileName>Kitchen\FoodFactory.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_factory" />
+      <Field Name="_tf" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="stDelivery.Kitchen.Hamburger" Collapsed="true">
+    <Position X="9.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Kitchen\Food\Hamburger.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="stDelivery.Kitchen.IFood">
+    <Position X="5" Y="6.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>Kitchen\Food\IFood.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="stDelivery.Kitchen.Menuitem">
+    <Position X="9.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAAIAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Kitchen\Food\Menuitem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="stDelivery.Kitchen.Paste" Collapsed="true">
+    <Position X="11.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Kitchen\Food\Paste.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="stDelivery.Kitchen.Pizza" Collapsed="true">
+    <Position X="2.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Kitchen\Food\Pizza.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="stDelivery.Kitchen.Restaurant">
+    <Position X="8.25" Y="2.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>QAAABAAAAAAAAAAAAAAAAAAAAEAAAAEAgAAQAAAAAAA=</HashCode>
+      <FileName>Kitchen\Restaurant.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Ciorba" />
+      <Property Name="Salata" />
+      <Property Name="Pizza" />
+      <Property Name="Paste" />
+      <Property Name="Hamburger" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="stDelivery.Kitchen.Salata" Collapsed="true">
+    <Position X="7.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Kitchen\Food\Salata.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="stDelivery.Kitchen.RestaurantFactory">
+    <Position X="20.5" Y="2" Width="4.75" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAABAAEAAAAABAAAAAAAAAAAAAAIAAA=</HashCode>
+      <FileName>Kitchen\RestaurantFactory.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_singleton" />
+      <Field Name="_restaurant" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="stDelivery.MainActivity">
+    <Position X="14.25" Y="7" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>MainActivity.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="restaurantFactory" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="stDelivery.FoodMenuActivity">
+    <Position X="14.25" Y="4.25" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAgABBAAAAAAAACUAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>FoodMenuActivity.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_foods" />
+      <Field Name="_foodFactory" />
+    </ShowAsAssociation>
+  </Class>
+  <Enum Name="stDelivery.Kitchen.TypeOfFood">
+    <Position X="17" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAABAAAAAAAAAAAAAAAAAAAAEAAAAEAgAAQAAAAAAA=</HashCode>
+      <FileName>Kitchen\Food\IFood.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -738,11 +738,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Repositories\\stDelivery\\stDelivery\\stDelivery.csproj",
+      "projectUniqueName": "D:\\A.C\\IP\\stDelivery\\stDelivery\\stDelivery.csproj",
       "projectName": "stDelivery",
-      "projectPath": "E:\\Repositories\\stDelivery\\stDelivery\\stDelivery.csproj",
+      "projectPath": "D:\\A.C\\IP\\stDelivery\\stDelivery\\stDelivery.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "E:\\Repositories\\stDelivery\\stDelivery\\obj\\",
+      "outputPath": "D:\\A.C\\IP\\stDelivery\\stDelivery\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [

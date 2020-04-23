@@ -42,13 +42,39 @@ namespace stDelivery
             this._foods = GetSpecificFood(typeFood);
 
             SetupRecyclerView();
+
+            _btnFinish.Click += delegate
+            {
+                Log.Info("myap", "Send new object to Stef activity");
+            };
         }
 
         private void SetupRecyclerView()
         {
             _recyclerView.SetLayoutManager(new Android.Support.V7.Widget.LinearLayoutManager(_recyclerView.Context));
             FoodAdapter adapter = new FoodAdapter(this._foods);
+            adapter.ItemBuyClick += Adapter_BuyItemClick;
             _recyclerView.SetAdapter(adapter);
+        }
+
+        private void Adapter_BuyItemClick(object sender, FoodAdapterClickEventArgs e)
+        {
+            string nameFood = _foods.menuitem[e.Position].name;
+            string priceFood = _foods.menuitem[e.Position].price.ToString();
+            Android.Support.V7.App.AlertDialog.Builder message = new Android.Support.V7.App.AlertDialog.Builder(this);
+            message.SetTitle("Ati adaugat in cos");
+            message.SetMessage(nameFood + "\n Pret: " + priceFood + " LEI.");
+            message.SetPositiveButton("Confirm", (confirmAlert, args) =>
+            {
+                //Add new item food in shop
+            });
+
+            message.SetNegativeButton("Revoke", (revokeAlert, args) =>
+            {
+
+            });
+
+            message.Show();
         }
 
         private IFood GetSpecificFood(int typeFood)

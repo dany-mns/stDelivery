@@ -733,20 +733,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Manastireanu\\.nuget\\packages\\": {}
+    "C:\\Users\\Administrator\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\A.C\\IP_PROJECT\\Proiect\\stDelivery\\stDelivery\\stDelivery.csproj",
+      "projectUniqueName": "E:\\Repositories\\stDelivery\\stDelivery\\stDelivery.csproj",
       "projectName": "stDelivery",
-      "projectPath": "E:\\A.C\\IP_PROJECT\\Proiect\\stDelivery\\stDelivery\\stDelivery.csproj",
-      "packagesPath": "C:\\Users\\Manastireanu\\.nuget\\packages\\",
-      "outputPath": "E:\\A.C\\IP_PROJECT\\Proiect\\stDelivery\\stDelivery\\obj\\",
+      "projectPath": "E:\\Repositories\\stDelivery\\stDelivery\\stDelivery.csproj",
+      "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+      "outputPath": "E:\\Repositories\\stDelivery\\stDelivery\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
-        "C:\\Users\\Manastireanu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

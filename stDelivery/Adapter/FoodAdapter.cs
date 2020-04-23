@@ -4,6 +4,7 @@ using Android.Views;
 using Android.Widget;
 using Android.Support.V7.Widget;
 using stDelivery.Kitchen;
+using Android.Util;
 
 namespace stDelivery.Adapter
 {
@@ -11,6 +12,8 @@ namespace stDelivery.Adapter
     {
         public event EventHandler<FoodAdapterClickEventArgs> ItemClick;
         public event EventHandler<FoodAdapterClickEventArgs> ItemLongClick;
+        public event EventHandler<FoodAdapterClickEventArgs> ItemBuyClick;
+
         public IFood foods;
 
         public FoodAdapter(IFood data)
@@ -25,7 +28,7 @@ namespace stDelivery.Adapter
             //Setup layout here
             View itemView = LayoutInflater.From(parent.Context).Inflate(Resource.Layout.UsesForFood, parent, false);
 
-            var vh = new FoodAdapterViewHolder(itemView, OnClick, OnLongClick);
+            var vh = new FoodAdapterViewHolder(itemView, OnClick, OnLongClick, OnBuyFoodClick);
             return vh;
         }
 
@@ -36,7 +39,6 @@ namespace stDelivery.Adapter
 
             // Replace the contents of the view with that element
             var holder = viewHolder as FoodAdapterViewHolder;
-            //holder.TextView.Text = items[position];
             holder.foodNameText.Text = item.name;
             holder.foodDescpriptionText.Text = item.description;
             holder.foodPriceText.Text = item.price.ToString() + " LEI";
@@ -46,6 +48,7 @@ namespace stDelivery.Adapter
 
         void OnClick(FoodAdapterClickEventArgs args) => ItemClick?.Invoke(this, args);
         void OnLongClick(FoodAdapterClickEventArgs args) => ItemLongClick?.Invoke(this, args);
+        void OnBuyFoodClick(FoodAdapterClickEventArgs args) => ItemBuyClick?.Invoke(this, args);
 
     }
 
@@ -57,9 +60,8 @@ namespace stDelivery.Adapter
         public ImageView addFoodButton { get; set; }
 
         public FoodAdapterViewHolder(View itemView, Action<FoodAdapterClickEventArgs> clickListener,
-                            Action<FoodAdapterClickEventArgs> longClickListener) : base(itemView)
+                            Action<FoodAdapterClickEventArgs> longClickListener, Action<FoodAdapterClickEventArgs> buyClickListener) : base(itemView)
         {
-            //TextView = v;
             foodNameText = (TextView)itemView.FindViewById(Resource.Id.textFoodName);
             foodDescpriptionText = (TextView)itemView.FindViewById(Resource.Id.textFoodDescription);
             foodPriceText = (TextView)itemView.FindViewById(Resource.Id.textFoodPrice);
@@ -67,6 +69,7 @@ namespace stDelivery.Adapter
 
             itemView.Click += (sender, e) => clickListener(new FoodAdapterClickEventArgs { View = itemView, Position = AdapterPosition });
             itemView.LongClick += (sender, e) => longClickListener(new FoodAdapterClickEventArgs { View = itemView, Position = AdapterPosition });
+            addFoodButton.Click += (sender, e) => buyClickListener(new FoodAdapterClickEventArgs { View = itemView, Position = AdapterPosition });
         }
     }
 

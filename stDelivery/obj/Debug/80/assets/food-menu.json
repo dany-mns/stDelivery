@@ -196,27 +196,27 @@
    "Desert":{
       "menuitem":[
          {
-            "name":"Platou prăjituri asortate (prăjitură Albă ca Zăpada, creme noir, mini tarte, trufe cu amarene)",
+            "name":"Platou prăjituri asortate",
             "description":"Făină, zahăr, unt, lapte, fructe, nucă, nucă cocos, cacao, ciocolată, ouă, praf de copt, vanilina, rom, coajă lămâie, portocale - 1kg",
             "price":85
          },
          {
-            "name":"Platou de post asortat (salam de biscuiți, prăjitură cu griș și cocos, brownie, trufe de post cu amarene)",
+            "name":"Platou de post asortat",
             "description":"Făina, zahăr, cacao, lapte vegetal, grăsimi vegetale, cacao, ciocolată, esențe, nucă, griș, fructe, alune - 1kg",
             "price":65
          },
          {
-            "name":"Platou de fursecuri asortate (cornulețe, arici cu alune, biscuiți linzer, fursec cu unt)",
+            "name":"Platou de fursecuri",
             "description":"Făină, unt, cacao, nucă, zahăr, sare, lapte, ciocolată, esențe, coajă lămâie, portocală - 1kg",
             "price":70
          },
          {
-            "name":"Sărățele cu brânză de burduf și cașcaval",
+            "name":"Sărățele",
             "description":"Făină, brânză de burduf, cașcaval, smântână, lapte, drojdie, sare, mix semințe, ouă - 1kg",
             "price":70
          },
          {
-            "name":"Covrigei cu brânză de burduf și cașcaval",
+            "name":"Covrigei",
             "description":"Făină, brânză de burduf, cașcaval, smântână, lapte, drojdie, sare, mix semințe, ouă - 1kg",
             "price":70
          },
@@ -241,7 +241,7 @@
             "price":85
          },
          {
-            "name":"Macarons cu cremă de ciocolată belgiană",
+            "name":"Macarons",
             "description":"Făină de migdale, ou, zahăr, ciocolată, frișcă naturală, esențe, colorant alimentar - 1kg",
             "price":100
          },

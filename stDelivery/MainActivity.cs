@@ -20,6 +20,6 @@ namespace stDelivery
 
             ShoppingCartActivity shoppingCartActivity = new ShoppingCartActivity(this);
         }
-	}
+    }
 }
 

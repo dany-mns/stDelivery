@@ -12,7 +12,8 @@ using System.Security.Cryptography;
 
 namespace stDelivery
 {
-    [Activity(Label = "@string/app_name", Theme = "@style/AppTheme.NoActionBar", MainLauncher = true)]
+    
+    [Activity(Label = "StDelivery", Theme = "@style/AppTheme.NoActionBar", MainLauncher = true)]
     public class LoginActivity : AppCompatActivity
     {
         
@@ -29,12 +30,14 @@ namespace stDelivery
             registerButton.Click += RegisterClick;
 
             
-            db = new Database();
+            db = Database.Instance();
 
             
 
             
             db.createDatabase();
+
+            
 
            // db.InsertUserIntoTable(user);
             
@@ -79,16 +82,17 @@ namespace stDelivery
             {
                 EditText emailText = FindViewById<EditText>(Resource.Id.LogEmailText);
                 EditText passText = FindViewById<EditText>(Resource.Id.LogPassText);
-                int nr = db.userExists(emailText.Text.ToString(), Crypt.SHA256hash(passText.Text.ToString()));
-                if (nr>0){
+                User user = db.getCurrentUser(emailText.Text.ToString(), Crypt.SHA256hash(passText.Text.ToString()));
+                if (user!=null){
+                    GlobalVariables.currentUser = new Persoana(user);
                     View view = (View)sender;
-                    Snackbar.Make(view, "Te-ai logat"+nr.ToString(), Snackbar.LengthLong)
+                    Snackbar.Make(view, "Te-ai logat!", Snackbar.LengthLong)
                         .SetAction("Action", (Android.Views.View.IOnClickListener)null).Show();
                 }
                 else
                 {
                     View view = (View)sender;
-                    Snackbar.Make(view, "Email sau parola gresita! Daca nu ai cont creeaza-ti unul apasand pe Register!"+db.userNumber().ToString(), Snackbar.LengthLong)
+                    Snackbar.Make(view, "Email sau parola gresita!"+db.userNumber().ToString(), Snackbar.LengthLong)
                         .SetAction("Action", (Android.Views.View.IOnClickListener)null).Show();
                 }
                 

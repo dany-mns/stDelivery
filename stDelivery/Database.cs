@@ -15,7 +15,20 @@ namespace stDelivery
 {
     public class Database
     {
+
+        private static Database instance;
         string path = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
+        private Database()
+        {
+
+        }
+
+        public static Database Instance()
+        {
+            if (instance == null)
+                instance = new Database();
+            return instance;
+        }
         public bool createDatabase()
         {
             try
@@ -72,7 +85,7 @@ namespace stDelivery
             {
                 using (var connection = new SQLite.SQLiteConnection(System.IO.Path.Combine(path, "users.db")))
                 {
-                    connection.Query<User>("UPDATE User set Nume=?,Prenume=?,Email=?,Varsta=?,Adresa=? Where Id=?", user.Nume, user.Prenume, user.Email, user.Varsta, user.Adresa, user.Id);
+                    connection.Query<User>("UPDATE User set Nume=?,Email=?,Telefon=?,Adresa=? Where Id=?", user.Nume, user.Email, user.Telefon, user.Adresa, user.Id);
                 }
                 return true;
             }
@@ -131,6 +144,30 @@ namespace stDelivery
             {
                 Log.Info("Eroare la introducere userului!!!", e.Message);
                 return -1;
+            }
+        }
+
+        public User getCurrentUser(string email, string parola)
+        {
+            try
+            {
+                using (var connection = new SQLite.SQLiteConnection(System.IO.Path.Combine(path, "users.db")))
+                {
+                    List<User> users = connection.Query<User>("SELECT * FROM User where Email=? AND Parola=?", email, parola);
+                    if (users.Count == 1)
+                    {
+                        return users[0];
+                    }
+                    else
+                    {
+                        return null;
+                    }
+                }
+            }
+            catch (SQLite.SQLiteException e)
+            {
+                Log.Info("Eroare la introducere userului!!!", e.Message);
+                return null;
             }
         }
 

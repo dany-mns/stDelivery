@@ -24,7 +24,7 @@ namespace stDelivery
 
             SetContentView(Resource.Layout.RegisterLayout);
 
-            db = new Database();
+            db = Database.Instance();
 
             Button regButton = FindViewById<Button>(Resource.Id.FinRegisterButton);
             regButton.Click += RegisterCl;
@@ -36,14 +36,22 @@ namespace stDelivery
 
         public void RegisterCl(Object sender, EventArgs eventArgs)
         {
-            EditText LastNameText = FindViewById<EditText>(Resource.Id.LastNameText);
-            EditText FirstNameText = FindViewById<EditText>(Resource.Id.FirstNameText);
+            EditText NameText = FindViewById<EditText>(Resource.Id.NameText);
+            
             EditText EmailText = FindViewById<EditText>(Resource.Id.EmailText);
-            EditText AdressText = FindViewById<EditText>(Resource.Id.AdressText);
-            EditText AgeText = FindViewById<EditText>(Resource.Id.AgeText);
+            
+            EditText PhoneText = FindViewById<EditText>(Resource.Id.PhoneText);
             EditText pass1Text = FindViewById<EditText>(Resource.Id.PassText1);
             EditText pass2Text = FindViewById<EditText>(Resource.Id.PassText2);
 
+            EditText StreetText = FindViewById<EditText>(Resource.Id.StreetText);
+            EditText StreetNumberText = FindViewById<EditText>(Resource.Id.StreetNumberText);
+            EditText BlText = FindViewById<EditText>(Resource.Id.BlText);
+            EditText ScText = FindViewById<EditText>(Resource.Id.ScText);
+            EditText ApText = FindViewById<EditText>(Resource.Id.ApText);
+            EditText CityText = FindViewById<EditText>(Resource.Id.CityText);
+            String AdressText = StreetText.Text.ToString() + "|" + StreetNumberText.Text.ToString() + "|" + BlText.Text.ToString() + "|"
+                + ScText.Text.ToString() + "|" + ApText.Text.ToString() + "|" + CityText.Text.ToString();
             if (pass1Text.Text.ToString() == pass2Text.Text.ToString())
             {
 
@@ -52,11 +60,10 @@ namespace stDelivery
                 {
                     User user = new User()
                     {
-                        Nume = LastNameText.Text.ToString(),
-                        Prenume = FirstNameText.Text.ToString(),
+                        Nume = NameText.Text.ToString(),
                         Email = EmailText.Text.ToString(),
-                        Varsta = Int32.Parse(AgeText.Text.ToString()),
-                        Adresa=AdressText.Text.ToString(),
+                        Telefon = PhoneText.Text.ToString(),
+                        Adresa=AdressText,
                         Parola = Crypt.SHA256hash(pass1Text.Text.ToString())
                     };
 

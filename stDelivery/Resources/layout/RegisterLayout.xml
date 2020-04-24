@@ -5,29 +5,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <TextView
-        android:text="Nume:"
+        android:text="Nume si Prenume:"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:minWidth="25px"
         android:minHeight="25px"
-        android:id="@+id/LastNameView" />
+        android:id="@+id/NameView" />
     <EditText
         android:inputType="textPersonName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/LastNameText" />
-    <TextView
-        android:text="Prenume:"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/FirstNameView" />
-    <EditText
-        android:inputType="textPersonName"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/FirstNameText" />
+        android:id="@+id/NameText" />
     <TextView
         android:text="Email:"
         android:textAppearance="?android:attr/textAppearanceMedium"
@@ -45,22 +34,114 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/AdressView" />
-    <EditText
-        android:inputType="textPostalAddress"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/AdressText" />
+
+    <LinearLayout
+         android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/linearLayout1">
+        <TextView
+            android:text="Str."
+             android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/StreetView"
+            />
+        <EditText
+            android:inputType="textPostalAddress"
+             android:layout_width="200dp"
+             android:layout_height="wrap_content"
+            android:id="@+id/StreetText"/>
+        <TextView
+            android:text="Nr."
+             android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/SteetNumberView"/>
+        <EditText
+            android:inputType="textPostalAddress"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/StreetNumberText"/>
+     </LinearLayout>
+    <LinearLayout
+         android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/linearLayout2">
+        <TextView
+            android:text="Bl."
+             android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/BlView"
+            />
+        <EditText
+            android:inputType="textPostalAddress"
+             android:layout_width="70dp"
+             android:layout_height="wrap_content"
+            android:id="@+id/BlText"/>
+        <TextView
+            android:text="Sc."
+             android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/ScView"/>
+        <EditText
+            android:inputType="textPostalAddress"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/ScText"/>
+        <TextView
+            android:text="Ap."
+             android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/ApView"/>
+        <EditText
+            android:inputType="textPostalAddress"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/ApText"/>
+     </LinearLayout>
+    <LinearLayout
+         android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/linearLayout3">
+        <TextView
+            android:text="Oras:"
+             android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/CityView"
+            />
+        <EditText
+            android:inputType="textPostalAddress"
+             android:layout_width="180dp"
+             android:layout_height="wrap_content"
+            android:id="@+id/CityText"/>
+     </LinearLayout>
     <TextView
-        android:text="Varsta:"
+        android:text="Telefon:"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/AgeView" />
+        android:id="@+id/PhoneView" />
     <EditText
-        android:inputType="number"
+        android:inputType="phone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/AgeText" />
+        android:id="@+id/PhoneText" />
     <TextView
         android:text="Parola:"
         android:textAppearance="?android:attr/textAppearanceMedium"

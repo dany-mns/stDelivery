@@ -20,13 +20,11 @@ namespace stDelivery
         [SQLite.NotNull]
         public string Nume { get; set; }
         [SQLite.NotNull]
-        public string Prenume { get; set; }
-        [SQLite.NotNull]
         public string Email { get; set; }
         [SQLite.NotNull]
-        public int Varsta { get; set; }
+        public string Adresa  { get; set; }
         [SQLite.NotNull]
-        public string Adresa { get; set; }
+        public string Telefon { get; set; }
         [SQLite.NotNull]
         public string Parola { get; set; }
 

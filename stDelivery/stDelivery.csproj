@@ -68,6 +68,7 @@
     <Compile Include="Crypt.cs" />
     <Compile Include="Database.cs" />
     <Compile Include="LoginActivity.cs" />
+    <Compile Include="Persoana.cs" />
     <Compile Include="RegisterActivity.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

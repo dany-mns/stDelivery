@@ -12,6 +12,8 @@ Button;obj\Debug\80\res\layout\layout1.xml
 Button;obj\Debug\80\res\layout\layout2.xml
 Button;obj\Debug\80\res\layout\loginlayout.xml
 Button;obj\Debug\80\res\layout\registerlayout.xml
+Button;obj\Debug\80\res\layout\stefan.xml
+CheckBox;obj\Debug\80\res\layout\stefan.xml
 color;obj\Debug\80\res\values\colors.xml
 color;obj\Debug\80\res\values\ic_launcher_background.xml
 dimen;obj\Debug\80\res\values\dimens.xml
@@ -19,6 +21,7 @@ EditText;obj\Debug\80\res\layout\layout1.xml
 EditText;obj\Debug\80\res\layout\layout2.xml
 EditText;obj\Debug\80\res\layout\loginlayout.xml
 EditText;obj\Debug\80\res\layout\registerlayout.xml
+EditText;obj\Debug\80\res\layout\stefan.xml
 foreground;obj\Debug\80\res\mipmap-anydpi-v26\ic_launcher.xml
 foreground;obj\Debug\80\res\mipmap-anydpi-v26\ic_launcher_round.xml
 include;obj\Debug\80\res\layout\activity_main.xml
@@ -28,6 +31,7 @@ LinearLayout;obj\Debug\80\res\layout\layout1.xml
 LinearLayout;obj\Debug\80\res\layout\layout2.xml
 LinearLayout;obj\Debug\80\res\layout\loginlayout.xml
 LinearLayout;obj\Debug\80\res\layout\registerlayout.xml
+LinearLayout;obj\Debug\80\res\layout\stefan.xml
 menu;obj\Debug\80\res\menu\menu_main.xml
 RelativeLayout;obj\Debug\80\res\layout\content_main.xml
 resources;obj\Debug\80\res\values\colors.xml
@@ -35,6 +39,8 @@ resources;obj\Debug\80\res\values\dimens.xml
 resources;obj\Debug\80\res\values\ic_launcher_background.xml
 resources;obj\Debug\80\res\values\strings.xml
 resources;obj\Debug\80\res\values\styles.xml
+Space;obj\Debug\80\res\layout\stefan.xml
+Spinner;obj\Debug\80\res\layout\stefan.xml
 string;obj\Debug\80\res\values\strings.xml
 style;obj\Debug\80\res\values\styles.xml
 TextView;obj\Debug\80\res\layout\content_main.xml
@@ -42,3 +48,4 @@ TextView;obj\Debug\80\res\layout\layout1.xml
 TextView;obj\Debug\80\res\layout\layout2.xml
 TextView;obj\Debug\80\res\layout\loginlayout.xml
 TextView;obj\Debug\80\res\layout\registerlayout.xml
+TextView;obj\Debug\80\res\layout\stefan.xml

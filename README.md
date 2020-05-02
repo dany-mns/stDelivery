@@ -10,3 +10,4 @@
 * [ ] reguli de declarare variabile si scriere
 * [ ] unit testing
 * [X] adauga scara la formularul de comandare
+* [ ] tratare exceptii

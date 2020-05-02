@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "6+SLaVZpTyVN8SDjCd1Wnx5NLdj2HSfOzvi7wj5h7R41u5EWqNeil7arcZvkr5e9UURb0AEesbLkEz0a37mYLA==",
+  "success": true,
+  "projectFilePath": "D:\\Facultate\\Anul III\\Semestrul II\\Ingineria programarii\\Project\\stDelivery-stefanStratulat\\stDelivery\\DLLs\\SMTP\\SMTP.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\stefa\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\stefa\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

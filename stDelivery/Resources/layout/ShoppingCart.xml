@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -33,20 +33,31 @@
             android:id="@+id/textView1"
             android:textStyle="bold|italic"/>
         <TextView
-            android:text="Debifati produsele nedorite"
+            android:text="Eliminati produsele nedorite"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42.9dp"
             android:id="@+id/textView2"
             android:gravity="center_horizontal"
             android:textStyle="bold|italic"/>
-        <LinearLayout
-            android:orientation="vertical"
+        <ScrollView
             android:minWidth="25px"
             android:minHeight="25px"
             android:layout_width="match_parent"
             android:layout_height="601.7dp"
-            android:id="@+id/linearLayout2" />
+            android:id="@+id/scrollView1" >
+            <LinearLayout
+                android:orientation="vertical"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold|italic"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/shoppingCart" >
+            </LinearLayout>
+        </ScrollView>
         <TextView
             android:text="Pret final : 0 lei"
             android:textAppearance="?android:attr/textAppearanceMedium"

@@ -1,7 +1,7 @@
 # stDelivery - Stratulat Stefan
 ## Todo list
 * [ ] Diagrama de secvente
-* [ ] DLL cu STMP pentru trimitere mesaj
+* [X] DLL cu STMP pentru trimitere mesaj
 * [X] preluare lista Dany si cos cumparaturi
 * [X] (probabil) modificare format adresa (in functie de Claudiu) - nu mai este cazul
 * [ ] adaugare comentarii

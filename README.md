@@ -9,4 +9,4 @@
 * [ ] generare help
 * [ ] reguli de declarare variabile si scriere
 * [ ] unit testing
-* [ ] adauga scara la formularul de comandare
+* [X] adauga scara la formularul de comandare

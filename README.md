@@ -7,3 +7,5 @@
 * [ ] adaugare comentarii
 * [ ] realizare diagrama UML
 * [ ] generare help
+* [ ] reguli de declarare variabile si scriere
+* [ ] unit testing

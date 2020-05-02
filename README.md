@@ -1,3 +1,4 @@
 # stDelivery
 ## StratulatStefan
-### IP
+### [x] IP
+### [ ] IPx

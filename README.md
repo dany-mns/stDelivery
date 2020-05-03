@@ -31,3 +31,4 @@
 * [ ] unit testing
 * [X] adauga scara la formularul de comandare
 * [ ] tratare exceptii
+* [ ] antet fiecare fisier

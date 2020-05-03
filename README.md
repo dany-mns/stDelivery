@@ -27,7 +27,7 @@
 * [ ] adaugare comentarii
 * [ ] realizare diagrama UML
 * [ ] generare help
-* [ ] reguli de declarare variabile si scriere
+* [X] reguli de declarare variabile si scriere
 * [ ] unit testing
 * [X] adauga scara la formularul de comandare
 * [ ] tratare exceptii

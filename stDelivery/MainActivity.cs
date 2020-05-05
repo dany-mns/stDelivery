@@ -16,7 +16,7 @@ using stDelivery.Kitchen;
  *  Copyright:   (c) 2020, Manastireanu Dany                              *
  *  E-mail:      andrei-dany.manastireanu@student.tuiasi.ro               *
  *  Website:     http://127.0.0.1                                         *
- *  Description: Main activity for select food category                   *
+ *  Description: Main activity for select food category.                  *
  *                                                                        *
  *  This program is free software; you can redistribute it and/or modify  *
  *  it under the terms of the GNU General Public License as published by  *

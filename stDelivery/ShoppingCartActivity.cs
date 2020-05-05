@@ -1,72 +1,81 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Drawing.Imaging;
-using System.IO;
-using System.Linq;
-using System.Reflection.Emit;
-using System.Text;
 using System.Text.RegularExpressions;
-using Android.App;
-using Android.Content;
 using Android.Graphics;
-using Android.OS;
-using Android.Provider;
-using Android.Runtime;
 using Android.Support.V7.App;
-using Android.Views;
 using Android.Widget;
 
-namespace stDelivery
+namespace StDelivery
 {
+    /// <summary>
+    /// This class implements the logic of building the shopping cart.
+    /// It also provides methods for deleting products from the shopping cart.
+    /// </summary>
     class ShoppingCartActivity : Activity
     {
-        private FinishOrderActivity finishOrderActivity;
+        /// <summary>
+        /// A FinishOrderActivity object instantiated at the "Finalizeaza comanda" button.
+        /// </summary>
+        private FinishOrderActivity _finishOrderActivity;
 
-        public ShoppingCartActivity(AppCompatActivity _mainActivity) : base(_mainActivity)
+
+        /// <summary>
+        /// The class constructor that handles the logic of the shopping cart activity.
+        /// It defines the using of the main components of the activity and also add a callback function to the button
+        /// </summary>
+        /// <param name="mainActivity"></param>
+        public ShoppingCartActivity(AppCompatActivity mainActivity) : base(mainActivity)
         {
-            Button finalizareComanda = _mainActivity.FindViewById<Button>(Resource.Id.finalizareComanda);
-            LinearLayout shoppingCart = _mainActivity.FindViewById<LinearLayout>(Resource.Id.shoppingCart);
-            ShoppingCart cart = this.randomCartGenerator();
-            this.drawCart(_mainActivity, shoppingCart, cart);
+            Button finishCommand = mainActivity.FindViewById<Button>(Resource.Id.finalizareComanda);
+            LinearLayout shoppingCart = mainActivity.FindViewById<LinearLayout>(Resource.Id.shoppingCart);
+            ShoppingCart cart = this.RandomCartGenerator();
+            this.DrawCart(mainActivity, shoppingCart, cart);
 
-            finalizareComanda.Click += (object sender, System.EventArgs e) =>
+            finishCommand.Click += (object sender, System.EventArgs e) =>
             {
-                _mainActivity.SetContentView(Resource.Layout.FinishOrder);
-                this.finishOrderActivity = new FinishOrderActivity(_mainActivity);
-                this.finishOrderActivity.Cart = cart;
-                this.finishOrderActivity.Price = this.pretComanda(cart);
+                mainActivity.SetContentView(Resource.Layout.FinishOrder);
+                this._finishOrderActivity = new FinishOrderActivity(mainActivity);
+                this._finishOrderActivity.Cart = cart;
+                this._finishOrderActivity.Price = this.PriceCommand(cart);
             };
         }
 
-
-        private ShoppingCart randomCartGenerator()
+        /// <summary>
+        /// This functions generates a random shopping cart object. It not be used in the final project because 
+        /// the shooping cart list will be generated in a previous activity
+        /// </summary>
+        /// <returns>shopping cart object</returns>
+        private ShoppingCart RandomCartGenerator()
         {
             ShoppingCart cart = new ShoppingCart();
-            cart.AdaugainCos = new Food("Pizza Margherita", 25);
-            cart.AdaugainCos = new Food("Salata Chaesar", 21);
-            cart.AdaugainCos = new Food("Sos Ketchup", 5);
-            cart.AdaugainCos = new Food("Sos Tzatziki", 5);
-            cart.AdaugainCos = new Food("Doza Cola 330ml", 4);
-            cart.AdaugainCos = new Food("Ciorba de burta", 25);
-            cart.AdaugainCos = new Food("Paste Carbonara", 30);
-           
+            cart.AddToCart = new Food("Pizza Margherita", 25);
+            cart.AddToCart = new Food("Salata Chaesar", 21);
+            cart.AddToCart = new Food("Sos Ketchup", 5);
+            cart.AddToCart = new Food("Sos Tzatziki", 5);
+            cart.AddToCart = new Food("Doza Cola 330ml", 4);
+            cart.AddToCart = new Food("Ciorba de burta", 25);
+            cart.AddToCart = new Food("Paste Carbonara", 30);
+     
             return cart;
-            
         }
 
-        private LinearLayout setShoppingCartHeader(AppCompatActivity _mainActivity)
+        /// <summary>
+        /// This function sets the shopping cart list header.
+        /// It creates two TextView elements and put into a LinearLayout.
+        /// </summary>
+        /// <param name="mainActivity">The main activity context</param>
+        /// <returns>The layout containing the elements that will be added as the first element in the shopping cart</returns>
+        private LinearLayout SetShoppingCartHeader(AppCompatActivity mainActivity)
         {
-            var layout = new LinearLayout(_mainActivity);
+            var layout = new LinearLayout(mainActivity);
             layout.Orientation = Orientation.Horizontal;
 
-            TextView nameView = new TextView(_mainActivity);
+            TextView nameView = new TextView(mainActivity);
             nameView.Text = "Produs";
             nameView.SetTypeface(Typeface.Default, TypefaceStyle.BoldItalic);
             nameView.TextSize = 22;
             nameView.SetPadding(50, 0, 0, 0);
 
-            TextView priceView = new TextView(_mainActivity);
+            TextView priceView = new TextView(mainActivity);
             priceView.Text = "Pret";
             priceView.SetTypeface(Typeface.Default, TypefaceStyle.BoldItalic);
             priceView.TextSize = 22;
@@ -74,64 +83,79 @@ namespace stDelivery
 
             layout.AddView(nameView);
             layout.AddView(priceView);
+
             return layout;
         }
 
-        private void drawCart(AppCompatActivity _mainActivity, LinearLayout shoppingCart, ShoppingCart cart)
+        /// <summary>
+        /// This function creates the shopping cart list. As the first element, it has the header previously created.
+        /// Then, each element from the shopping cart object in used to generate a label that will be added in the list.
+        /// There is implemented the posibility of deleting a object from the shopping list.
+        /// It also handles the view that contains the information about the final price.
+        /// </summary>
+        /// <param name="mainActivity">The main activity context</param>
+        /// <param name="shoppingCart">The layout in the graphical interface that will contain the cart list</param>
+        /// <param name="cart">The shopping cart object which contains the products to be added in the list</param>
+        private void DrawCart(AppCompatActivity mainActivity, LinearLayout shoppingCart, ShoppingCart cart)
         {
             shoppingCart.RemoveAllViews();
-            shoppingCart.AddView(this.setShoppingCartHeader(_mainActivity));
-            cart.CosCumparaturi.ForEach(produs => {
-                var layout = new LinearLayout(_mainActivity);
+            shoppingCart.AddView(this.SetShoppingCartHeader(mainActivity));
+            cart.Cart.ForEach(product => {
+                var layout = new LinearLayout(mainActivity);
                 layout.Orientation = Orientation.Horizontal;
 
-                TextView nameView = new TextView(_mainActivity);
-                nameView.Text = produs.Name;
+                TextView nameView = new TextView(mainActivity);
+                nameView.Text = product.Name;
                 nameView.SetTypeface(Typeface.Default, TypefaceStyle.BoldItalic);
                 nameView.TextSize = 22;
-                int padding = 175 - produs.Name.Length;
+                int padding = 175 - product.Name.Length;
                 nameView.SetPadding(0, 0, padding, 0);
 
-
-                TextView priceView = new TextView(_mainActivity);
-                priceView.Text = produs.Price.ToString() + " lei";
+                TextView priceView = new TextView(mainActivity);
+                priceView.Text = product.Price.ToString() + " lei";
                 priceView.SetTypeface(Typeface.Default, TypefaceStyle.BoldItalic);
                 priceView.TextSize = 22;
-                padding = 50 - produs.Price.ToString().Length;
+                padding = 50 - product.Price.ToString().Length;
                 priceView.SetPadding(0, 0, padding, 0);
 
-
-                Button button = new Button(_mainActivity);
+                Button button = new Button(mainActivity);
                 button.Text = "Eliminare";
                 button.Click += delegate
                 {
-                    cart.EliminadinCos = produs;
-                    this.drawCart(_mainActivity, shoppingCart, cart);
+                    cart.RemoveFromCart = product;
+                    this.DrawCart(mainActivity, shoppingCart, cart);
                 };
                 layout.AddView(nameView);
                 layout.AddView(priceView);
                 layout.AddView(button);
                 shoppingCart.AddView(layout);
             });
-            int pret = this.pretComanda(cart);
-            TextView finalPrice = _mainActivity.FindViewById<TextView>(Resource.Id.finalPrice);
-            this.replacePretFinal(pret, finalPrice);
-            
-            
+            int price = this.PriceCommand(cart);
+            TextView finalPrice = mainActivity.FindViewById<TextView>(Resource.Id.finalPrice);
+            this.ReplaceFinalPrice(price, finalPrice);
         }
 
-        private int pretComanda(ShoppingCart cart)
+        /// <summary>
+        /// This function takes the shopping cart object and calculates the total price of the command
+        /// </summary>
+        /// <param name="cart">The shoppinh cart object containing the products that have a name and a price</param>
+        /// <returns>The total price</returns>
+        private int PriceCommand(ShoppingCart cart)
         {
-            int pret = 0;
-            cart.CosCumparaturi.ForEach(produs => pret += produs.Price);
-            return pret;
+            int price = 0;
+            cart.Cart.ForEach(product => price += product.Price);
+            return price;
         }
 
-        private void replacePretFinal(int pret, TextView label)
+        /// <summary>
+        /// This function updates the graphical interface view that represents the final price.
+        /// </summary>
+        /// <param name="price">The total command price calculated</param>
+        /// <param name="label">The view that contains the information about the price/</param>
+        private void ReplaceFinalPrice(int price, TextView label)
         {
             String pattern = @"[0-9]+";
-            label.Text = Regex.Replace(label.Text, pattern, pret.ToString());
+            label.Text = Regex.Replace(label.Text, pattern, price.ToString());
         }
-
     }
 }

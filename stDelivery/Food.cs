@@ -1,38 +1,39 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Text;
 
-using Android.App;
-using Android.Content;
-using Android.OS;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
-
-namespace stDelivery
+namespace StDelivery
 {
     public class Food
     {
-        private String name;
-        private int price;
+        private String _name;
+        private int _price;
         
-        public Food(String _name, int _price)
+        public Food(String name, int price)
         {
-            this.name = _name;
-            this.price = _price;
+            this._name = name;
+            this._price = price;
         }
 
         public String Name {
-            get { return this.name; }
-            set { this.name = value;  }
+            get 
+            {
+                return this._name; 
+            }
+            set
+            {
+                this._name = value; 
+            }
         }
 
         public int Price
         {
-            get { return this.price; }
-            set { this.price = value; }
+            get 
+            { 
+                return this._price;
+            }
+            set
+            { 
+                this._price = value;
+            }
         }
     }
 }

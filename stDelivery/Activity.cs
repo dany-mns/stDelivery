@@ -1,20 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using Android.Support.V7.App;
 
-using Android.App;
-using Android.Content;
-using Android.OS;
-using Android.Runtime;
-using Android.Support.V7.App;
-using Android.Views;
-using Android.Widget;
-
-namespace stDelivery
+namespace StDelivery
 {
+    /// <summary>
+    /// An abstract class, base for the concrete activities : ShoppingCartActivity and FinishOrderActivity
+    /// </summary>
     abstract class Activity
     {
-        public Activity(AppCompatActivity _mainActivity) { }
+        /// <summary>
+        /// The constructor of the abstract class, base for building the concrete classes
+        /// </summary>
+        /// <param name="mainActivity">The main activity context</param>
+        public Activity(AppCompatActivity mainActivity) { }
     }
 }

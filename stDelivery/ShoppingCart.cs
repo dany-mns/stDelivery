@@ -1,38 +1,37 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Collections.Generic;
 
-using Android.App;
-using Android.Content;
-using Android.OS;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
-
-namespace stDelivery
+namespace StDelivery
 {
     class ShoppingCart
     {
-        private List<Food> cosCumparaturi;
+        private List<Food> _shoppingCart;
         public ShoppingCart()
         {
-            this.cosCumparaturi = new List<Food>();
+            this._shoppingCart = new List<Food>();
         }
 
-        public Food AdaugainCos
+        public Food AddToCart
         {
-            set{ this.cosCumparaturi.Add(value); }
+            set 
+            {
+                this._shoppingCart.Add(value);
+            }
         }
         
-        public List<Food> CosCumparaturi
+        public List<Food> Cart
         {
-            get { return this.cosCumparaturi;  }
+            get 
+            {
+                return this._shoppingCart;
+            }
         }
 
-        public Food EliminadinCos
+        public Food RemoveFromCart
         {
-            set { this.cosCumparaturi.Remove(value);  }
+            set 
+            { 
+                this._shoppingCart.Remove(value);
+            }
         }
     }
 }

@@ -9,9 +9,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Android.Runtime.ResourceDesignerAttribute("stDelivery.Resource", IsApplication=true)]
+[assembly: global::Android.Runtime.ResourceDesignerAttribute("StDelivery.Resource", IsApplication=true)]
 
-namespace stDelivery
+namespace StDelivery
 {
 	
 	

@@ -31,17 +31,22 @@ using stDelivery.Kitchen;
 
 namespace stDelivery.Kitchen
 {
+    /// <summary>
+    /// The main FoodFactory class.
+    /// Contains method for performing return food reference based on user choice.
+    /// </summary>
     class FoodFactory
     {
         private TypeOfFood _tf;
         private RestaurantFactory _factory;
-
+        
         public FoodFactory(TypeOfFood tf)
         {
             this._tf = tf;
             this._factory = RestaurantFactory.GetInstance(null, "");
         }
 
+        // Get a reference on food user choice.
         public IFood prepareFoods()
         {
             switch (this._tf)

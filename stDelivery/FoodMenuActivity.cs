@@ -68,7 +68,11 @@ namespace stDelivery
 			};
 		}
 
-		private void SetupRecyclerView()
+
+        /// <summary>
+        /// Init recycler view for performace.
+        /// </summary>
+        private void SetupRecyclerView()
 		{
 			_recyclerView.SetLayoutManager(new Android.Support.V7.Widget.LinearLayoutManager(_recyclerView.Context));
 			FoodAdapter adapter = new FoodAdapter(this._foods);
@@ -76,7 +80,13 @@ namespace stDelivery
 			_recyclerView.SetAdapter(adapter);
 		}
 
-		private void Adapter_BuyItemClick(object sender, FoodAdapterClickEventArgs e)
+        /// <summary>
+        /// Adds food in cart shop or not.
+        /// </summary>
+        /// See <see cref="FoodAdapterClickEventArgs"/> to use adapter click event.
+        /// <param name="sender">Unused in this function.</param>
+        /// <param name="e">Get selected element.</param>
+        private void Adapter_BuyItemClick(object sender, FoodAdapterClickEventArgs e)
 		{
 			string nameFood = _foods.menuitem[e.Position].name;
 			string priceFood = _foods.menuitem[e.Position].price.ToString();
@@ -96,7 +106,14 @@ namespace stDelivery
 			message.Show();
 		}
 
-		private IFood GetSpecificFood(int typeFood)
+        /// <summary>
+        /// Make the food factory
+        /// </summary>
+        /// <returns>
+        /// The factory or null in case of bad user choice.
+        /// </returns>
+        /// <param name="typeFood">An integer which specify user choice.</param>
+        private IFood GetSpecificFood(int typeFood)
 		{
 
 			if (typeFood != -1)

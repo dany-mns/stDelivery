@@ -38,6 +38,12 @@ using stDelivery.Kitchen;
 
 namespace stDelivery.Kitchen
 {
+
+    /// <summary>
+    /// The main RestaurantFactory class.
+    /// Contains method for performing restaurant creation based on input file and retain this
+    /// restaurant until user shutdown the app.
+    /// </summary>
     public sealed class RestaurantFactory
     {
         private static RestaurantFactory _singleton = null;
@@ -46,6 +52,11 @@ namespace stDelivery.Kitchen
 
         public Restaurant Restaurant { get => _restaurant; set => _restaurant = value; }
 
+        /// <summary>
+        /// Init singleton
+        /// </summary>
+        /// <param name="fileName">To specify name of restaurant(json file) with specific foods.</param>
+        /// <param name="asset">llows you to open and read raw files that have been bundled with the application as a simple stream of bytes.</param>
         private RestaurantFactory(string fileName, AssetManager asset)
         {
             try
@@ -61,8 +72,12 @@ namespace stDelivery.Kitchen
                 Log.Info("myapp", "Fail on read: " + ioe.Message);
             }
         }
-
-
+        
+        /// <summary>
+        /// Get instance the singletone restaurant where you need
+        /// </summary>
+        /// <param name="fileName">To specify name of restaurant(json file) with specific foods.</param>
+        /// <param name="asset">llows you to open and read raw files that have been bundled with the application as a simple stream of bytes.</param>
         public static RestaurantFactory GetInstance(AssetManager asset, string fileName)
         {
             if (_singleton == null)

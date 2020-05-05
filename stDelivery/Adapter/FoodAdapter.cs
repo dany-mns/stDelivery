@@ -10,6 +10,10 @@ namespace stDelivery.Adapter
 {
     class FoodAdapter : RecyclerView.Adapter
     {
+        /*
+         * Event handler for different action.
+         * Foods member who will populate the screen.
+         */
         public event EventHandler<FoodAdapterClickEventArgs> ItemClick;
         public event EventHandler<FoodAdapterClickEventArgs> ItemLongClick;
         public event EventHandler<FoodAdapterClickEventArgs> ItemBuyClick;
@@ -21,7 +25,13 @@ namespace stDelivery.Adapter
             foods = data;
         }
 
-        // Create new views (invoked by the layout manager)
+
+        /// <summary>
+        /// Create new views (invoked by the layout manager)
+        /// </summary>
+        /// See <see cref="View"/> to get more information about android views.
+        /// <param name="parent">Get main context.</param>
+        /// <param name="viewType">Unused.</param>
         public override RecyclerView.ViewHolder OnCreateViewHolder(ViewGroup parent, int viewType)
         {
 
@@ -44,6 +54,7 @@ namespace stDelivery.Adapter
             holder.foodPriceText.Text = item.price.ToString() + " LEI";
         }
 
+        //Specify number of element on the screen
         public override int ItemCount => foods.menuitem.Count;
 
         void OnClick(FoodAdapterClickEventArgs args) => ItemClick?.Invoke(this, args);
@@ -52,6 +63,9 @@ namespace stDelivery.Adapter
 
     }
 
+    /// <summary>
+    /// In principle is for populate entire screen after user choices with a type of food.
+    /// </summary>
     public class FoodAdapterViewHolder : RecyclerView.ViewHolder
     {
         public TextView foodNameText { get; set; }

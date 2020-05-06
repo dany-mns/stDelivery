@@ -1,4 +1,24 @@
-﻿using System;
+﻿/**************************************************************************
+ *                                                                        *
+ *  File:        ShoppingCartActivity.cs                                  *
+ *  Copyright:   (c) 2020, Stratulat Stefan                               *
+ *  E-mail:      stefanc.stratulat@gmail.com                              *
+ *  Website:     -                                                        *
+ *  Description: This class implements the logic of building the shopping *
+ *              cart and provides methods for deleting product from       *
+ *              the shopping cart.                                        *
+ *                                                                        *
+ *  This program is free software; you can redistribute it and/or modify  *
+ *  it under the terms of the GNU General Public License as published by  *
+ *  the Free Software Foundation. This program is distributed in the      *
+ *  hope that it will be useful, but WITHOUT ANY WARRANTY; without even   *
+ *  the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR   *
+ *  PURPOSE. See the GNU General Public License for more details.         *
+ *                                                                        *
+ **************************************************************************/
+
+
+using System;
 using System.Text.RegularExpressions;
 using Android.Graphics;
 using Android.Support.V7.App;

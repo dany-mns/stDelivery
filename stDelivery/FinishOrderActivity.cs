@@ -1,4 +1,24 @@
-﻿using System;
+﻿/**************************************************************************
+ *                                                                        *
+ *  File:        FinishOrderActivity.cs                                   *
+ *  Copyright:   (c) 2020, Stratulat Stefan                               *
+ *  E-mail:      stefanc.stratulat@gmail.com                              *
+ *  Website:     -                                                        *
+ *  Description: The FinishOrderActivity class that handles the logic of  *
+ *				the last activity of the application, containing the      *
+ *				form for finishing the shopping command,by sending an     *
+ *				email to the client with the details.                     *
+ *                                                                        *
+ *  This program is free software; you can redistribute it and/or modify  *
+ *  it under the terms of the GNU General Public License as published by  *
+ *  the Free Software Foundation. This program is distributed in the      *
+ *  hope that it will be useful, but WITHOUT ANY WARRANTY; without even   *
+ *  the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR   *
+ *  PURPOSE. See the GNU General Public License for more details.         *
+ *                                                                        *
+ **************************************************************************/
+
+using System;
 using System.Collections.Generic;
 using System.Text;
 using Android.Support.V7.App;

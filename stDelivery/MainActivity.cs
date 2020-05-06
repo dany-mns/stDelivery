@@ -1,4 +1,22 @@
-﻿using Android.App;
+﻿/**************************************************************************
+ *                                                                        *
+ *  File:        MainActivity.cs                                          *
+ *  Copyright:   (c) 2020, Stratulat Stefan                               *
+ *  E-mail:      stefanc.stratulat@gmail.com                              *
+ *  Website:     -                                                        *
+ *  Description: The main activity that handles all the activities and    *
+ *              contains the Xamarin context.                             *
+ *                                                                        *
+ *  This program is free software; you can redistribute it and/or modify  *
+ *  it under the terms of the GNU General Public License as published by  *
+ *  the Free Software Foundation. This program is distributed in the      *
+ *  hope that it will be useful, but WITHOUT ANY WARRANTY; without even   *
+ *  the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR   *
+ *  PURPOSE. See the GNU General Public License for more details.         *
+ *                                                                        *
+ **************************************************************************/
+
+using Android.App;
 using Android.OS;
 using Android.Support.V7.App;
 

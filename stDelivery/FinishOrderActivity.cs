@@ -25,7 +25,17 @@ namespace StDelivery
         /// The selected payment method modified from the graphical interface.
         /// </summary>
         private int _selectedPaymentMethod = 0;
-        
+
+        /// <summary>
+        /// The Toast object display at the command send button press or in case of an error
+        /// </summary>
+        private Toast _toast;
+
+        /// <summary>
+        /// The Toast object text content
+        /// </summary>
+        StringBuilder _toastMessage = new StringBuilder();
+
         /// <summary>
         /// The getter and setter that set or return the value of the shopping cart object.
         /// </summary>
@@ -179,7 +189,7 @@ namespace StDelivery
         }
 
         /// <summary>
-        /// This callback function is used at the selecting of the send command button. It display a Toast message of the status 
+        /// This callback function is used at the selecting of the send command button. It display a _toast message of the status 
         /// of the command. If the verification of the form is valid, it used a Email DLL to send an email to the client. If the 
         /// verification is not valid, it display an error message.
         /// </summary>
@@ -188,15 +198,14 @@ namespace StDelivery
         private void SendCommand(AppCompatActivity mainActivity, Dictionary<String, View> credentials)
         {
             bool isStatusCheck = this.StatusCredentials(credentials);
-            Toast toast;
-            StringBuilder toastMessage = new StringBuilder();
+            
             if (!isStatusCheck)
             {
-                toastMessage.Append("Va rugam sa introduceti corect toate datele!\n\n");
-                toastMessage.Append("stDelivery 2020 ©");
-                toast = Toast.MakeText(mainActivity, toastMessage.ToString(), ToastLength.Long);
-                toast.SetGravity(GravityFlags.Center,0,0);
-                toast.Show();
+                _toastMessage.Append("Va rugam sa introduceti corect toate datele!\n\n");
+                _toastMessage.Append("stDelivery 2020 ©");
+                _toast = Toast.MakeText(mainActivity, _toastMessage.ToString(), ToastLength.Long);
+                _toast.SetGravity(GravityFlags.Center,0,0);
+                _toast.Show();
             }
             else
             {
@@ -206,24 +215,36 @@ namespace StDelivery
                 email.Sender = "stdeliveryip@gmail.com";
                 email.Receiver = ((EditText)credentials["emailPersoana"]).Text;
                 email.Subject = "Comanda stDelivery";
-                email.Body = this.BuildEmailBody(credentials);
+                try
+                {
+                    email.Body = this.BuildEmailBody(credentials);
+                }
+                catch(ArgumentOutOfRangeException ex)
+                {
+                    _toastMessage.Append("Nu se poate construi corpul emailului!\n\n");
+                    _toastMessage.Append("stDelivery 2020 ©");
+                    _toast = Toast.MakeText(mainActivity, _toastMessage.ToString(), ToastLength.Long);
+                    _toast.SetGravity(GravityFlags.Center, 0, 0);
+                    _toast.Show();
+                }
+
                 if (email.SendEmail())
                 {
-                    toastMessage.Append("Comanda a fost trimisa cu succes!\n");
-                    toastMessage.Append("Va rugam sa verificati adresa de email!\n\n");
-                    toastMessage.Append("Va multumim pentru comanda dumneavoastra!\n");
-                    toastMessage.Append("stDelivery 2020 ©");
-                    toast = Toast.MakeText(mainActivity, toastMessage.ToString(), ToastLength.Long);
-                    toast.SetGravity(GravityFlags.Center, 0, 0);
-                    toast.Show();
+                    _toastMessage.Append("Comanda a fost trimisa cu succes!\n");
+                    _toastMessage.Append("Va rugam sa verificati adresa de email!\n\n");
+                    _toastMessage.Append("Va multumim pentru comanda dumneavoastra!\n");
+                    _toastMessage.Append("stDelivery 2020 ©");
+                    _toast = Toast.MakeText(mainActivity, _toastMessage.ToString(), ToastLength.Long);
+                    _toast.SetGravity(GravityFlags.Center, 0, 0);
+                    _toast.Show();
                 }
                 else 
                 {
-                    toastMessage.Append("Eroare de trimitere a emailului!\n");
-                    toastMessage.Append("stDelivery 2020 ©");
-                    toast = Toast.MakeText(mainActivity, toastMessage.ToString(), ToastLength.Long);
-                    toast.SetGravity(GravityFlags.Center, 0, 0);
-                    toast.Show();
+                    _toastMessage.Append("Eroare de trimitere a emailului!\n");
+                    _toastMessage.Append("stDelivery 2020 ©");
+                    _toast = Toast.MakeText(mainActivity, _toastMessage.ToString(), ToastLength.Long);
+                    _toast.SetGravity(GravityFlags.Center, 0, 0);
+                    _toast.Show();
                 }
             }
         }
@@ -250,32 +271,39 @@ namespace StDelivery
         private String BuildEmailBody(Dictionary<String, View> credentials)
         { 
             StringBuilder body = new StringBuilder();
-            body.Append("Buna-ziua! \n Tocmai am receptionat comanda dumneavoastra!\n");
-            body.Append("\n-----------------\n");
-            body.Append("Ati comandat urmatorele produse : \n");
-            this.Cart.Cart.ForEach(produs =>
+            try
             {
-                body.Append(" - " + produs.Name + " : " + produs.Price + " lei.\n");
-            });
-            body.Append("\n * Pret final : " + this.Price + " lei. \n");
-            body.Append("\n-----------------\n");
-            body.Append("Datele dumneavoastra de contact :\n");
-            body.Append(" - Nume : " + ((EditText)credentials["numePersoana"]).Text + "\n");
-            body.Append(" - Numar de telefon : " + ((EditText)credentials["telefonPersoana"]).Text + "\n");
+                body.Append("Buna-ziua! \n Tocmai am receptionat comanda dumneavoastra!\n");
+                body.Append("\n-----------------\n");
+                body.Append("Ati comandat urmatorele produse : \n");
+                this.Cart.Cart.ForEach(produs =>
+                {
+                    body.Append(" - " + produs.Name + " : " + produs.Price + " lei.\n");
+                });
+                body.Append("\n * Pret final : " + this.Price + " lei. \n");
+                body.Append("\n-----------------\n");
+                body.Append("Datele dumneavoastra de contact :\n");
+                body.Append(" - Nume : " + ((EditText)credentials["numePersoana"]).Text + "\n");
+                body.Append(" - Numar de telefon : " + ((EditText)credentials["telefonPersoana"]).Text + "\n");
 
-            body.Append(" - Adresa : strada " + ((EditText)credentials["stradaPersoana"]).Text + ", ");
-            body.Append("nr. " + ((EditText)credentials["nrCasaPersoana"]).Text + ", ");
-            body.Append("bloc " + ((EditText)credentials["nrBlocPersoana"]).Text + ", ");
-            body.Append("scara " + ((EditText)credentials["scaraPersoana"]).Text + ", ");
-            body.Append("apartament " + ((EditText)credentials["apartamentPersoana"]).Text + ", ");
-            body.Append("oras " + ((EditText)credentials["orasPersoana"]).Text + "\n");
-            body.Append(" - Observatii : " + ((EditText)credentials["observatiiPersoana"]).Text + "\n");
-            body.Append(" - Metoda de plata : " + ((Spinner)credentials["metodaPlata"]).GetItemAtPosition(this._selectedPaymentMethod) + "\n") ;
-            body.Append("\n-----------------\n");
+                body.Append(" - Adresa : strada " + ((EditText)credentials["stradaPersoana"]).Text + ", ");
+                body.Append("nr. " + ((EditText)credentials["nrCasaPersoana"]).Text + ", ");
+                body.Append("bloc " + ((EditText)credentials["nrBlocPersoana"]).Text + ", ");
+                body.Append("scara " + ((EditText)credentials["scaraPersoana"]).Text + ", ");
+                body.Append("apartament " + ((EditText)credentials["apartamentPersoana"]).Text + ", ");
+                body.Append("oras " + ((EditText)credentials["orasPersoana"]).Text + "\n");
+                body.Append(" - Observatii : " + ((EditText)credentials["observatiiPersoana"]).Text + "\n");
+                body.Append(" - Metoda de plata : " + ((Spinner)credentials["metodaPlata"]).GetItemAtPosition(this._selectedPaymentMethod) + "\n");
+                body.Append("\n-----------------\n");
 
-            body.Append("Va multumim si va mai asteptam!\n");
-            body.Append("stDelivery 2020 ©\n");
-            return body.ToString();
+                body.Append("Va multumim si va mai asteptam!\n");
+                body.Append("stDelivery 2020 ©\n");
+                return body.ToString();
+            }
+            catch(ArgumentOutOfRangeException ex)
+            {
+                throw ex;
+            }
         }
     }
 }

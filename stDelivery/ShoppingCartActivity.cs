@@ -100,39 +100,71 @@ namespace StDelivery
         {
             shoppingCart.RemoveAllViews();
             shoppingCart.AddView(this.SetShoppingCartHeader(mainActivity));
-            cart.Cart.ForEach(product => {
-                var layout = new LinearLayout(mainActivity);
-                layout.Orientation = Orientation.Horizontal;
-
-                TextView nameView = new TextView(mainActivity);
-                nameView.Text = product.Name;
-                nameView.SetTypeface(Typeface.Default, TypefaceStyle.BoldItalic);
-                nameView.TextSize = 22;
-                int padding = 175 - product.Name.Length;
-                nameView.SetPadding(0, 0, padding, 0);
-
-                TextView priceView = new TextView(mainActivity);
-                priceView.Text = product.Price.ToString() + " lei";
-                priceView.SetTypeface(Typeface.Default, TypefaceStyle.BoldItalic);
-                priceView.TextSize = 22;
-                padding = 50 - product.Price.ToString().Length;
-                priceView.SetPadding(0, 0, padding, 0);
-
-                Button button = new Button(mainActivity);
-                button.Text = "Eliminare";
-                button.Click += delegate
+            try
+            {
+                cart.Cart.ForEach(product =>
                 {
-                    cart.RemoveFromCart = product;
-                    this.DrawCart(mainActivity, shoppingCart, cart);
-                };
-                layout.AddView(nameView);
-                layout.AddView(priceView);
-                layout.AddView(button);
-                shoppingCart.AddView(layout);
-            });
+                    var layout = new LinearLayout(mainActivity);
+                    layout.Orientation = Orientation.Horizontal;
+
+                    TextView nameView = new TextView(mainActivity);
+                    nameView.Text = product.Name;
+                    nameView.SetTypeface(Typeface.Default, TypefaceStyle.BoldItalic);
+                    nameView.TextSize = 22;
+                    int padding = 175 - product.Name.Length;
+                    nameView.SetPadding(0, 0, padding, 0);
+
+                    TextView priceView = new TextView(mainActivity);
+                    priceView.Text = product.Price.ToString() + " lei";
+                    priceView.SetTypeface(Typeface.Default, TypefaceStyle.BoldItalic);
+                    priceView.TextSize = 22;
+                    padding = 50 - product.Price.ToString().Length;
+                    priceView.SetPadding(0, 0, padding, 0);
+
+                    Button button = new Button(mainActivity);
+                    button.Text = "Eliminare";
+                    button.Click += delegate
+                    {
+                        cart.RemoveFromCart = product;
+                        this.DrawCart(mainActivity, shoppingCart, cart);
+                    };
+                    layout.AddView(nameView);
+                    layout.AddView(priceView);
+                    layout.AddView(button);
+                    shoppingCart.AddView(layout);
+                });
+            }
+            catch(ArgumentNullException ex)
+            {
+                Toast.MakeText(mainActivity,
+                    "ArgumentNullException! The shopping cart object is empty!\nstDelivery 2020 ©",
+                    ToastLength.Long).Show();
+            }
+            catch(InvalidOperationException ex)
+            {
+                Toast.MakeText(mainActivity,
+                    "InvalidOperationException! Could not operate with shopping cart object!\nstDelivery 2020 ©",
+                    ToastLength.Long).Show();
+            }
             int price = this.PriceCommand(cart);
             TextView finalPrice = mainActivity.FindViewById<TextView>(Resource.Id.finalPrice);
-            this.ReplaceFinalPrice(price, finalPrice);
+            try
+            {
+                this.ReplaceFinalPrice(price, finalPrice);
+            }
+            catch (ArgumentException ex)
+            {
+                Toast.MakeText(mainActivity,
+                    "ArgumentException! Invalid object given to Regex!\nstDelivery 2020 ©",
+                    ToastLength.Long).Show();
+            }
+            catch (RegexMatchTimeoutException ex)
+            {
+                Toast.MakeText(mainActivity,
+                    "RegexMatchTimeoutException! Could not finish Regex Replace operation!\nstDelivery 2020 ©",
+                    ToastLength.Long).Show();
+            }
+
         }
 
         /// <summary>
@@ -155,7 +187,18 @@ namespace StDelivery
         private void ReplaceFinalPrice(int price, TextView label)
         {
             String pattern = @"[0-9]+";
-            label.Text = Regex.Replace(label.Text, pattern, price.ToString());
+            try
+            {
+                label.Text = Regex.Replace(label.Text, pattern, price.ToString());
+            }
+            catch(ArgumentException ex)
+            {
+                throw ex;
+            }
+            catch (RegexMatchTimeoutException ex)
+            {
+                throw ex;
+            }
         }
     }
 }

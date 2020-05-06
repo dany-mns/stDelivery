@@ -38,5 +38,11 @@ namespace stDelivery.Kitchen
     public class IFood
     {
         public List<Menuitem> menuitem { get; set; }
+
+        public void Add(Menuitem mi)
+        {
+            this.menuitem.Add(mi);
+        }
     }
+
 }

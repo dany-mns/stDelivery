@@ -3545,11 +3545,36 @@ containing a value of this type.
     }
     public static final class id {
         public static int ALT=0x7f080031;
+        public static int AdressView=0x7f0800cb;
+        public static int ApText=0x7f0800d7;
+        public static int ApView=0x7f0800d6;
+        public static int BackButton=0x7f0800e2;
+        public static int BlText=0x7f0800d3;
+        public static int BlView=0x7f0800d2;
         public static int CTRL=0x7f080032;
+        public static int CityText=0x7f0800da;
+        public static int CityView=0x7f0800d9;
+        public static int EmailText=0x7f0800ca;
+        public static int EmailView=0x7f0800c9;
         public static int FUNCTION=0x7f080033;
+        public static int FinRegisterButton=0x7f0800e1;
         public static int META=0x7f080034;
+        public static int NameText=0x7f0800c8;
+        public static int NameView=0x7f0800c7;
+        public static int PassText1=0x7f0800de;
+        public static int PassText2=0x7f0800e0;
+        public static int PassView1=0x7f0800dd;
+        public static int PassView2=0x7f0800df;
+        public static int PhoneText=0x7f0800dc;
+        public static int PhoneView=0x7f0800db;
         public static int SHIFT=0x7f080035;
         public static int SYM=0x7f080036;
+        public static int ScText=0x7f0800d5;
+        public static int ScView=0x7f0800d4;
+        public static int SteetNumberView=0x7f0800cf;
+        public static int StreetNumberText=0x7f0800d0;
+        public static int StreetText=0x7f0800ce;
+        public static int StreetView=0x7f0800cd;
         public static int action0=0x7f0800b7;
         public static int action_bar=0x7f080088;
         public static int action_bar_activity_content=0x7f080001;
@@ -3567,7 +3592,7 @@ containing a value of this type.
         public static int action_mode_bar=0x7f080085;
         public static int action_mode_bar_stub=0x7f080084;
         public static int action_mode_close_button=0x7f080068;
-        public static int action_settings=0x7f0800ca;
+        public static int action_settings=0x7f0800e6;
         public static int action_text=0x7f0800b6;
         public static int actions=0x7f0800c4;
         public static int activity_chooser_view_content=0x7f080069;
@@ -3644,11 +3669,14 @@ containing a value of this type.
         public static int left=0x7f080048;
         public static int line1=0x7f080017;
         public static int line3=0x7f080018;
+        public static int linearLayout1=0x7f0800cc;
+        public static int linearLayout2=0x7f0800d1;
+        public static int linearLayout3=0x7f0800d8;
         public static int listMode=0x7f08001c;
         public static int list_item=0x7f08006d;
-        public static int masked=0x7f0800c9;
+        public static int masked=0x7f0800e5;
         public static int media_actions=0x7f0800ba;
-        public static int message=0x7f0800c7;
+        public static int message=0x7f0800e3;
         public static int middle=0x7f080030;
         public static int mini=0x7f080052;
         public static int multiply=0x7f080026;
@@ -3743,7 +3771,7 @@ containing a value of this type.
         public static int up=0x7f080009;
         public static int useLogo=0x7f080025;
         public static int view_offset_helper=0x7f080016;
-        public static int visible=0x7f0800c8;
+        public static int visible=0x7f0800e4;
         public static int withText=0x7f08003b;
         public static int wrap=0x7f08005a;
         public static int wrap_content=0x7f08002d;
@@ -3820,12 +3848,13 @@ containing a value of this type.
         public static int notification_template_media_custom=0x7f040038;
         public static int notification_template_part_chronometer=0x7f040039;
         public static int notification_template_part_time=0x7f04003a;
-        public static int select_dialog_item_material=0x7f04003b;
-        public static int select_dialog_multichoice_material=0x7f04003c;
-        public static int select_dialog_singlechoice_material=0x7f04003d;
-        public static int support_simple_spinner_dropdown_item=0x7f04003e;
-        public static int tooltip=0x7f04003f;
-        public static int usesforfood=0x7f040040;
+        public static int registerlayout=0x7f04003b;
+        public static int select_dialog_item_material=0x7f04003c;
+        public static int select_dialog_multichoice_material=0x7f04003d;
+        public static int select_dialog_singlechoice_material=0x7f04003e;
+        public static int support_simple_spinner_dropdown_item=0x7f04003f;
+        public static int tooltip=0x7f040040;
+        public static int usesforfood=0x7f040041;
     }
     public static final class menu {
         public static int menu_main=0x7f0e0000;

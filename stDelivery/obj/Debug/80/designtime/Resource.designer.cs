@@ -2564,8 +2564,8 @@ namespace stDelivery
 			// aapt resource value: 0x7F0C0011
 			public const int action_mode_close_button = 2131492881;
 			
-			// aapt resource value: 0x7F020017
-			public const int action_settings = 2130837527;
+			// aapt resource value: 0x7F020089
+			public const int action_settings = 2130837641;
 			
 			// aapt resource value: 0x7F0C0004
 			public const int action_text = 2131492868;
@@ -2576,8 +2576,20 @@ namespace stDelivery
 			// aapt resource value: 0x7F0C0015
 			public const int add = 2131492885;
 			
+			// aapt resource value: 0x7F020063
+			public const int AdressView = 2130837603;
+			
 			// aapt resource value: 0x7F0C0016
 			public const int alertTitle = 2131492886;
+			
+			// aapt resource value: 0x7F020031
+			public const int apartamentClient = 2130837553;
+			
+			// aapt resource value: 0x7F020073
+			public const int ApText = 2130837619;
+			
+			// aapt resource value: 0x7F020072
+			public const int ApView = 2130837618;
 			
 			// aapt resource value: 0x7F0C0006
 			public const int async = 2131492870;
@@ -2585,17 +2597,29 @@ namespace stDelivery
 			// aapt resource value: 0x7F0C0018
 			public const int auto = 2131492888;
 			
+			// aapt resource value: 0x7F020083
+			public const int BackButton = 2130837635;
+			
 			// aapt resource value: 0x7F02000E
 			public const int barrier = 2130837518;
+			
+			// aapt resource value: 0x7F020027
+			public const int blocClient = 2130837543;
 			
 			// aapt resource value: 0x7F0C0007
 			public const int blocking = 2131492871;
 			
+			// aapt resource value: 0x7F020069
+			public const int BlText = 2130837609;
+			
+			// aapt resource value: 0x7F020068
+			public const int BlView = 2130837608;
+			
 			// aapt resource value: 0x7F020000
 			public const int bottom = 2130837504;
 			
-			// aapt resource value: 0x7F020009
-			public const int btnAddFood = 2130837513;
+			// aapt resource value: 0x7F020044
+			public const int btnAddFood = 2130837572;
 			
 			// aapt resource value: 0x7F020004
 			public const int btnCiorba = 2130837508;
@@ -2603,8 +2627,8 @@ namespace stDelivery
 			// aapt resource value: 0x7F020007
 			public const int btnDesert = 2130837511;
 			
-			// aapt resource value: 0x7F020010
-			public const int btnFinishBuy = 2130837520;
+			// aapt resource value: 0x7F020045
+			public const int btnFinishBuy = 2130837573;
 			
 			// aapt resource value: 0x7F020003
 			public const int btnHamburger = 2130837507;
@@ -2635,6 +2659,15 @@ namespace stDelivery
 			
 			// aapt resource value: 0x7F0C0008
 			public const int chronometer = 2131492872;
+			
+			// aapt resource value: 0x7F020075
+			public const int CityText = 2130837621;
+			
+			// aapt resource value: 0x7F020074
+			public const int CityView = 2130837620;
+			
+			// aapt resource value: 0x7F020012
+			public const int contactSelector = 2130837522;
 			
 			// aapt resource value: 0x7F0C0020
 			public const int container = 2131492896;
@@ -2681,6 +2714,15 @@ namespace stDelivery
 			// aapt resource value: 0x7F0C002C
 			public const int edit_query = 2131492908;
 			
+			// aapt resource value: 0x7F020021
+			public const int emailClient = 2130837537;
+			
+			// aapt resource value: 0x7F020062
+			public const int EmailText = 2130837602;
+			
+			// aapt resource value: 0x7F020061
+			public const int EmailView = 2130837601;
+			
 			// aapt resource value: 0x7F020001
 			public const int end = 2130837505;
 			
@@ -2695,6 +2737,15 @@ namespace stDelivery
 			
 			// aapt resource value: 0x7F0C0031
 			public const int fill = 2131492913;
+			
+			// aapt resource value: 0x7F020088
+			public const int finalizareComanda = 2130837640;
+			
+			// aapt resource value: 0x7F020087
+			public const int finalPrice = 2130837639;
+			
+			// aapt resource value: 0x7F020082
+			public const int FinRegisterButton = 2130837634;
 			
 			// aapt resource value: 0x7F0C0032
 			public const int @fixed = 2131492914;
@@ -2744,11 +2795,56 @@ namespace stDelivery
 			// aapt resource value: 0x7F0C000F
 			public const int line3 = 2131492879;
 			
+			// aapt resource value: 0x7F020008
+			public const int linearLayout1 = 2130837512;
+			
+			// aapt resource value: 0x7F020034
+			public const int linearLayout10 = 2130837556;
+			
+			// aapt resource value: 0x7F020014
+			public const int linearLayout2 = 2130837524;
+			
+			// aapt resource value: 0x7F020041
+			public const int linearLayout3 = 2130837569;
+			
+			// aapt resource value: 0x7F020015
+			public const int linearLayout4 = 2130837525;
+			
+			// aapt resource value: 0x7F020018
+			public const int linearLayout5 = 2130837528;
+			
+			// aapt resource value: 0x7F020020
+			public const int linearLayout6 = 2130837536;
+			
+			// aapt resource value: 0x7F020022
+			public const int linearLayout7 = 2130837538;
+			
+			// aapt resource value: 0x7F020024
+			public const int linearLayout8 = 2130837540;
+			
+			// aapt resource value: 0x7F020032
+			public const int linearLayout9 = 2130837554;
+			
 			// aapt resource value: 0x7F0C0040
 			public const int listMode = 2131492928;
 			
 			// aapt resource value: 0x7F0C0041
 			public const int list_item = 2131492929;
+			
+			// aapt resource value: 0x7F020054
+			public const int LogEmailText = 2130837588;
+			
+			// aapt resource value: 0x7F020053
+			public const int LogEmailView = 2130837587;
+			
+			// aapt resource value: 0x7F020057
+			public const int LoginButton = 2130837591;
+			
+			// aapt resource value: 0x7F020056
+			public const int LogPassText = 2130837590;
+			
+			// aapt resource value: 0x7F020055
+			public const int LogPassView = 2130837589;
 			
 			// aapt resource value: 0x7F0C0042
 			public const int masked = 2131492930;
@@ -2762,11 +2858,20 @@ namespace stDelivery
 			// aapt resource value: 0x7F0C0045
 			public const int mini = 2131492933;
 			
+			// aapt resource value: 0x7F020035
+			public const int modalitatePlataClient = 2130837557;
+			
 			// aapt resource value: 0x7F0C0046
 			public const int multiply = 2131492934;
 			
-			// aapt resource value: 0x7F020011
-			public const int myRecyclerView = 2130837521;
+			// aapt resource value: 0x7F020046
+			public const int myRecyclerView = 2130837574;
+			
+			// aapt resource value: 0x7F020060
+			public const int NameText = 2130837600;
+			
+			// aapt resource value: 0x7F020059
+			public const int NameView = 2130837593;
 			
 			// aapt resource value: 0x7F0C0047
 			public const int navigation_header_container = 2131492935;
@@ -2786,6 +2891,18 @@ namespace stDelivery
 			// aapt resource value: 0x7F0C0013
 			public const int notification_main_column_container = 2131492883;
 			
+			// aapt resource value: 0x7F020025
+			public const int nrCasaClient = 2130837541;
+			
+			// aapt resource value: 0x7F020017
+			public const int numeClient = 2130837527;
+			
+			// aapt resource value: 0x7F020037
+			public const int observatiiClient = 2130837559;
+			
+			// aapt resource value: 0x7F020033
+			public const int orasClient = 2130837555;
+			
 			// aapt resource value: 0x7F02000C
 			public const int packed = 2130837516;
 			
@@ -2801,8 +2918,26 @@ namespace stDelivery
 			// aapt resource value: 0x7F0C004F
 			public const int parent_matrix = 2131492943;
 			
+			// aapt resource value: 0x7F020079
+			public const int PassText1 = 2130837625;
+			
+			// aapt resource value: 0x7F020081
+			public const int PassText2 = 2130837633;
+			
+			// aapt resource value: 0x7F020078
+			public const int PassView1 = 2130837624;
+			
+			// aapt resource value: 0x7F020080
+			public const int PassView2 = 2130837632;
+			
 			// aapt resource value: 0x7F020009
 			public const int percent = 2130837513;
+			
+			// aapt resource value: 0x7F020077
+			public const int PhoneText = 2130837623;
+			
+			// aapt resource value: 0x7F020076
+			public const int PhoneView = 2130837622;
 			
 			// aapt resource value: 0x7F0C0050
 			public const int pin = 2131492944;
@@ -2825,6 +2960,9 @@ namespace stDelivery
 			// aapt resource value: 0x7F0C0015
 			public const int right_side = 2131492885;
 			
+			// aapt resource value: 0x7F020038
+			public const int robotCheck = 2130837560;
+			
 			// aapt resource value: 0x7F0C0057
 			public const int save_image_matrix = 2131492951;
 			
@@ -2833,6 +2971,9 @@ namespace stDelivery
 			
 			// aapt resource value: 0x7F0C0059
 			public const int save_scale_type = 2131492953;
+			
+			// aapt resource value: 0x7F020029
+			public const int scaraClient = 2130837545;
 			
 			// aapt resource value: 0x7F0C005A
 			public const int screen = 2131492954;
@@ -2848,6 +2989,15 @@ namespace stDelivery
 			
 			// aapt resource value: 0x7F0C005D
 			public const int scrollView = 2131492957;
+			
+			// aapt resource value: 0x7F020085
+			public const int scrollView1 = 2130837637;
+			
+			// aapt resource value: 0x7F020071
+			public const int ScText = 2130837617;
+			
+			// aapt resource value: 0x7F020070
+			public const int ScView = 2130837616;
 			
 			// aapt resource value: 0x7F0C005F
 			public const int search_badge = 2131492959;
@@ -2882,6 +3032,12 @@ namespace stDelivery
 			// aapt resource value: 0x7F0C0069
 			public const int select_dialog_listview = 2131492969;
 			
+			// aapt resource value: 0x7F020042
+			public const int sendCommand = 2130837570;
+			
+			// aapt resource value: 0x7F020086
+			public const int shoppingCart = 2130837638;
+			
 			// aapt resource value: 0x7F0C006A
 			public const int shortcut = 2131492970;
 			
@@ -2893,6 +3049,12 @@ namespace stDelivery
 			
 			// aapt resource value: 0x7F0C006D
 			public const int snackbar_text = 2131492973;
+			
+			// aapt resource value: 0x7F020011
+			public const int space1 = 2130837521;
+			
+			// aapt resource value: 0x7F020013
+			public const int space2 = 2130837523;
 			
 			// aapt resource value: 0x7F0C006E
 			public const int spacer = 2131492974;
@@ -2924,6 +3086,21 @@ namespace stDelivery
 			// aapt resource value: 0x7F0C0074
 			public const int status_bar_latest_event_content = 2131492980;
 			
+			// aapt resource value: 0x7F020066
+			public const int SteetNumberView = 2130837606;
+			
+			// aapt resource value: 0x7F020023
+			public const int stradaClient = 2130837539;
+			
+			// aapt resource value: 0x7F020067
+			public const int StreetNumberText = 2130837607;
+			
+			// aapt resource value: 0x7F020065
+			public const int StreetText = 2130837605;
+			
+			// aapt resource value: 0x7F020064
+			public const int StreetView = 2130837604;
+			
 			// aapt resource value: 0x7F0C0075
 			public const int submenuarrow = 2131492981;
 			
@@ -2933,20 +3110,29 @@ namespace stDelivery
 			// aapt resource value: 0x7F0C0077
 			public const int tabMode = 2131492983;
 			
+			// aapt resource value: 0x7F020019
+			public const int telefonClient = 2130837529;
+			
+			// aapt resource value: 0x7F020039
+			public const int termsCheck = 2130837561;
+			
+			// aapt resource value: 0x7F020040
+			public const int termsClick = 2130837568;
+			
 			// aapt resource value: 0x7F0C0016
 			public const int text = 2131492886;
 			
 			// aapt resource value: 0x7F0C0017
 			public const int text2 = 2131492887;
 			
-			// aapt resource value: 0x7F020013
-			public const int textFoodDescription = 2130837523;
+			// aapt resource value: 0x7F020048
+			public const int textFoodDescription = 2130837576;
 			
-			// aapt resource value: 0x7F020012
-			public const int textFoodName = 2130837522;
+			// aapt resource value: 0x7F020047
+			public const int textFoodName = 2130837575;
 			
-			// aapt resource value: 0x7F020014
-			public const int textFoodPrice = 2130837524;
+			// aapt resource value: 0x7F020049
+			public const int textFoodPrice = 2130837577;
 			
 			// aapt resource value: 0x7F0C007D
 			public const int textinput_counter = 2131492989;
@@ -2960,11 +3146,32 @@ namespace stDelivery
 			// aapt resource value: 0x7F0C007B
 			public const int textSpacerNoTitle = 2131492987;
 			
-			// aapt resource value: 0x7F020016
-			public const int textStatus = 2130837526;
+			// aapt resource value: 0x7F020051
+			public const int textStatus = 2130837585;
 			
-			// aapt resource value: 0x7F020015
-			public const int textStatusView = 2130837525;
+			// aapt resource value: 0x7F020050
+			public const int textStatusView = 2130837584;
+			
+			// aapt resource value: 0x7F020009
+			public const int textView1 = 2130837513;
+			
+			// aapt resource value: 0x7F020028
+			public const int textView15 = 2130837544;
+			
+			// aapt resource value: 0x7F020010
+			public const int textView2 = 2130837520;
+			
+			// aapt resource value: 0x7F020016
+			public const int textView3 = 2130837526;
+			
+			// aapt resource value: 0x7F020026
+			public const int textView4 = 2130837542;
+			
+			// aapt resource value: 0x7F020030
+			public const int textView5 = 2130837552;
+			
+			// aapt resource value: 0x7F020036
+			public const int textView6 = 2130837558;
 			
 			// aapt resource value: 0x7F0C007C
 			public const int text_input_password_toggle = 2131492988;
@@ -2972,23 +3179,29 @@ namespace stDelivery
 			// aapt resource value: 0x7F0C0018
 			public const int time = 2131492888;
 			
-			// aapt resource value: 0x7F0C0019
-			public const int title = 2131492889;
+			// aapt resource value: 0x7F020084
+			public const int title = 2130837636;
 			
 			// aapt resource value: 0x7F0C0081
 			public const int titleDividerNoCustom = 2131492993;
 			
+			// aapt resource value: 0x7F020052
+			public const int TitleView = 2130837586;
+			
 			// aapt resource value: 0x7F0C0082
 			public const int title_template = 2131492994;
 			
-			// aapt resource value: 0x7F020008
-			public const int toolbar = 2130837512;
+			// aapt resource value: 0x7F020043
+			public const int toolbar = 2130837571;
 			
 			// aapt resource value: 0x7F020005
 			public const int top = 2130837509;
 			
 			// aapt resource value: 0x7F0C0084
 			public const int topPanel = 2131492996;
+			
+			// aapt resource value: 0x7F020058
+			public const int ToRegisterButton = 2130837592;
 			
 			// aapt resource value: 0x7F0C0085
 			public const int touch_outside = 2131492997;
@@ -3209,10 +3422,16 @@ namespace stDelivery
 			public const int design_text_input_password_icon = 2131689513;
 			
 			// aapt resource value: 0x7F030003
-			public const int FoodMenuActivity = 2130903043;
+			public const int FinishOrder = 2130903043;
 			
 			// aapt resource value: 0x7F030004
-			public const int foodrow = 2130903044;
+			public const int FoodMenuActivity = 2130903044;
+			
+			// aapt resource value: 0x7F030005
+			public const int foodrow = 2130903045;
+			
+			// aapt resource value: 0x7F030006
+			public const int LoginLayout = 2130903046;
 			
 			// aapt resource value: 0x7F0F0001
 			public const int notification_action = 2131689473;
@@ -3259,6 +3478,9 @@ namespace stDelivery
 			// aapt resource value: 0x7F0F0006
 			public const int notification_template_part_time = 2131689478;
 			
+			// aapt resource value: 0x7F030007
+			public const int RegisterLayout = 2130903047;
+			
 			// aapt resource value: 0x7F0F0039
 			public const int select_dialog_item_material = 2131689529;
 			
@@ -3268,14 +3490,17 @@ namespace stDelivery
 			// aapt resource value: 0x7F0F003B
 			public const int select_dialog_singlechoice_material = 2131689531;
 			
+			// aapt resource value: 0x7F030008
+			public const int ShoppingCart = 2130903048;
+			
 			// aapt resource value: 0x7F0F003C
 			public const int support_simple_spinner_dropdown_item = 2131689532;
 			
 			// aapt resource value: 0x7F0F003D
 			public const int tooltip = 2131689533;
 			
-			// aapt resource value: 0x7F030005
-			public const int UsesForFood = 2130903045;
+			// aapt resource value: 0x7F030009
+			public const int UsesForFood = 2130903049;
 			
 			static Layout()
 			{

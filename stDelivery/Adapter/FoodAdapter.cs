@@ -49,9 +49,9 @@ namespace stDelivery.Adapter
 
             // Replace the contents of the view with that element
             var holder = viewHolder as FoodAdapterViewHolder;
-            holder.foodNameText.Text = item.name;
-            holder.foodDescpriptionText.Text = item.description;
-            holder.foodPriceText.Text = item.price.ToString() + " LEI";
+            holder.foodNameText.Text = item.Name;
+            holder.foodDescpriptionText.Text = item.Description;
+            holder.foodPriceText.Text = item.Price.ToString() + " LEI";
         }
 
         //Specify number of element on the screen

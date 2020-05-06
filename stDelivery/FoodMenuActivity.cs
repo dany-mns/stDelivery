@@ -64,7 +64,8 @@ namespace stDelivery
 
 			_btnFinish.Click += delegate
 			{
-				Log.Info("myap", "Send new object to Stef activity");
+                //ShoppingCartActivity shoppingCartActivity = new ShoppingCartActivity();
+                Log.Info("myap", "Send new object to Stef activity");
 			};
 		}
 
@@ -88,15 +89,17 @@ namespace stDelivery
         /// <param name="e">Get selected element.</param>
         private void Adapter_BuyItemClick(object sender, FoodAdapterClickEventArgs e)
 		{
-			string nameFood = _foods.menuitem[e.Position].name;
-			string priceFood = _foods.menuitem[e.Position].price.ToString();
+			string nameFood = _foods.menuitem[e.Position].Name;
+			string priceFood = _foods.menuitem[e.Position].Price.ToString();
 			Android.Support.V7.App.AlertDialog.Builder message = new Android.Support.V7.App.AlertDialog.Builder(this);
 			message.SetTitle("Ati adaugat in cos");
 			message.SetMessage(nameFood + "\nPret: " + priceFood + " LEI.");
 			message.SetPositiveButton("Confirm", (confirmAlert, args) =>
 			{
-				//Add new item food in shopping cart
-			});
+                //Add new item food in shopping cart
+                GlobalVariables.currentUser.ShoppingCart.Add(_foods.menuitem[e.Position]);
+
+            });
 
 			message.SetNegativeButton("Revoke", (revokeAlert, args) =>
 			{

@@ -5,12 +5,14 @@
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
   <application android:allowBackup="true" android:icon="@mipmap/ic_profi" android:label="@string/app_name" android:roundIcon="@mipmap/ic_profi" android:supportsRtl="true" android:theme="@style/AppTheme" android:name="android.app.Application" android:debuggable="true">
     <activity android:label="FoodMenu" android:theme="@style/AppTheme.NoActionBar" android:name="md549db6d8e5f52d3e5c415335b0cbd4fff.FoodMenuActivity" />
-    <activity android:label="@string/app_name" android:theme="@style/AppTheme.NoActionBar" android:name="md549db6d8e5f52d3e5c415335b0cbd4fff.MainActivity">
+    <activity android:label="@string/app_name" android:theme="@style/AppTheme.NoActionBar" android:name="md549db6d8e5f52d3e5c415335b0cbd4fff.RestaurantActivity" />
+    <activity android:label="StDelivery" android:theme="@style/AppTheme.NoActionBar" android:name="md549db6d8e5f52d3e5c415335b0cbd4fff.LoginActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
     </activity>
+    <activity android:label="Register" android:name="md549db6d8e5f52d3e5c415335b0cbd4fff.RegisterActivity" />
     <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="stDelivery.stDelivery.mono.MonoRuntimeProvider.__mono_init__" />
     <!--suppress ExportedReceiver-->
     <receiver android:name="mono.android.Seppuku">
@@ -19,7 +21,7 @@
         <category android:name="mono.android.intent.category.SEPPUKU.stDelivery.stDelivery" />
       </intent-filter>
     </receiver>
-    <meta-data android:name="android.support.VERSION" android:value="26.1.0" />
     <meta-data android:name="android.arch.lifecycle.VERSION" android:value="27.0.0-SNAPSHOT" />
+    <meta-data android:name="android.support.VERSION" android:value="26.1.0" />
   </application>
 </manifest>

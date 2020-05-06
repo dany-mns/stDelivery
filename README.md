@@ -1,7 +1,7 @@
 # stDelivery - Danny Manastireanu
-
-<a href="https://github.com/dannymanastireanu/stDelivery/tree/hw"><img src="https://i.imgur.com/DYA6W4h.jpg" title="VS" alt="VS"></a>
-
+<p align="center">
+	<a href="https://github.com/dannymanastireanu/stDelivery/tree/hw"><img src="https://i.imgur.com/DYA6W4h.jpg" title="VS" alt="VS"></a>
+</p>
 
 # stDelivery
 > Read input file with whole type of foods which simulate a restaurant factory.

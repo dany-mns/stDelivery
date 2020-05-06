@@ -10,7 +10,7 @@
 
 > User interface: food selection (display main category)
 
-<a href="https://github.com/dannymanastireanu/stDelivery/tree/hw"><img src="https://i.imgur.com/jeUTJpy.jpg" title="VS" alt="VS"></a>
+<a href="https://github.com/dannymanastireanu/stDelivery/tree/hw"><img src="https://i.imgur.com/jeUTJpy.jpg" title="VS" alt="VS" width = 250px height=500px></a>
 
 > View restaurant food menu
 

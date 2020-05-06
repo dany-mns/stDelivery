@@ -14,8 +14,8 @@
 
 > View restaurant food menu
 
-<a href="https://github.com/dannymanastireanu/stDelivery/tree/hw"><img src="https://i.imgur.com/q7qn3HT.jpg" title="VS" alt="VS" style="width:250px;height:1000px;"></a> 
-<a href="https://github.com/dannymanastireanu/stDelivery/tree/hw"><img src="https://i.imgur.com/UJAdkiZ.jpg" title="VS" alt="VS" style="width:250px;height:1000px;"></a> 
+<a href="https://github.com/dannymanastireanu/stDelivery/tree/hw"><img src="https://i.imgur.com/q7qn3HT.jpg" title="VS" alt="VS" width = 250px height=500px></a> 
+<a href="https://github.com/dannymanastireanu/stDelivery/tree/hw"><img src="https://i.imgur.com/UJAdkiZ.jpg" title="VS" alt="VS" width = 250px height=500px></a> 
 
 
 ---

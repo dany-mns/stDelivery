@@ -1,39 +1,21 @@
-<a href="https://www.microsoft.com/ro-ro/"><img src="https://venturebeat.com/wp-content/uploads/2019/11/visual-studio-logo.jpeg?fit=578%2C289&strip=all" title="VS" alt="VS"></a>
+# stDelivery - Danny Manastireanu
+
+<a href="https://github.com/dannymanastireanu/stDelivery/tree/hw"><img src="https://i.imgur.com/DYA6W4h.jpg" title="VS" alt="VS"></a>
 
 
 # stDelivery
+> Read input file with whole type of foods which simulate a restaurant factory.
 
-> Subtitle or Short Description Goes Here
+<a href="https://github.com/dannymanastireanu/stDelivery/tree/hw"><img src="https://i.imgur.com/lxeVkr7.png" title="VS" alt="VS"></a>
 
-> ideally one sentence
+> User interface: food selection (display main category)
 
-> include terms/tags that can be searched
+<a href="https://github.com/dannymanastireanu/stDelivery/tree/hw"><img src="https://i.imgur.com/jeUTJpy.jpg" title="VS" alt="VS"></a>
 
-**Description**
+> View restaurant food menu
 
-
-[![Build Status](http://img.shields.io/travis/badges/badgerbadgerbadger.svg?style=flat-square)](https://github.com/dannymanastireanu/stDelivery/tree/hw) [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org) [![Badges](http://img.shields.io/:badges-9/9-ff6799.svg?style=flat-square)](https://github.com/badges/badgerbadgerbadger)
-
-
----
-
-## FAQ
-
-- **How do I do *specifically* so and so?**
-    - No problem! Just do it.
-
----
-
-## Support
-
-Reach out to me at one of the following places!
-
-
----
-
-## Donations (Optional)
-
-
+<a href="https://github.com/dannymanastireanu/stDelivery/tree/hw"><img src="https://i.imgur.com/q7qn3HT.jpg" title="VS" alt="VS"></a> 
+<a href="https://github.com/dannymanastireanu/stDelivery/tree/hw"><img src="https://i.imgur.com/UJAdkiZ.jpg" title="VS" alt="VS"></a> 
 
 
 ---

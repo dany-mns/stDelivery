@@ -26,7 +26,7 @@
 * [X] (probabil) modificare format adresa (in functie de Claudiu) - nu mai este cazul
 * [X] adaugare comentarii
 * [ ] realizare diagrama UML
-* [ ] generare help
+* [X] generare help
 * [X] reguli de declarare variabile si scriere
 * [ ] unit testing
 * [X] adauga scara la formularul de comandare

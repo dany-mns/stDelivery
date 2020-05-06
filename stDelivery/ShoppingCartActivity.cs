@@ -32,6 +32,7 @@ namespace stDelivery
     /// It also provides methods for deleting products from the shopping cart.
     /// </summary>
     class ShoppingCartActivity : StDelivery.Activity
+    
     {
         /// <summary>
         /// A FinishOrderActivity object instantiated at the "Finalizeaza comanda" button.

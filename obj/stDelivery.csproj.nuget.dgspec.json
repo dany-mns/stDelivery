@@ -1,0 +1,70 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\Facultate\\An 3\\IP\\Proiect\\stDelivery\\stDelivery.csproj": {}
+  },
+  "projects": {
+    "E:\\Facultate\\An 3\\IP\\Proiect\\stDelivery\\stDelivery.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Facultate\\An 3\\IP\\Proiect\\stDelivery\\stDelivery.csproj",
+        "projectName": "stDelivery",
+        "projectPath": "E:\\Facultate\\An 3\\IP\\Proiect\\stDelivery\\stDelivery.csproj",
+        "packagesPath": "C:\\Users\\zalin\\.nuget\\packages\\",
+        "outputPath": "E:\\Facultate\\An 3\\IP\\Proiect\\stDelivery\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\zalin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "monoandroid80"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "monoandroid80": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "monoandroid80": {
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            },
+            "Xamarin.Android.Support.Constraint.Layout": {
+              "target": "Package",
+              "version": "[1.1.2, )"
+            },
+            "Xamarin.Android.Support.Design": {
+              "target": "Package",
+              "version": "[28.0.0.3, )"
+            },
+            "Xamarin.Android.Support.v4": {
+              "target": "Package",
+              "version": "[28.0.0.3, )"
+            },
+            "Xamarin.Android.Support.v7.RecyclerView": {
+              "target": "Package",
+              "version": "[28.0.0.3, )"
+            },
+            "sqlite-net-pcl": {
+              "target": "Package",
+              "version": "[1.6.292, )"
+            }
+          }
+        }
+      }
+    }
+  }
+}

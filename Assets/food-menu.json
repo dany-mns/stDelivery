@@ -1,0 +1,295 @@
+{
+   "Pizza":{
+      "menuitem":[
+         {
+            "name":"Pizza Margherita",
+            "description":"Sos de rosii, mozzarella proaspata de bivolita, busuioc - 400 g",
+            "price":17
+         },
+         {
+            "name":"Pizza Contadina ",
+            "description":"Sos de rosii, mozzarella, tartar de rosii cu busuioc, ceapa rosie - 450 g",
+            "price":22
+         },
+         {
+            "name":"Pizza Quatro Stagioni ",
+            "description":"Sos de rosii, salam uscat, sunca presata,ciuperci, ardei gras - 500 g",
+            "price":24
+         },
+         {
+            "name":"Pizz Quatro Formaggi ",
+            "description":"Mozzarella, gorgonzola, emmentaler,telemea de oaie - 500 g",
+            "price":25
+         },
+         {
+            "name":"Pizza Capriciosa ",
+            "description":"Sos de rosii, mozzarella, ciuperci, masline, sunca presata, anghinare, ceapa - 450 g",
+            "price":25
+         },
+         {
+            "name":"Pizza Primavera ",
+            "description":"Sos de rosii, mozzarella, prosciutto crudo, rucola, parmezan, rosii cherry -  500 g",
+            "price":23
+         },
+         {
+            "name":"Pizza Vegetariana ",
+            "description":"Sos de rosii, mozzarella, rosii, ardei gras, porumb, masline, ceapa, ciuperci - 500 g",
+            "price":22
+         },
+         {
+            "name":"Pizza Tonno e cipolla",
+            "description":"Sos de rosii, mozzarella, ton, ceapa rosie, lamaie, capere murate - 400 g",
+            "price":25
+         },
+         {
+            "name":"Pizza Diavola ",
+            "description":"Sos de rosii, mozzarella,  usturoi, salam ventricina - 400 g",
+            "price":23
+         },
+         {
+            "name":"Pizza Panna Prosciutto Mais ",
+            "description":"Smantana, sunca presata, porumb, mozzarella - 450 g",
+            "price":22
+         },
+         {
+            "name":"Pizza Prosciutto e funghi ",
+            "description":"Sos de rosii, mozzarella, sunca presata, ciuperci - 400 g",
+            "price":22
+         },
+         {
+            "name":"Pizza Chicken & Bacon ",
+            "description":"Sos de rosii, mozzadella, piept de pui, bacon, porumb -  450 g",
+            "price":25
+         },
+         {
+            "name":"Pizza Salamino e funghi ",
+            "description":"Sos de rosii, mozzarella, salam, ciuperci - 400 g",
+            "price":22
+         },
+         {
+            "name":"Pizza Carnivore ",
+            "description":"Sos de rosii, mozzarella, salam, sunca presata, bacon, piept de pui -  500 g",
+            "price":28
+         },
+         {
+            "name":"Pizza Vero ",
+            "description":"Sos de rosii, mozzarella, anghinare, ardei gras, rosii cherry, prosciutto crudo, piept de pui, rucola - 550 g",
+            "price":30
+         },
+         {
+            "name":"Pizza Calzone ",
+            "description":"Sos de rosii, mozzarella, salam, sunca presata, ciuperci, masline - 450 g",
+            "price":24
+         },
+         {
+            "name":"Pizza Desert ",
+            "description":"Mar proaspat, zahar vanilat, scortisoara, ulei de masline - 350 g",
+            "price":12
+         }
+      ]
+   },
+   "Hamburger":{
+      "menuitem":[
+         {
+            "name":"Hamburger classic",
+            "description":"Carne de vita tocata, chifla, branza cheddar, castraveti murati, ceapa, rosie, salata, ketchup - 250g",
+            "price":17
+         },
+         {
+            "name":"Hamburger Inferno",
+            "description":"Carne de vita tocata, chifla, salam picant, branza cheddar, castraveti murati, rosie, salata, sos picant - 270g",
+            "price":19
+         },
+         {
+            "name":"Hamburger Milano",
+            "description":"Carne de vita tocata, chifla,branza cheddar, salata, ceapa caramelizata, rosie, sos gorgonzola, sos tartar - 250g",
+            "price":18
+         },
+         {
+            "name":"Hamburger chicken grill",
+            "description":"Carne de pui, chifla, branza cheddar, ceapa caramelizata, rucola, sos rozé - 250g",
+            "price":16
+         },
+         {
+            "name":"Hamburger Vero",
+            "description":"Carne de vită tocată, chiflă, brânză cheddar, salată, roșie, bacon, ou, sos vero - 350g ",
+            "price":22
+         }
+      ]
+   },
+
+   "Ciorba": {
+      "menuitem": [
+                     { 
+            "name": "Ciorbă rădăuțeană",
+            "description": "pui",
+            "price": 10
+         },
+         { 
+            "name": "Ciorbă de pui cu tăieței de casă",
+            "description": "pui",
+            "price": 9
+         },
+         { 
+            "name": "Ciorbă de fasole cu afumătură",
+            "description": "fasole",
+            "price": 10
+         },
+         { 
+            "name": "Minestrone",
+            "description": "nu stiu",
+            "price": 9
+         }
+      ]
+   },
+
+   "Paste": {
+      "menuitem": [
+         {
+            "name": "Tagliatelli Carbonara ",
+            "description": "Tagliatelli, bacon, ou, parmezan - 300 g",
+            "price": 22 
+         },
+         {
+            "name": "Penne cu piept de pui",
+            "description": "Penne, piept de pui, sos alb/sos de rosii, parmezan - 300 g",
+            "price": 22 
+         }
+      ]
+   },
+
+   "Salata": {
+      "menuitem": [
+            {
+               "name": "Coleslaw",
+               "description": "150g",
+               "price": 7
+            },
+            {
+               "name": "Castraveți murați",
+               "description": "150g",
+               "price": 5
+            },
+            {
+               "name": "Gogoșari la oțet",
+               "description": "150g",
+               "price": 5
+            },
+            {
+               "name": "Salată mix",
+               "description": "100g",
+               "price": 5
+            },
+            {
+               "name": "Salată de vinete",
+               "description": "Mini focaccia - 200g",
+               "price": 10
+            },
+            {
+               "name": "Salată de varză",
+               "description": "posibil contine varza",
+               "price": 5
+            }
+      ]
+   },
+
+   "Desert":{
+      "menuitem":[
+         {
+            "name":"Platou prăjituri asortate",
+            "description":"Făină, zahăr, unt, lapte, fructe, nucă, nucă cocos, cacao, ciocolată, ouă, praf de copt, vanilina, rom, coajă lămâie, portocale - 1kg",
+            "price":85
+         },
+         {
+            "name":"Platou de post asortat",
+            "description":"Făina, zahăr, cacao, lapte vegetal, grăsimi vegetale, cacao, ciocolată, esențe, nucă, griș, fructe, alune - 1kg",
+            "price":65
+         },
+         {
+            "name":"Platou de fursecuri",
+            "description":"Făină, unt, cacao, nucă, zahăr, sare, lapte, ciocolată, esențe, coajă lămâie, portocală - 1kg",
+            "price":70
+         },
+         {
+            "name":"Sărățele",
+            "description":"Făină, brânză de burduf, cașcaval, smântână, lapte, drojdie, sare, mix semințe, ouă - 1kg",
+            "price":70
+         },
+         {
+            "name":"Covrigei",
+            "description":"Făină, brânză de burduf, cașcaval, smântână, lapte, drojdie, sare, mix semințe, ouă - 1kg",
+            "price":70
+         },
+         {
+            "name":"Minieclere/minichoux",
+            "description":"Făină, unt, lapte, ouă, amidon, ciocolată/fondant, vanilina - 1kg",
+            "price":80
+         },
+         {
+            "name":"Priconuci cu ciocolată belgiană",
+            "description":"Albuș ou, nucă, făină, ciocolată, zahăr, frișcă naturală - 1kg",
+            "price":85
+         },
+         {
+            "name":"Faguri cu ciocolată belgiană",
+            "description":"Ouă, făină, esențe, ulei, zahăr, ciocolată, frișcă naturală - 1kg",
+            "price":85
+         },
+         {
+            "name":"Nuci cu cremă de ciocolată și nucă",
+            "description":"Făină, zahăr, unt, esențe, borș natural, ciocolată, nucă, rom, lapte - 1kg",
+            "price":85
+         },
+         {
+            "name":"Macarons",
+            "description":"Făină de migdale, ou, zahăr, ciocolată, frișcă naturală, esențe, colorant alimentar - 1kg",
+            "price":100
+         },
+         {
+            "name":"Cornulețe cu rahat",
+            "description":"Făină, zahăr, unt, esențe, borș natural, rahat - 1kg",
+            "price":70
+         },
+         {
+            "name":"Amandine",
+            "description":"Făină, ouă, zahăr, amidon, cacao, unt, ciocolată, fondant, esență rom - 140g",
+            "price":8
+         },
+         {
+            "name":"Savarine",
+            "description":"Făină, zahăr, ou, drojdie, coajă lămâie, portocale, lapte, ulei, frișcă naturală, cireșe confiate, gem fructe - 300g",
+            "price":10
+         },
+         {
+            "name":"Boema",
+            "description":"Făină, ouă, zahăr, sare, amidon, cacao, ciocolată, fondant, frișcă naturală, esențe, coajă lămâie, portocale - 200g",
+            "price":10
+         },
+         {
+            "name":"Karamella",
+            "description":"Făină, ouă, zahăr, amidon, frișcă naturală, unt, alune caramelizate - 180g",
+            "price":10
+         },
+         {
+            "name":"Diplomat ",
+            "description":"Făină, ouă, zahăr, amidon, sare, mix fructe exotice, kiwi, cireșe confiate, portocale confiate, lapte, vanilina, frișcă naturală, decor fructe de sezon - 120g",
+            "price":10
+         },
+         {
+            "name":"Profiterol",
+            "description":"Făină, ouă, zahăr, amidon, sare, unt, lapte, ciocolată, frișcă naturală, vanilina - 250g",
+            "price":10
+         },
+         {
+            "name":"Eclere",
+            "description":"Făină, lapte, unt, zahăr, sare, amidon, ciocolată/fondant cofetărie - 70g",
+            "price":7
+         },
+         {
+            "name":"Brânzoaică",
+            "description":"Făină, brânză de vaci, stafide - 160g",
+            "price":6
+         }
+      ]
+   }
+}

@@ -1,0 +1,75 @@
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_main"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/linearLayout1">
+        <TextView
+            android:text="Cos de cumparaturi"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/title"
+            android:gravity="center_horizontal"
+            android:textStyle="bold|italic" />
+        <TextView
+            android:text="Verificati comanda"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:id="@+id/textView1"
+            android:textStyle="bold|italic"/>
+        <TextView
+            android:text="Eliminati produsele nedorite"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="42.9dp"
+            android:id="@+id/textView2"
+            android:gravity="center_horizontal"
+            android:textStyle="bold|italic"/>
+        <ScrollView
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="601.7dp"
+            android:id="@+id/scrollView1" >
+            <LinearLayout
+                android:orientation="vertical"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold|italic"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/shoppingCart" >
+            </LinearLayout>
+        </ScrollView>
+        <TextView
+            android:text="Pret final : 0 lei"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/finalPrice"
+            android:gravity="center_horizontal"
+            android:textStyle="bold|italic"/>
+        <Button
+            android:text="Finalizare comanda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/finalizareComanda" />
+    </LinearLayout>
+</RelativeLayout>

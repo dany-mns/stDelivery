@@ -281,3 +281,7 @@ E:\Facultate\An 3\IP\Proiect\stDelivery\obj\Debug\80\stamp\_ConvertResourcesCase
 E:\Facultate\An 3\IP\Proiect\stDelivery\obj\Debug\80\stamp\_GenerateJavaStubs.stamp
 E:\Facultate\An 3\IP\Proiect\stDelivery\obj\Debug\80\stamp\_GeneratePackageManagerJava.stamp
 E:\Facultate\An 3\IP\Proiect\stDelivery\obj\Debug\80\stamp\_ResolveLibraryProjectImports.stamp
+E:\Facultate\An 3\IP\Proiect\stDelivery\bin\Debug\DatabaseStDeliveryLibrary.dll
+E:\Facultate\An 3\IP\Proiect\stDelivery\bin\Debug\DatabaseStDeliveryLibrary.pdb
+E:\Facultate\An 3\IP\Proiect\stDelivery\obj\Debug\80\android\assets\DatabaseStDeliveryLibrary.dll
+E:\Facultate\An 3\IP\Proiect\stDelivery\obj\Debug\80\android\assets\DatabaseStDeliveryLibrary.dll.mdb

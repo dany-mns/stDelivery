@@ -1,1 +1,88 @@
-<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="100dp" android:paddingTop="16dp" android:paddingLeft="16dp" android:paddingRight="16dp" xmlns:android="http://schemas.android.com/apk/res/android"><RelativeLayout android:layout_height="0dp" android:layout_weight="0.5" android:layout_width="match_parent"><TextView android:id="@+id/textFoodName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="center" android:text="Nume de mancare" android:textSize="18sp" /><TextView android:id="@+id/textFoodDescription" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Descrierea mancarii" android:textSize="12sp" android:layout_below="@id/textFoodName" /><TextView android:id="@+id/textFoodPrice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_marginTop="10dp" android:textSize="14sp" android:text="$12" /></RelativeLayout><RelativeLayout android:layout_height="0dp" android:layout_weight="0.5" android:layout_width="match_parent"><TextView android:id="@+id/textStatusView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="14sp" android:text="Status:" android:layout_alignParentBottom="true" android:layout_marginBottom="9dp" /><TextView android:id="@+id/textStatus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="14sp" android:text="in stoc" android:layout_alignParentBottom="true" android:layout_marginBottom="9dp" android:layout_toRightOf="@id/textStatusView" android:layout_marginLeft="4dp" android:textStyle="bold" android:textColor="@android:color/holo_green_dark" /><ImageView android:id="@+id/btnAddFood" android:layout_width="30dp" android:layout_height="30dp" android:layout_alignParentBottom="true" android:layout_alignParentRight="true" android:src="@android:drawable/ic_input_add" android:layout_marginBottom="6dp" /><View android:layout_height="1dp" android:layout_width="match_parent" android:background="#c2c2c2" android:layout_alignParentBottom="true" /></RelativeLayout></LinearLayout>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+	android:paddingTop="16dp"
+	android:paddingLeft="16dp"
+	android:paddingRight="16dp">
+
+	<RelativeLayout
+		android:layout_height="0dp"
+		android:layout_weight="0.5"
+		android:layout_width="match_parent">
+	<TextView
+		android:id="@+id/textFoodName"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:text="Nume de mancare"
+		android:textSize="18sp"/>
+	
+	<TextView
+		android:id="@+id/textFoodDescription"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Descrierea mancarii"
+		android:textSize="12sp"
+		android:layout_below="@id/textFoodName"/>
+
+	<TextView
+		android:id="@+id/textFoodPrice"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentRight="true"
+		android:layout_marginTop="10dp"
+		android:textSize="14sp"
+		android:text="$12"/>
+
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:layout_height="0dp"
+		android:layout_weight="0.5"
+		android:layout_width="match_parent">
+
+		<TextView 
+			android:id="@+id/textStatusView"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="14sp"
+			android:text="Status:"
+			android:layout_alignParentBottom="true"
+			android:layout_marginBottom="9dp"/>
+
+		<TextView 
+			android:id="@+id/textStatus"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="14sp"
+			android:text="in stoc"
+			android:layout_alignParentBottom="true"
+			android:layout_marginBottom="9dp"
+			android:layout_toRightOf="@id/textStatusView"
+			android:layout_marginLeft="4dp"
+			android:textStyle="bold"
+			android:textColor="@android:color/holo_green_dark"
+		/>
+
+		<ImageView
+			android:id="@+id/btnAddFood"
+			android:layout_width="30dp"
+			android:layout_height="30dp"
+			android:layout_alignParentBottom="true"
+			android:layout_alignParentRight="true"
+			android:src="@android:drawable/ic_input_add"
+			android:layout_marginBottom="6dp"
+		/>
+
+		<View 
+			android:layout_height="1dp"
+			android:layout_width="match_parent"
+			android:background="#c2c2c2"
+			android:layout_alignParentBottom="true"
+		/>
+			
+	</RelativeLayout>
+
+</LinearLayout>

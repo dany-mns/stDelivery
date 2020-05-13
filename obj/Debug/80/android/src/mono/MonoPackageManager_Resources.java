@@ -3,6 +3,7 @@ public class MonoPackageManager_Resources {
 	public static String[] Assemblies = new String[]{
 		/* We need to ensure that "stDelivery.dll" comes first in this list. */
 		"stDelivery.dll",
+		"DatabaseStDeliveryLibrary.dll",
 		"Newtonsoft.Json.dll",
 		"SMTP.dll",
 		"SQLite-net.dll",

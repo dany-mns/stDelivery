@@ -1,1 +1,52 @@
-<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" xmlns:tools="http://schemas.android.com/tools" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android"><android.support.v7.widget.Toolbar android:id="@+id/toolbar" android:layout_height="wrap_content" android:layout_width="match_parent" android:background="@color/colorPrimary" android:minHeight="?android:attr/actionBarSize"><RelativeLayout android:layout_height="wrap_content" android:layout_width="match_parent"><ImageView android:id="@+id/btnAddFood" android:layout_width="40dp" android:layout_height="40dp" android:src="@android:drawable/btn_star_big_on" /><TextView android:id="@+id/btnFinishBuy" android:layout_centerVertical="true" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_marginRight="10dp" android:gravity="right" android:text="Cos cumparaturi" android:textStyle="bold" android:textColor="#FFF" android:textSize="25sp"></TextView></RelativeLayout></android.support.v7.widget.Toolbar><android.support.v7.widget.RecyclerView android:id="@+id/myRecyclerView" android:layout_height="match_parent" android:layout_width="match_parent" android:scrollbars="vertical" android:background="#e2e2e2"></android.support.v7.widget.RecyclerView></LinearLayout>
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+	<android.support.v7.widget.Toolbar
+		android:id="@+id/toolbar"
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:background="@color/colorPrimary"
+		android:minHeight="?android:attr/actionBarSize">
+
+	<RelativeLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent">
+
+		
+		<ImageView
+			android:id="@+id/btnAddFood"
+			android:layout_width="40dp"
+			android:layout_height="40dp"
+			android:src="@android:drawable/btn_star_big_on"
+		/>
+
+		<TextView 
+			android:id="@+id/btnFinishBuy"
+			android:layout_centerVertical="true"
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:layout_marginRight="10dp"
+			android:gravity="right"
+			android:text="Cos cumparaturi"
+			android:textStyle="bold"
+			android:textColor="#FFF"
+			android:textSize = "25sp">
+		</TextView>
+	</RelativeLayout>
+	</android.support.v7.widget.Toolbar>
+
+	<android.support.v7.widget.RecyclerView
+		android:id="@+id/myRecyclerView"
+		android:layout_height="match_parent"
+		android:layout_width="match_parent"
+		android:scrollbars="vertical"
+		android:background="#e2e2e2">
+	</android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

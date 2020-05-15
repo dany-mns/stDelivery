@@ -75,7 +75,29 @@ namespace stDelivery
             EditText CityText = FindViewById<EditText>(Resource.Id.CityText);
             String AdressText = StreetText.Text.ToString() + "|" + StreetNumberText.Text.ToString() + "|" + BlText.Text.ToString() + "|"
                 + ScText.Text.ToString() + "|" + ApText.Text.ToString() + "|" + CityText.Text.ToString();
-            if (pass1Text.Text.ToString() == pass2Text.Text.ToString())
+            if(NameText.Text=="" || EmailText.Text=="" || PhoneText.Text=="" || pass1Text.Text=="" || pass2Text.Text=="" || StreetText.Text==""
+                || CityText.Text == "" || BlText.Text=="")
+            {
+                View view = (View)sender;
+                Snackbar.Make(view,"Nu lasati campuri necompletate!", Snackbar.LengthLong)
+                    .SetAction("Action", (Android.Views.View.IOnClickListener)null).Show();
+                return;
+            }
+            if (pass1Text.Text.Length < 8 || pass2Text.Text.Length < 8)
+            {
+                View view = (View)sender;
+                Snackbar.Make(view, "Introduceti o parola de cel putin 8 caractere!", Snackbar.LengthLong)
+                    .SetAction("Action", (Android.Views.View.IOnClickListener)null).Show();
+                return;
+            }
+            if (!IsValidEmail(EmailText.Text))
+            {
+                View view = (View)sender;
+                Snackbar.Make(view, "Email invalid!", Snackbar.LengthLong)
+                    .SetAction("Action", (Android.Views.View.IOnClickListener)null).Show();
+                return;
+            }
+            if (pass1Text.Text.ToString() == pass2Text.Text.ToString() && pass1Text.Text.ToString()!="")
             {
 
 
@@ -122,6 +144,19 @@ namespace stDelivery
         {
             Intent loginActivity = new Intent(this, typeof(LoginActivity));
             StartActivity(loginActivity);
+        }
+
+        bool IsValidEmail(string email)
+        {
+            try
+            {
+                var addr = new System.Net.Mail.MailAddress(email);
+                return addr.Address == email;
+            }
+            catch
+            {
+                return false;
+            }
         }
     }
 }

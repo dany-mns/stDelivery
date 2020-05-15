@@ -10,8 +10,31 @@ using Android.Views;
 using Android.Widget;
 using System.Security.Cryptography;
 
+
+/**************************************************************************
+ *                                                                        *
+ *  File:        LoginActivity.cs                                         *
+ *  Copyright:   (c) 2020, Zalinca Claudiu                                *
+ *  E-mail:      claudiu-serban.zalinca@student.tuiasi.ro                 *
+ *  Website:     http://127.0.0.1                                         *
+ *  Description: The activity for login                                   *
+ *                                                                        *
+ *  This program is free software; you can redistribute it and/or modify  *
+ *  it under the terms of the GNU General Public License as published by  *
+ *  the Free Software Foundation. This program is distributed in the      *
+ *  hope that it will be useful, but WITHOUT ANY WARRANTY; without even   *
+ *  the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR   *
+ *  PURPOSE. See the GNU General Public License for more details.         *
+ *                                                                        *
+ **************************************************************************/
+
+
 namespace stDelivery
 {
+    /// <summary>
+    /// LoginActivity class handles the login activity 
+    /// Provides logic to login in application using email and password and also in case the user doesn't have an account he can creates one 
+    /// </summary>
     
     [Activity(Label = "StDelivery", Theme = "@style/AppTheme.NoActionBar", MainLauncher = true)]
     public class LoginActivity : AppCompatActivity
@@ -36,38 +59,13 @@ namespace stDelivery
 
             
             db.createDatabase();
-
-            
-
-           // db.InsertUserIntoTable(user);
-            
-            /*Android.Support.V7.Widget.Toolbar toolbar = FindViewById<Android.Support.V7.Widget.Toolbar>(Resource.Id.toolbar);
-            SetSupportActionBar(toolbar);
-
-            FloatingActionButton fab = FindViewById<FloatingActionButton>(Resource.Id.fab);
-            fab.Click += FabOnClick;*/
         }
 
-        /*public override bool OnCreateOptionsMenu(IMenu menu)
+        /// <summary>
+        /// Event of click on register button
+        /// Move to Register Activity
+        /// </summary>
        
-
-        public override bool OnOptionsItemSelected(IMenuItem item)
-        {
-            int id = item.ItemId;
-            if (id == Resource.Id.action_settings)
-            {
-                return true;
-            }
-
-            return base.OnOptionsItemSelected(item);
-        }
-
-        private void FabOnClick(object sender, EventArgs eventArgs)
-        {
-            View view = (View) sender;
-            Snackbar.Make(view, "Replace with your own action", Snackbar.LengthLong)
-                .SetAction("Action", (Android.Views.View.IOnClickListener)null).Show();
-        }*/
 
         private void RegisterClick(Object sender, EventArgs eventArgs)
         {
@@ -76,6 +74,12 @@ namespace stDelivery
             
         }
 
+        /// <summary>
+        /// Event of click on login button
+        /// Check the informations provided by the user in the database and log the user in if he has an account
+        /// Also, if the user has a valid account is moved to the next activity to use the service
+        /// </summary>
+        
         private void LoginClick(Object sender, EventArgs eventArgs)
         {
             try
@@ -92,7 +96,7 @@ namespace stDelivery
                 else
                 {
                     View view = (View)sender;
-                    Snackbar.Make(view, "Email sau parola gresita!"+db.userNumber().ToString(), Snackbar.LengthLong)
+                    Snackbar.Make(view, "Email sau parola gresita!", Snackbar.LengthLong)
                         .SetAction("Action", (Android.Views.View.IOnClickListener)null).Show();
                 }
                 

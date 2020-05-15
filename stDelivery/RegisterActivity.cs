@@ -1,23 +1,38 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-using Android.App;
+﻿using Android.App;
 using Android.Content;
 using Android.OS;
-using Android.Runtime;
 using Android.Support.Design.Widget;
 using Android.Views;
 using Android.Widget;
-using System.Security.Cryptography;
+using System;
+
+/**************************************************************************
+ *                                                                        *
+ *  File:        RegisterActivity.cs                                      *
+ *  Copyright:   (c) 2020, Zalinca Claudiu                                *
+ *  E-mail:      claudiu-serban.zalinca@student.tuiasi.ro                 *
+ *  Website:     http://127.0.0.1                                         *
+ *  Description: The activity for register a new account                  *
+ *                                                                        *
+ *  This program is free software; you can redistribute it and/or modify  *
+ *  it under the terms of the GNU General Public License as published by  *
+ *  the Free Software Foundation. This program is distributed in the      *
+ *  hope that it will be useful, but WITHOUT ANY WARRANTY; without even   *
+ *  the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR   *
+ *  PURPOSE. See the GNU General Public License for more details.         *
+ *                                                                        *
+ **************************************************************************/
 
 namespace stDelivery
 {
+    /// <summary>
+    /// RegisterActivity class provides the logic for register activity, creating a valid account and store it in the database
+    /// </summary>
     [Activity(Label = "Register")]
     public class RegisterActivity : Activity
     {
         Database db;
+       
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -34,6 +49,12 @@ namespace stDelivery
             
         }
 
+        /// <summary>
+        /// Event of regiser click
+        /// If the datas are valid, it creates an account and store it in the database
+        /// If the account is created successfully then the user is moved to the login activity to log in in the application
+        /// </summary>
+        
         public void RegisterCl(Object sender, EventArgs eventArgs)
         {
             EditText NameText = FindViewById<EditText>(Resource.Id.NameText);
@@ -91,6 +112,11 @@ namespace stDelivery
 
 
         }
+
+        /// <summary>
+        /// Back button event click it moves the user back to the login without creating an account
+        /// </summary>
+        
         public void BackCl(Object sender, EventArgs eventArgs)
         {
             Intent loginActivity = new Intent(this, typeof(LoginActivity));

@@ -1,4 +1,4 @@
-# stDelivery - Danny Manastireanu
+# stDelivery - Zalinca Claudiu-Serban
 <p align="center">
 	<a href="https://github.com/dannymanastireanu/stDelivery/tree/claudiu"><img src="https://i.imgur.com/DYA6W4h.jpg" title="VS" alt="VS"></a>
 </p>

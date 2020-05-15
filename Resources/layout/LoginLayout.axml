@@ -8,7 +8,8 @@
     android:minWidth="25px"
     android:minHeight="25px">
     <TextView
-        android:text="Title"
+        android:text="stDelivery"
+		android:textSize="30sp"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

@@ -30,7 +30,11 @@ using Android.Widget;
 
 namespace stDelivery.Kitchen
 {
-    public class Desert : IFood
+
+    /// <summary>
+    /// Desert view
+    /// </summary>
+    public class Desert : Food
     {
     }
 }

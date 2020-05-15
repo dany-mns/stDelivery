@@ -18,9 +18,9 @@ namespace stDelivery.Adapter
         public event EventHandler<FoodAdapterClickEventArgs> ItemLongClick;
         public event EventHandler<FoodAdapterClickEventArgs> ItemBuyClick;
 
-        public IFood foods;
+        public Food foods;
 
-        public FoodAdapter(IFood data)
+        public FoodAdapter(Food data)
         {
             foods = data;
         }

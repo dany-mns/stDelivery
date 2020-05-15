@@ -31,6 +31,10 @@ using Android.Widget;
 
 namespace stDelivery.Kitchen
 {
+
+    /// <summary>
+    /// Menu with 3 principal category name, description and price
+    /// </summary>
     public class Menuitem
     {
         public string Name { get; set; }

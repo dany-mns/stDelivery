@@ -30,7 +30,11 @@ using Android.Widget;
 
 namespace stDelivery.Kitchen
 {
-    public class Paste : IFood
+
+    /// <summary>
+    /// Paste view
+    /// </summary>
+    public class Paste : Food
     {
     }
 }

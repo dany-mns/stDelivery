@@ -316,7 +316,7 @@ namespace stDelivery
         /// </summary>
         /// <param name="cart">The shoppinh cart object containing the products that have a name and a price</param>
         /// <returns>The total price</returns>
-        private int PriceCommand(IFood cart)
+        private int PriceCommand(Food cart)
         {
             int price = 0;
             cart.menuitem.ForEach(product => price += product.Price);

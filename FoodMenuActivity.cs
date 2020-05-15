@@ -42,25 +42,27 @@ namespace stDelivery
 	public class FoodMenuActivity : Activity
 	{
 		private FoodFactory _foodFactory;
-		private IFood _foods;
+		private Food _foods;
 
 		//User controls
 		private RecyclerView _recyclerView;
 		private TextView _btnFinish;
 
-		protected override void OnCreate(Bundle savedInstanceState)
+        /// <summary>
+        /// Get user selected type of foods
+        /// Init RecyclerView view and populate withe foods selected
+        /// </summary>
+        protected override void OnCreate(Bundle savedInstanceState)
 		{
 			base.OnCreate(savedInstanceState);
 			SetContentView(Resource.Layout.FoodMenuActivity);
 
 			_btnFinish = (TextView)FindViewById(Resource.Id.btnFinishBuy);
 			_recyclerView = (RecyclerView)FindViewById(Resource.Id.myRecyclerView);
-
-			//Get user selected type of foods
+            
 			int typeFood = Intent.GetIntExtra("Type", -1);
 			this._foods = GetSpecificFood(typeFood);
-
-			// Init RecyclerView view and populate withe foods selected
+            
 			SetupRecyclerView();
 
 			_btnFinish.Click += delegate
@@ -118,7 +120,7 @@ namespace stDelivery
         /// The factory or null in case of bad user choice.
         /// </returns>
         /// <param name="typeFood">An integer which specify user choice.</param>
-        private IFood GetSpecificFood(int typeFood)
+        private Food GetSpecificFood(int typeFood)
 		{
 
 			if (typeFood != -1)

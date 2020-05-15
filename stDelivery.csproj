@@ -35,6 +35,8 @@
     <AndroidUseSharedRuntime>True</AndroidUseSharedRuntime>
     <AndroidLinkMode>None</AndroidLinkMode>
     <EmbedAssembliesIntoApk>False</EmbedAssembliesIntoApk>
+    <DocumentationFile>bin\Debug\stDelivery.xml</DocumentationFile>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>PdbOnly</DebugType>
@@ -73,7 +75,7 @@
     <Compile Include="Kitchen\Food\Paste.cs" />
     <Compile Include="Kitchen\Restaurant.cs" />
     <Compile Include="Kitchen\Food\Desert.cs" />
-    <Compile Include="Kitchen\Food\IFood.cs" />
+    <Compile Include="Kitchen\Food\Food.cs" />
     <Compile Include="Kitchen\FoodFactory.cs" />
     <Compile Include="Kitchen\Food\Hamburger.cs" />
     <Compile Include="Kitchen\Food\Pizza.cs" />
@@ -203,9 +205,7 @@
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Stefan\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <AndroidResource Include="Resources\layout\ShoppingCart.xml" />
   </ItemGroup>

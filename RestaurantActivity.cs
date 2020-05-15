@@ -31,6 +31,10 @@ using stDelivery.Kitchen;
 namespace stDelivery
 {
     [Activity(Label = "@string/app_name", Theme = "@style/AppTheme.NoActionBar")]
+
+    /// <summary>
+    /// RestaurantActivity for menu view
+    /// </summary>
     public class RestaurantActivity : AppCompatActivity
     {
         private RestaurantFactory restaurantFactory;
@@ -38,6 +42,8 @@ namespace stDelivery
 
         /// <summary>
         /// The main entry point for the application food select.
+        /// First and unique init of restaurant (singleton)
+        /// Start correct view based on user choice
         /// </summary>
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -46,11 +52,17 @@ namespace stDelivery
 
             // First and unique init of restaurant (singleton)
             string restaurantFoods = "food-menu.json";
-            restaurantFactory = RestaurantFactory.GetInstance(this.Assets, restaurantFoods);
+            try
+            {
+                restaurantFactory = RestaurantFactory.GetInstance(this.Assets, restaurantFoods);
+            } catch (Exception exp)
+            {
+                Log.Info("myapp", "Fail on read: " + exp.Message);
+            }
             Restaurant restaurant = restaurantFactory.Restaurant;
 
 
-            // Start corect view based on user choice
+            // Start correct view based on user choice
             var btnPizza = FindViewById(Resource.Id.btnPizza);
             btnPizza.Click += delegate
             {

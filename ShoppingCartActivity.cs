@@ -47,7 +47,7 @@ namespace stDelivery
 
             Button finishCommand = FindViewById<Button>(Resource.Id.finalizareComanda);
             LinearLayout shoppingCart = FindViewById<LinearLayout>(Resource.Id.shoppingCart);
-            IFood cart = GlobalVariables.currentUser.ShoppingCart;
+            Food cart = GlobalVariables.currentUser.ShoppingCart;
             this.DrawCart(shoppingCart, cart);
 
             finishCommand.Click += (object sender, System.EventArgs e) =>
@@ -93,7 +93,7 @@ namespace stDelivery
         /// </summary>
         /// <param name="shoppingCart">The layout in the graphical interface that will contain the cart list</param>
         /// <param name="cart">The shopping cart object which contains the products to be added in the list</param>
-        private void DrawCart(LinearLayout shoppingCart, IFood cart)
+        private void DrawCart(LinearLayout shoppingCart, Food cart)
         {
             shoppingCart.RemoveAllViews();
             //shoppingCart.AddView(this.SetShoppingCartHeader());
@@ -167,7 +167,7 @@ namespace stDelivery
         /// </summary>
         /// <param name="cart">The shoppinh cart object containing the products that have a name and a price</param>
         /// <returns>The total price</returns>
-        private int PriceCommand(IFood cart)
+        private int PriceCommand(Food cart)
         {
             int price = 0;
             cart.menuitem.ForEach(product => price += product.Price);

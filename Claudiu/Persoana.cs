@@ -27,14 +27,14 @@ namespace stDelivery
     public class Persoana
     {
         public User Client { get; set; }
-        public IFood ShoppingCart { get => _shoppingCart; set => _shoppingCart = value; }
+        public Food ShoppingCart { get => _shoppingCart; set => _shoppingCart = value; }
 
-        private IFood _shoppingCart;
+        private Food _shoppingCart;
 
         public Persoana(User user)
         {
             this.Client = user;
-            _shoppingCart = new IFood();
+            _shoppingCart = new Food();
         }
 
         

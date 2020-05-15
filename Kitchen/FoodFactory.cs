@@ -7,6 +7,7 @@ using Android.App;
 using Android.Content;
 using Android.OS;
 using Android.Runtime;
+using Android.Util;
 using Android.Views;
 using Android.Widget;
 using stDelivery.Kitchen;
@@ -35,7 +36,7 @@ namespace stDelivery.Kitchen
     /// The main FoodFactory class.
     /// Contains method for performing return food reference based on user choice.
     /// </summary>
-    class FoodFactory
+    public class FoodFactory
     {
         private TypeOfFood _tf;
         private RestaurantFactory _factory;
@@ -43,11 +44,17 @@ namespace stDelivery.Kitchen
         public FoodFactory(TypeOfFood tf)
         {
             this._tf = tf;
-            this._factory = RestaurantFactory.GetInstance(null, "");
+            try
+            {
+                this._factory = RestaurantFactory.GetInstance(null, "food-menu.json");
+            } catch (Exception exp)
+            {
+                Log.Info("myapp", "Fail on read: " + exp.Message);
+            }
         }
 
         // Get a reference on food user choice.
-        public IFood prepareFoods()
+        public Food prepareFoods()
         {
             switch (this._tf)
             {

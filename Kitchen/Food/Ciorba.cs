@@ -31,7 +31,10 @@ using Android.Widget;
 
 namespace stDelivery.Kitchen
 {
-    public class Ciorba : IFood
+    /// <summary>
+    /// Ciorba view
+    /// </summary>
+    public class Ciorba : Food
     {
     }
 }

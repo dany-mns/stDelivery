@@ -1,0 +1,316 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>stDelivery</name>
+    </assembly>
+    <members>
+        <member name="M:stDelivery.Adapter.FoodAdapter.OnCreateViewHolder(Android.Views.ViewGroup,System.Int32)">
+            <summary>
+            Create new views (invoked by the layout manager)
+            </summary>
+            See <see cref="T:Android.Views.View"/> to get more information about android views.
+            <param name="parent">Get main context.</param>
+            <param name="viewType">Unused.</param>
+        </member>
+        <member name="T:stDelivery.Adapter.FoodAdapterViewHolder">
+            <summary>
+            In principle is for populate entire screen after user choices with a type of food.
+            </summary>
+        </member>
+        <member name="T:stDelivery.Crypt">
+            <summary>
+            Class that contains methods for crypting
+            </summary>
+        </member>
+        <member name="M:stDelivery.Crypt.SHA256hash(System.String)">
+            <summary>
+            Method that crypts a string using SHA256 algorithm
+            Method used to introduce the crypted password in database and to check it in case of login
+            </summary>
+            <param name="pass">The string we want to crypt</param>
+            <returns>the password crypted</returns>
+        </member>
+        <member name="T:stDelivery.Persoana">
+            <summary>
+            Class used to store all the informations of the current user that the application needs to process
+            </summary>
+        </member>
+        <member name="T:stDelivery.GlobalVariables">
+            <summary>
+            Class used for global variables
+            Provides the current user instance to all activities
+            </summary>
+        </member>
+        <member name="T:stDelivery.FinishOrderActivity">
+            <summary>
+            The FinishOrderActivity class that handles the logic of the last activity of the application.
+            It contains a form about placing the command and the posibility to successfully send the command by sending an email to the client
+            </summary>
+        </member>
+        <member name="F:stDelivery.FinishOrderActivity._selectedPaymentMethod">
+            <summary>
+            The selected payment method modified from the graphical interface.
+            </summary>
+        </member>
+        <member name="F:stDelivery.FinishOrderActivity._toast">
+            <summary>
+            The Toast object display at the command send button press or in case of an error
+            </summary>
+        </member>
+        <member name="F:stDelivery.FinishOrderActivity._toastMessage">
+            <summary>
+            The Toast object text content
+            </summary>
+        </member>
+        <member name="M:stDelivery.FinishOrderActivity.OnCreate(Android.OS.Bundle)">
+            <summary>
+            The class constructor that creates the object which hold the representation of each view, which set 
+            the values for the Spinner (combobex representing the payment method and the auto complete of the form).
+            It also handles the logic of the page by calling subsequenct functions and by adding callback functions to the objects.
+            </summary>
+        </member>
+        <member name="M:stDelivery.FinishOrderActivity.AutoComplete(System.Collections.Generic.Dictionary{System.String,Android.Views.View})">
+            <summary>
+            This callback function is used at the selection of the autocomplete button in the Spinner of the graphical interface.
+            It takes the "User" object fields and replaces the forms values.
+            </summary>
+            <param name="credentials">The dictionary that contains a key : value pair as a way to identify the form elements.</param>
+        </member>
+        <member name="M:stDelivery.FinishOrderActivity.StatusCredentials(System.Collections.Generic.Dictionary{System.String,Android.Views.View})">
+            <summary>
+            This function is used to verify the validity of the form fields inputs. It is necessary to have all the 
+            fields completed and the Checkbox elements checked.
+            </summary>
+            <param name="credentials">The dictionary that contains a key : value pair as a way to identify the form elements.</param>
+            <returns>The validity of the verification</returns>
+        </member>
+        <member name="M:stDelivery.FinishOrderActivity.SendCommand(System.Collections.Generic.Dictionary{System.String,Android.Views.View})">
+            <summary>
+            This callback function is used at the selecting of the send command button. It display a _toast message of the status 
+            of the command. If the verification of the form is valid, it used a Email DLL to send an email to the client. If the 
+            verification is not valid, it display an error message.
+            </summary>
+            <param name="mainActivity">The main activity context</param>
+            <param name="credentials">The dictionary that contains a key : value pair as a way to identify the form elements.</param>
+        </member>
+        <member name="M:stDelivery.FinishOrderActivity.SetSpinner(Android.Widget.Spinner,System.String[])">
+            <summary>
+            This function set the Spinner elements possible values.
+            </summary>
+            <param name="spinner">The spinner element in the graphical interface</param>
+            <param name="contactDataOptions">The values to be set</param>
+        </member>
+        <member name="M:stDelivery.FinishOrderActivity.BuildEmailBody(System.Collections.Generic.Dictionary{System.String,Android.Views.View})">
+            <summary>
+            This function is used at the email sending and it build the email body by taking all the fields in the form and
+            building a beautiful string.
+            </summary>
+            <param name="credentials">The dictionary that contains a key : value pair as a way to identify the form elements.</param>
+            <returns>The string that will be the body of the email</returns>
+        </member>
+        <member name="M:stDelivery.FinishOrderActivity.PriceCommand(stDelivery.Kitchen.Food)">
+            <summary>
+            This function takes the shopping cart object and calculates the total price of the command
+            </summary>
+            <param name="cart">The shoppinh cart object containing the products that have a name and a price</param>
+            <returns>The total price</returns>
+        </member>
+        <member name="T:stDelivery.Kitchen.RestaurantFactory">
+            <summary>
+            The main RestaurantFactory class.
+            Contains method for performing restaurant creation based on input file and retain this
+            restaurant until user shutdown the app.
+            </summary>
+        </member>
+        <member name="M:stDelivery.Kitchen.RestaurantFactory.#ctor(System.String,Android.Content.Res.AssetManager)">
+            <summary>
+            Init singleton
+            </summary>
+            <param name="fileName">To specify name of restaurant(json file) with specific foods.</param>
+            <param name="asset">llows you to open and read raw files that have been bundled with the application as a simple stream of bytes.</param>
+        </member>
+        <member name="M:stDelivery.Kitchen.RestaurantFactory.GetInstance(Android.Content.Res.AssetManager,System.String)">
+            <summary>
+            Get instance the singletone restaurant where you need
+            </summary>
+            <param name="fileName">To specify name of restaurant(json file) with specific foods.</param>
+            <param name="asset">llows you to open and read raw files that have been bundled with the application as a simple stream of bytes.</param>
+        </member>
+        <member name="T:stDelivery.Kitchen.Ciorba">
+            <summary>
+            Ciorba view
+            </summary>
+        </member>
+        <member name="T:stDelivery.Kitchen.Menuitem">
+            <summary>
+            Menu with 3 principal category name, description and price
+            </summary>
+        </member>
+        <member name="T:stDelivery.Kitchen.Paste">
+            <summary>
+            Paste view
+            </summary>
+        </member>
+        <member name="T:stDelivery.Kitchen.Restaurant">
+            <summary>
+            Main root json deserialization
+            </summary>
+        </member>
+        <member name="T:stDelivery.Kitchen.Desert">
+            <summary>
+            Desert view
+            </summary>
+        </member>
+        <member name="T:stDelivery.Kitchen.TypeOfFood">
+            <summary>
+            The enumerable fodd.
+            Contains all foods for performing basic food generation.
+            </summary>
+        </member>
+        <member name="T:stDelivery.Kitchen.FoodFactory">
+            <summary>
+            The main FoodFactory class.
+            Contains method for performing return food reference based on user choice.
+            </summary>
+        </member>
+        <member name="T:stDelivery.Kitchen.Hamburger">
+            <summary>
+            Hamburger view
+            </summary>
+        </member>
+        <member name="T:stDelivery.Kitchen.Pizza">
+            <summary>
+            Pizza view
+            </summary>
+        </member>
+        <member name="T:stDelivery.Kitchen.Salata">
+            <summary>
+            Salata view
+            </summary>
+        </member>
+        <member name="M:stDelivery.FoodMenuActivity.OnCreate(Android.OS.Bundle)">
+            <summary>
+            Get user selected type of foods
+            Init RecyclerView view and populate withe foods selected
+            </summary>
+        </member>
+        <member name="M:stDelivery.FoodMenuActivity.SetupRecyclerView">
+            <summary>
+            Init recycler view for performace.
+            </summary>
+        </member>
+        <member name="M:stDelivery.FoodMenuActivity.Adapter_BuyItemClick(System.Object,stDelivery.Adapter.FoodAdapterClickEventArgs)">
+            <summary>
+            Adds food in cart shop or not.
+            </summary>
+            See <see cref="T:stDelivery.Adapter.FoodAdapterClickEventArgs"/> to use adapter click event.
+            <param name="sender">Unused in this function.</param>
+            <param name="e">Get selected element.</param>
+        </member>
+        <member name="M:stDelivery.FoodMenuActivity.GetSpecificFood(System.Int32)">
+            <summary>
+            Make the food factory
+            </summary>
+            <returns>
+            The factory or null in case of bad user choice.
+            </returns>
+            <param name="typeFood">An integer which specify user choice.</param>
+        </member>
+        <member name="M:stDelivery.RestaurantActivity.OnCreate(Android.OS.Bundle)">
+            <summary>
+            The main entry point for the application food select.
+            First and unique init of restaurant (singleton)
+            Start correct view based on user choice
+            </summary>
+        </member>
+        <member name="T:stDelivery.LoginActivity">
+            <summary>
+            LoginActivity class handles the login activity 
+            Provides logic to login in application using email and password and also in case the user doesn't have an account he can creates one 
+            </summary>
+        </member>
+        <member name="M:stDelivery.LoginActivity.OnCreate(Android.OS.Bundle)">
+            <summary>
+            The function which is called when the LoginActivity starts
+            </summary>
+        </member>
+        <member name="M:stDelivery.LoginActivity.RegisterClick(System.Object,System.EventArgs)">
+            <summary>
+            Event of click on register button
+            Move to Register Activity
+            </summary>
+        </member>
+        <member name="M:stDelivery.LoginActivity.LoginClick(System.Object,System.EventArgs)">
+            <summary>
+            Event of click on login button
+            Check the informations provided by the user in the database and log the user in if he has an account
+            Also, if the user has a valid account is moved to the next activity to use the service
+            </summary>
+        </member>
+        <member name="T:stDelivery.RegisterActivity">
+            <summary>
+            RegisterActivity class provides the logic for register activity, creating a valid account and store it in the database
+            </summary>
+        </member>
+        <member name="M:stDelivery.RegisterActivity.OnCreate(Android.OS.Bundle)">
+            <summary>
+            The function which is called when the RegisterActivity starts
+            </summary>
+        </member>
+        <member name="M:stDelivery.RegisterActivity.RegisterCl(System.Object,System.EventArgs)">
+            <summary>
+            Event of regiser click
+            If the datas are valid, it creates an account and store it in the database
+            If the account is created successfully then the user is moved to the login activity to log in in the application
+            </summary>
+        </member>
+        <member name="M:stDelivery.RegisterActivity.BackCl(System.Object,System.EventArgs)">
+            <summary>
+            Back button event click it moves the user back to the login without creating an account
+            </summary>
+        </member>
+        <member name="T:stDelivery.ShoppingCartActivity">
+            <summary>
+            This class implements the logic of building the shopping cart.
+            It also provides methods for deleting products from the shopping cart.
+            </summary>
+        </member>
+        <member name="M:stDelivery.ShoppingCartActivity.OnCreate(Android.OS.Bundle)">
+            <summary>
+            The class constructor that handles the logic of the shopping cart activity.
+            It defines the using of the main components of the activity and also add a callback function to the button
+            </summary>
+        </member>
+        <member name="M:stDelivery.ShoppingCartActivity.SetShoppingCartHeader">
+            <summary>
+            This function sets the shopping cart list header.
+            It creates two TextView elements and put into a LinearLayout.
+            </summary>
+            <returns>The layout containing the elements that will be added as the first element in the shopping cart</returns>
+        </member>
+        <member name="M:stDelivery.ShoppingCartActivity.DrawCart(Android.Widget.LinearLayout,stDelivery.Kitchen.Food)">
+            <summary>
+            This function creates the shopping cart list. As the first element, it has the header previously created.
+            Then, each element from the shopping cart object in used to generate a label that will be added in the list.
+            There is implemented the posibility of deleting a object from the shopping list.
+            It also handles the view that contains the information about the final price.
+            </summary>
+            <param name="shoppingCart">The layout in the graphical interface that will contain the cart list</param>
+            <param name="cart">The shopping cart object which contains the products to be added in the list</param>
+        </member>
+        <member name="M:stDelivery.ShoppingCartActivity.PriceCommand(stDelivery.Kitchen.Food)">
+            <summary>
+            This function takes the shopping cart object and calculates the total price of the command
+            </summary>
+            <param name="cart">The shoppinh cart object containing the products that have a name and a price</param>
+            <returns>The total price</returns>
+        </member>
+        <member name="M:stDelivery.ShoppingCartActivity.ReplaceFinalPrice(System.Int32,Android.Widget.TextView)">
+            <summary>
+            This function updates the graphical interface view that represents the final price.
+            </summary>
+            <param name="price">The total command price calculated</param>
+            <param name="label">The view that contains the information about the price/</param>
+        </member>
+    </members>
+</doc>

@@ -25,7 +25,7 @@ namespace stDelivery
     /// <summary>
     /// Class that contains methods for crypting
     /// </summary>
-    class Crypt
+    public class Crypt
     {
         /// <summary>
         /// Method that crypts a string using SHA256 algorithm

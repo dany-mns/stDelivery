@@ -54,14 +54,9 @@ namespace stDelivery
 
             
             db = Database.Instance();
-
-            
-
             
             db.createDatabase();
-
             
-
         }
 
         /// <summary>

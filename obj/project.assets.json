@@ -905,26 +905,21 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\zalin\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\Administrator\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Facultate\\An 3\\IP\\Proiect\\stDelivery\\stDelivery.csproj",
+      "projectUniqueName": "D:\\A.C\\IP\\stDelivery - To modify\\stDelivery\\stDelivery.csproj",
       "projectName": "stDelivery",
-      "projectPath": "E:\\Facultate\\An 3\\IP\\Proiect\\stDelivery\\stDelivery.csproj",
-      "packagesPath": "C:\\Users\\zalin\\.nuget\\packages\\",
-      "outputPath": "E:\\Facultate\\An 3\\IP\\Proiect\\stDelivery\\obj\\",
+      "projectPath": "D:\\A.C\\IP\\stDelivery - To modify\\stDelivery\\stDelivery.csproj",
+      "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+      "outputPath": "D:\\A.C\\IP\\stDelivery - To modify\\stDelivery\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
-      "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\"
-      ],
       "configFilePaths": [
-        "C:\\Users\\zalin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "monoandroid80"

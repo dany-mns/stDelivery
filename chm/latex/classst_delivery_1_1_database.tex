@@ -1,0 +1,242 @@
+\hypertarget{classst_delivery_1_1_database}{}\section{st\+Delivery.\+Database Class Reference}
+\label{classst_delivery_1_1_database}\index{st\+Delivery.\+Database@{st\+Delivery.\+Database}}
+
+
+Class that provides methods to handle the database  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classst_delivery_1_1_database_a4f96c508240ac2400823813c5d39a61a}{create\+Database} ()
+\begin{DoxyCompactList}\small\item\em Method that makes the connection with the database and creates a table after \hyperlink{classst_delivery_1_1_user}{User} class model in case it doesn\textquotesingle{}t exist \end{DoxyCompactList}\item 
+bool \hyperlink{classst_delivery_1_1_database_ade64b128f02dcd31d50211940b5ba53c}{Insert\+User\+Into\+Table} (\hyperlink{classst_delivery_1_1_user}{User} user)
+\begin{DoxyCompactList}\small\item\em Method that introduce a new user in the database \end{DoxyCompactList}\item 
+List$<$ \hyperlink{classst_delivery_1_1_user}{User} $>$ \hyperlink{classst_delivery_1_1_database_ac2d2e378d6f56010d919aeb701e79f92}{Select\+Users} (\hyperlink{classst_delivery_1_1_user}{User} user)
+\begin{DoxyCompactList}\small\item\em Method that returns all the user from database as a list \end{DoxyCompactList}\item 
+bool \hyperlink{classst_delivery_1_1_database_a60b069ceff50d851b0ff76906c01df07}{Update\+User\+Into\+Table} (\hyperlink{classst_delivery_1_1_user}{User} user)
+\begin{DoxyCompactList}\small\item\em Method that updates an user account from database \end{DoxyCompactList}\item 
+bool \hyperlink{classst_delivery_1_1_database_a8f2fe918677772e104ead36f935e6aa4}{Delete\+User\+Into\+Table} (\hyperlink{classst_delivery_1_1_user}{User} user)
+\begin{DoxyCompactList}\small\item\em Delete a specific user from table \end{DoxyCompactList}\item 
+bool \hyperlink{classst_delivery_1_1_database_a44f6c1008ab4a8c9cc778e424aa23290}{Select\+User\+By\+Id} (int Id)
+\begin{DoxyCompactList}\small\item\em Method that returns the user with the id introduced as a argument \end{DoxyCompactList}\item 
+int \hyperlink{classst_delivery_1_1_database_afa81257b192afc5091c35e8af8e1cf09}{user\+Exists} (string email, string parola)
+\begin{DoxyCompactList}\small\item\em Method that checks if exists an account with the specific email and password in the table \end{DoxyCompactList}\item 
+\hyperlink{classst_delivery_1_1_user}{User} \hyperlink{classst_delivery_1_1_database_a860528216ec870d55b4b37a3400c9cf4}{get\+Current\+User} (string email, string parola)
+\begin{DoxyCompactList}\small\item\em Method that returns the user with the specific email and password \end{DoxyCompactList}\item 
+bool \hyperlink{classst_delivery_1_1_database_ad06ec86e4219cfa71dd3aaf34ee456b4}{clear\+Database} ()
+\begin{DoxyCompactList}\small\item\em Method that drops the table with all the users registered \end{DoxyCompactList}\item 
+int \hyperlink{classst_delivery_1_1_database_adf411e30963819101ad97c16caa00ff6}{email\+Exist} (string email)
+\begin{DoxyCompactList}\small\item\em Method that returns the number of users which have the email specified in arguments \end{DoxyCompactList}\item 
+int \hyperlink{classst_delivery_1_1_database_a150234bbfd66c0a5b2067de2ddc851cc}{user\+Number} ()
+\begin{DoxyCompactList}\small\item\em Method that returns the number of the all users registered \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classst_delivery_1_1_database}{Database} \hyperlink{classst_delivery_1_1_database_a460aa2a51464b7f4c098ba1e8a2aa213}{Instance} ()
+\begin{DoxyCompactList}\small\item\em Receive the instance of the database -\/$>$ Singleton pattern \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class that provides methods to handle the database 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classst_delivery_1_1_database_ad06ec86e4219cfa71dd3aaf34ee456b4}\label{classst_delivery_1_1_database_ad06ec86e4219cfa71dd3aaf34ee456b4}} 
+\index{st\+Delivery\+::\+Database@{st\+Delivery\+::\+Database}!clear\+Database@{clear\+Database}}
+\index{clear\+Database@{clear\+Database}!st\+Delivery\+::\+Database@{st\+Delivery\+::\+Database}}
+\subsubsection{\texorpdfstring{clear\+Database()}{clearDatabase()}}
+{\footnotesize\ttfamily bool st\+Delivery.\+Database.\+clear\+Database (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Method that drops the table with all the users registered 
+
+\begin{DoxyReturn}{Returns}
+a bool that represents if the method has been executed successfully
+\end{DoxyReturn}
+\mbox{\Hypertarget{classst_delivery_1_1_database_a4f96c508240ac2400823813c5d39a61a}\label{classst_delivery_1_1_database_a4f96c508240ac2400823813c5d39a61a}} 
+\index{st\+Delivery\+::\+Database@{st\+Delivery\+::\+Database}!create\+Database@{create\+Database}}
+\index{create\+Database@{create\+Database}!st\+Delivery\+::\+Database@{st\+Delivery\+::\+Database}}
+\subsubsection{\texorpdfstring{create\+Database()}{createDatabase()}}
+{\footnotesize\ttfamily bool st\+Delivery.\+Database.\+create\+Database (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Method that makes the connection with the database and creates a table after \hyperlink{classst_delivery_1_1_user}{User} class model in case it doesn\textquotesingle{}t exist 
+
+\begin{DoxyReturn}{Returns}
+a bool that represents if the method has been executed successfully
+\end{DoxyReturn}
+\mbox{\Hypertarget{classst_delivery_1_1_database_a8f2fe918677772e104ead36f935e6aa4}\label{classst_delivery_1_1_database_a8f2fe918677772e104ead36f935e6aa4}} 
+\index{st\+Delivery\+::\+Database@{st\+Delivery\+::\+Database}!Delete\+User\+Into\+Table@{Delete\+User\+Into\+Table}}
+\index{Delete\+User\+Into\+Table@{Delete\+User\+Into\+Table}!st\+Delivery\+::\+Database@{st\+Delivery\+::\+Database}}
+\subsubsection{\texorpdfstring{Delete\+User\+Into\+Table()}{DeleteUserIntoTable()}}
+{\footnotesize\ttfamily bool st\+Delivery.\+Database.\+Delete\+User\+Into\+Table (\begin{DoxyParamCaption}\item[{\hyperlink{classst_delivery_1_1_user}{User}}]{user }\end{DoxyParamCaption})}
+
+
+
+Delete a specific user from table 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & \hyperlink{classst_delivery_1_1_user}{User} to be deleted\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a bool that represents if the method has been executed successfully
+\end{DoxyReturn}
+\mbox{\Hypertarget{classst_delivery_1_1_database_adf411e30963819101ad97c16caa00ff6}\label{classst_delivery_1_1_database_adf411e30963819101ad97c16caa00ff6}} 
+\index{st\+Delivery\+::\+Database@{st\+Delivery\+::\+Database}!email\+Exist@{email\+Exist}}
+\index{email\+Exist@{email\+Exist}!st\+Delivery\+::\+Database@{st\+Delivery\+::\+Database}}
+\subsubsection{\texorpdfstring{email\+Exist()}{emailExist()}}
+{\footnotesize\ttfamily int st\+Delivery.\+Database.\+email\+Exist (\begin{DoxyParamCaption}\item[{string}]{email }\end{DoxyParamCaption})}
+
+
+
+Method that returns the number of users which have the email specified in arguments 
+
+
+\begin{DoxyParams}{Parameters}
+{\em email} & the email needed to be cheked if exists\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+number of users with the email introduced as an argument, in case of error -\/1
+\end{DoxyReturn}
+\mbox{\Hypertarget{classst_delivery_1_1_database_a860528216ec870d55b4b37a3400c9cf4}\label{classst_delivery_1_1_database_a860528216ec870d55b4b37a3400c9cf4}} 
+\index{st\+Delivery\+::\+Database@{st\+Delivery\+::\+Database}!get\+Current\+User@{get\+Current\+User}}
+\index{get\+Current\+User@{get\+Current\+User}!st\+Delivery\+::\+Database@{st\+Delivery\+::\+Database}}
+\subsubsection{\texorpdfstring{get\+Current\+User()}{getCurrentUser()}}
+{\footnotesize\ttfamily \hyperlink{classst_delivery_1_1_user}{User} st\+Delivery.\+Database.\+get\+Current\+User (\begin{DoxyParamCaption}\item[{string}]{email,  }\item[{string}]{parola }\end{DoxyParamCaption})}
+
+
+
+Method that returns the user with the specific email and password 
+
+
+\begin{DoxyParams}{Parameters}
+{\em email} & Email of the user\\
+\hline
+{\em parola} & Password of the user\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the user specified if exists otherwise null
+\end{DoxyReturn}
+\mbox{\Hypertarget{classst_delivery_1_1_database_ade64b128f02dcd31d50211940b5ba53c}\label{classst_delivery_1_1_database_ade64b128f02dcd31d50211940b5ba53c}} 
+\index{st\+Delivery\+::\+Database@{st\+Delivery\+::\+Database}!Insert\+User\+Into\+Table@{Insert\+User\+Into\+Table}}
+\index{Insert\+User\+Into\+Table@{Insert\+User\+Into\+Table}!st\+Delivery\+::\+Database@{st\+Delivery\+::\+Database}}
+\subsubsection{\texorpdfstring{Insert\+User\+Into\+Table()}{InsertUserIntoTable()}}
+{\footnotesize\ttfamily bool st\+Delivery.\+Database.\+Insert\+User\+Into\+Table (\begin{DoxyParamCaption}\item[{\hyperlink{classst_delivery_1_1_user}{User}}]{user }\end{DoxyParamCaption})}
+
+
+
+Method that introduce a new user in the database 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & The user we want to introduce in the database\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a bool that represents if the method has been executed successfully
+\end{DoxyReturn}
+\mbox{\Hypertarget{classst_delivery_1_1_database_a460aa2a51464b7f4c098ba1e8a2aa213}\label{classst_delivery_1_1_database_a460aa2a51464b7f4c098ba1e8a2aa213}} 
+\index{st\+Delivery\+::\+Database@{st\+Delivery\+::\+Database}!Instance@{Instance}}
+\index{Instance@{Instance}!st\+Delivery\+::\+Database@{st\+Delivery\+::\+Database}}
+\subsubsection{\texorpdfstring{Instance()}{Instance()}}
+{\footnotesize\ttfamily static \hyperlink{classst_delivery_1_1_database}{Database} st\+Delivery.\+Database.\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Receive the instance of the database -\/$>$ Singleton pattern 
+
+\mbox{\Hypertarget{classst_delivery_1_1_database_a44f6c1008ab4a8c9cc778e424aa23290}\label{classst_delivery_1_1_database_a44f6c1008ab4a8c9cc778e424aa23290}} 
+\index{st\+Delivery\+::\+Database@{st\+Delivery\+::\+Database}!Select\+User\+By\+Id@{Select\+User\+By\+Id}}
+\index{Select\+User\+By\+Id@{Select\+User\+By\+Id}!st\+Delivery\+::\+Database@{st\+Delivery\+::\+Database}}
+\subsubsection{\texorpdfstring{Select\+User\+By\+Id()}{SelectUserById()}}
+{\footnotesize\ttfamily bool st\+Delivery.\+Database.\+Select\+User\+By\+Id (\begin{DoxyParamCaption}\item[{int}]{Id }\end{DoxyParamCaption})}
+
+
+
+Method that returns the user with the id introduced as a argument 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Id} & Id of the user needed to be returned\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a bool that represents if the method has been executed successfully
+\end{DoxyReturn}
+\mbox{\Hypertarget{classst_delivery_1_1_database_ac2d2e378d6f56010d919aeb701e79f92}\label{classst_delivery_1_1_database_ac2d2e378d6f56010d919aeb701e79f92}} 
+\index{st\+Delivery\+::\+Database@{st\+Delivery\+::\+Database}!Select\+Users@{Select\+Users}}
+\index{Select\+Users@{Select\+Users}!st\+Delivery\+::\+Database@{st\+Delivery\+::\+Database}}
+\subsubsection{\texorpdfstring{Select\+Users()}{SelectUsers()}}
+{\footnotesize\ttfamily List$<$\hyperlink{classst_delivery_1_1_user}{User}$>$ st\+Delivery.\+Database.\+Select\+Users (\begin{DoxyParamCaption}\item[{\hyperlink{classst_delivery_1_1_user}{User}}]{user }\end{DoxyParamCaption})}
+
+
+
+Method that returns all the user from database as a list 
+
+\begin{DoxyReturn}{Returns}
+list of all users from database
+\end{DoxyReturn}
+\mbox{\Hypertarget{classst_delivery_1_1_database_a60b069ceff50d851b0ff76906c01df07}\label{classst_delivery_1_1_database_a60b069ceff50d851b0ff76906c01df07}} 
+\index{st\+Delivery\+::\+Database@{st\+Delivery\+::\+Database}!Update\+User\+Into\+Table@{Update\+User\+Into\+Table}}
+\index{Update\+User\+Into\+Table@{Update\+User\+Into\+Table}!st\+Delivery\+::\+Database@{st\+Delivery\+::\+Database}}
+\subsubsection{\texorpdfstring{Update\+User\+Into\+Table()}{UpdateUserIntoTable()}}
+{\footnotesize\ttfamily bool st\+Delivery.\+Database.\+Update\+User\+Into\+Table (\begin{DoxyParamCaption}\item[{\hyperlink{classst_delivery_1_1_user}{User}}]{user }\end{DoxyParamCaption})}
+
+
+
+Method that updates an user account from database 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & The user we want to update with some new information\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a bool that represents if the method has been executed successfully
+\end{DoxyReturn}
+\mbox{\Hypertarget{classst_delivery_1_1_database_afa81257b192afc5091c35e8af8e1cf09}\label{classst_delivery_1_1_database_afa81257b192afc5091c35e8af8e1cf09}} 
+\index{st\+Delivery\+::\+Database@{st\+Delivery\+::\+Database}!user\+Exists@{user\+Exists}}
+\index{user\+Exists@{user\+Exists}!st\+Delivery\+::\+Database@{st\+Delivery\+::\+Database}}
+\subsubsection{\texorpdfstring{user\+Exists()}{userExists()}}
+{\footnotesize\ttfamily int st\+Delivery.\+Database.\+user\+Exists (\begin{DoxyParamCaption}\item[{string}]{email,  }\item[{string}]{parola }\end{DoxyParamCaption})}
+
+
+
+Method that checks if exists an account with the specific email and password in the table 
+
+
+\begin{DoxyParams}{Parameters}
+{\em email} & Email of the user\\
+\hline
+{\em parola} & Password of the user\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a bool that represents if exists an account with the informations introduced or not
+\end{DoxyReturn}
+\mbox{\Hypertarget{classst_delivery_1_1_database_a150234bbfd66c0a5b2067de2ddc851cc}\label{classst_delivery_1_1_database_a150234bbfd66c0a5b2067de2ddc851cc}} 
+\index{st\+Delivery\+::\+Database@{st\+Delivery\+::\+Database}!user\+Number@{user\+Number}}
+\index{user\+Number@{user\+Number}!st\+Delivery\+::\+Database@{st\+Delivery\+::\+Database}}
+\subsubsection{\texorpdfstring{user\+Number()}{userNumber()}}
+{\footnotesize\ttfamily int st\+Delivery.\+Database.\+user\+Number (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Method that returns the number of the all users registered 
+
+\begin{DoxyReturn}{Returns}
+number of all users
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+A.\+C/\+I\+P/new\+Version/st\+Delivery/\+D\+L\+Ls/\+Database/Database.\+cs\end{DoxyCompactItemize}

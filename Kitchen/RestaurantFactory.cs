@@ -81,7 +81,20 @@ namespace stDelivery.Kitchen
         public static RestaurantFactory GetInstance(AssetManager asset, string fileName)
         {
             if (_singleton == null)
-                _singleton = new RestaurantFactory(fileName, asset);
+            {
+                if(asset == null && fileName == "")
+                {
+                    throw new Exception("Wrong file read.");
+                }
+
+                try
+                {
+                    _singleton = new RestaurantFactory(fileName, asset);
+                } catch (IOException exp)
+                {
+                    Log.Info("myapp", "Fail on read: " + exp.Message);
+                }
+            }
             return _singleton;
         }
     }

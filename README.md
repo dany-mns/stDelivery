@@ -13,6 +13,7 @@
 
 <a href="https://github.com/dannymanastireanu/stDelivery/tree/claudiu"><img src="https://i.imgur.com/Iu42IAZ.jpg" title="VS" alt="VS" width = 250px height=500px></a> 
 
+> The diagrams made in Altova (Activity Diagram, Sequence Diagram, Use Case Diagram, My part class diagram)
 ---
 
 ## License

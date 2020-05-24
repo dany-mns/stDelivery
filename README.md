@@ -17,6 +17,14 @@
 
 <a href="https://github.com/dannymanastireanu/stDelivery/tree/stefanStratulat"><img src="https://imgur.com/e9joCKV.jpg" title="VS" alt="VS" width = 250px height=500px></a>
 
+>  <a href="https://github.com/dannymanastireanu/stDelivery/blob/stefanStratulat/SRS.doc">SRS</a>
+
+>  <a href="https://github.com/dannymanastireanu/stDelivery/blob/stefanStratulat/Documentatie-converted.pdf">Project Documentation</a>
+
+> Class Diagram
+
+<a href="https://github.com/dannymanastireanu/stDelivery/tree/stefanStratulat"><img src="https://github.com/dannymanastireanu/stDelivery/blob/stefanStratulat/StefanDiagramClass.png?raw=true" title="VS" alt="VS" width = 550px height=500px></a>
+
 ## License
 
 [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)

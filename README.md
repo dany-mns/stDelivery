@@ -5,8 +5,8 @@
 
 # stDelivery
 
-> Cate o linie cu fiecare functionalitate implementata
-
+> Shopping cart activity (manipulate the products from the shopping cart, see the final price and finish the command)
+<a href="https://github.com/dannymanastireanu/stDelivery/tree/stefanStratulat"><img src="https://imgur.com/0G3Q11A" title="VS" alt="VS" width = 250px height=500px></a>
 
 ---
 

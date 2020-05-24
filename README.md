@@ -9,9 +9,11 @@
 
 <a href="https://github.com/dannymanastireanu/stDelivery/tree/stefanStratulat"><img src="https://imgur.com/0G3Q11A.jpg" title="VS" alt="VS" width = 250px height=500px></a>
 
-> Complete or auto-complete the contact data for receiving the command, select the checkboxes, and enjoy your email from the app
+> Complete or auto-complete the contact data for receiving the command, select the checkboxes, and send the command
 
 <a href="https://github.com/dannymanastireanu/stDelivery/tree/stefanStratulat"><img src="https://imgur.com/VB2EIEu.jpg" title="VS" alt="VS" width = 250px height=500px></a>
+
+> Enjoy your email
 
 <a href="https://github.com/dannymanastireanu/stDelivery/tree/stefanStratulat"><img src="https://imgur.com/e9joCKV.jpg" title="VS" alt="VS" width = 250px height=500px></a>
 
